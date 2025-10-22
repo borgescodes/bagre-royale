@@ -10,7 +10,7 @@ window.BAGRE_DATA = {
     {
       id: "bagre-s1",
       name: "Camp Bagre Royale - 1ª Season",
-      cover: "assets/bagre1.png",
+      cover: "assets/bagre1.webp",
       date: "2025-10-19",
       status: "done",
       summary: {
@@ -60,7 +60,7 @@ window.BAGRE_DATA = {
     {
       id: "bagre-s2",
       name: "Camp Bagre Royale - 2° Season",
-      cover: "assets/bagre2.png",
+      cover: "assets/bagre2.webp",
       date: "2025-10-24",
       status: "upcoming",
       summary: { },
