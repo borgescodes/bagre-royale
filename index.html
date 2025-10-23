@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bagre Royale • Histórico de Camps</title>
+  <title>Bagre Royale • Histórico de Ligas</title>
   <meta name="theme-color" content="#070b18" />
-  <link rel="icon" href="assets/icon.png" sizes="any" />
-  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="icon" href="assets/main-icon.png" sizes="any" />
+  <link rel="apple-touch-icon" href="assets/main-icon.png" />
   <link rel="preload" href="assets/Supercell-Magic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,18 +14,26 @@
   <header class="site-header">
     <div class="container header-wrap">
       <a href="index.html" class="brand" aria-label="Bagre Royale">
-        <img src="assets/icon.png" alt="Bagre Royale ícone" class="brand-icon" />
+        <img src="assets/main-icon.png" alt="Ícone Bagre Royale" class="brand-icon" />
         <span class="brand-text">Bagre Royale</span>
       </a>
+      <div class="header-actions">
+        <a href="https://www.instagram.com/borgesdev/" target="_blank" rel="noopener" aria-label="Instagram do Pedro Borges">
+          <img src="assets/insta.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/pedro-borgesdev/" target="_blank" rel="noopener" aria-label="LinkedIn do Pedro Borges">
+          <img src="assets/linkedin.png" alt="" />
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main id="root">
     <section class="hero">
       <div class="container hero-wrap">
         <div>
-          <h1 class="hero-title">Histórico de Camps/Ligas</h1>
-          <p class="hero-subtitle">Campeonatos concluídos e próximos. Rankings e desempenho dos Bagresons.</p>
+          <h1 class="hero-title">Histórico de Ligas</h1>
+          <p class="hero-subtitle">Acompanhe Campeonatos, Resultados e Estatísticas dos Bagres.</p>
         </div>
       </div>
     </section>
@@ -33,9 +41,8 @@
     <section class="container section">
       <div class="section-head">
         <h2 class="section-title">Campeonatos</h2>
-        <div class="section-actions"></div>
       </div>
-      <div id="carousel" class="carousel" aria-label="Carrossel de Campeonatos"></div>
+      <div id="carousel" class="carousel" aria-live="polite"></div>
     </section>
 
     <section class="container section">
@@ -57,7 +64,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Bagre Royale - Desenvolvido por Borges</small>
+      <small>© <span id="year"></span> Bagre Royale</small>
+      <img src="assets/logo-dev-horizontal.png" alt="Logo Dev" class="footer-dev-logo" />
     </div>
   </footer>
 
