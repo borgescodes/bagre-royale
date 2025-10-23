@@ -34,6 +34,8 @@
         <div>
           <h1 class="hero-title">Histórico de Ligas</h1>
           <p class="hero-subtitle">Acompanhe Campeonatos, Resultados e Estatísticas dos Bagres.</p>
+          <!-- contador de acessos -->
+          
         </div>
       </div>
     </section>
@@ -64,7 +66,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Bagre Royale</small>
+      <small>© <span id="year"></span> Bagre Royale</small> <small class="hero-meta" aria-live="polite">Count: <strong id="visits">0</strong></small>
       <img src="assets/logo-dev-horizontal.png" alt="Logo Dev" class="footer-dev-logo" />
     </div>
   </footer>
@@ -72,5 +74,25 @@
   <script src="data.js"></script>
   <script src="engine.js"></script>
   <script src="main.js"></script>
+
+  <!-- CountAPI: pageviews -->
+  <script>
+    (function(){
+      const NS="borgescodes_bagre_royale_x9f2a0";
+      const KEY="home";
+      const el=document.getElementById("visits");
+      if(!el) return;
+      const tag="pv-session";
+      const hit = `https://api.countapi.xyz/hit/${NS}/${KEY}`;
+      const get = `https://api.countapi.xyz/get/${NS}/${KEY}`;
+      const go = (url)=>fetch(url).then(r=>r.json()).then(d=>{ if(d && typeof d.value==="number") el.textContent=d.value; }).catch(()=>{});
+      if(!sessionStorage.getItem(tag)){
+        sessionStorage.setItem(tag,"1");
+        go(hit);     // conta 1 na primeira visita da sessão
+      }else{
+        go(get);     // só lê nas próximas páginas da sessão
+      }
+    })();
+  </script>
 </body>
 </html>

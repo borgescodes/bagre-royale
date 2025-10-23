@@ -253,6 +253,17 @@ small{color:var(--muted)}
 .footer-dev-logo{height:48px;opacity:.95;display:block;filter:drop-shadow(0 2px 6px rgba(98,230,255,.18));transition:transform .15s ease}
 .footer-dev-logo:hover{transform:translateY(-1px)}
 
+/* Person: destaque dourado animado */
+
+.player--person .player-name{
+  background: linear-gradient(120deg,#b6891a,#ffd267,#fff2a6,#b6891a);
+  background-size:300% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation: brandGradient var(--chromatic-duration) linear infinite;
+}
+
 /* Animações */
 @keyframes fadeUp{from{opacity:.0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes brandGradient{0%{background-position:0% 50%}100%{background-position:200% 50%}}
