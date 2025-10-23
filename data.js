@@ -3,7 +3,7 @@ window.BAGRE_DATA = {
     Borges: {
       name: "Borges",
       avatar: "assets/borges.png",
-      achievements: ["Campeão 1ª Season Bagre Royale"],
+      achievements: ["Campeão – 1ª Season Bagre Royale"],
     },
     Lascanor: {
       name: "Lascanor",
@@ -22,7 +22,7 @@ window.BAGRE_DATA = {
   tournaments: [
     {
       id: "bagre-s1",
-      name: "Camp Bagre Royale - 1ª Season",
+      name: "Bagre Royale I",
       cover: "assets/2.webp",
       date: "2025-10-21",
       status: "done",
@@ -77,7 +77,7 @@ window.BAGRE_DATA = {
     },
     {
       id: "bagre-s2",
-      name: "Camp Bagre Royale - 2° Season",
+      name: "Bagre Royale II",
       cover: "assets/3.webp",
       date: "2025-10-25",
       status: "upcoming",
@@ -114,7 +114,7 @@ window.BAGRE_DATA = {
     },
     {
       id: "bagre-estrategico-ato1",
-      name: "Bagre Estratégico - Ato I",
+      name: "Bagre Estratégico",
       cover: "assets/1.webp",
       date: "2025-10-28",
       status: "upcoming",
