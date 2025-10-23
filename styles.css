@@ -163,7 +163,7 @@ small{color:var(--muted)}
 .card:hover{transform:translateY(-4px);border-color:rgba(98,230,255,.45);box-shadow:0 14px 40px rgba(0,0,0,.45);filter:saturate(110%)}
 .card-cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#0c1229}
 .card-body{padding:12px;display:flex;flex-direction:column;gap:4px}
-.card-title{margin:0;font-size:16px;align-self:flex-start}
+.card-title{margin:0;font-size:16px;align-self:center;text-align:center;}
 .card-meta{margin:2px 0 0;color:var(--muted);font-size:12px;text-align:center;align-self:center}
 .card-link{position:absolute;inset:0}
 
