@@ -75,7 +75,6 @@
   <script src="engine.js"></script>
   <script src="main.js"></script>
 
-  <!-- CountAPI: pageviews -->
   <script>
     (function(){
       const NS="borgescodes_bagre_royale_x9f2a0";
@@ -88,9 +87,9 @@
       const go = (url)=>fetch(url).then(r=>r.json()).then(d=>{ if(d && typeof d.value==="number") el.textContent=d.value; }).catch(()=>{});
       if(!sessionStorage.getItem(tag)){
         sessionStorage.setItem(tag,"1");
-        go(hit);     // conta 1 na primeira visita da sessão
+        go(hit);     
       }else{
-        go(get);     // só lê nas próximas páginas da sessão
+        go(get);     
       }
     })();
   </script>
