@@ -1,4 +1,3 @@
-// main.js: reexibe títulos no dropdown e posiciona badge de série à direita do nome
 (function () {
   const REG = (window.BAGRE_DATA && window.BAGRE_DATA.players) || {};
   const D = (window.BAGRE_DATA && typeof window.BAGRE_DATA === "object") ? window.BAGRE_DATA : { players: {}, tournaments: [] };
