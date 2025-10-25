@@ -17,7 +17,7 @@
   "jogos": [
     { "homeId": "Borges", "awayId": "Lascanor", "homeScore": 2, "awayScore": 1},
     { "homeId": "Bad", "awayId": "Person", "homeScore": 0, "awayScore": 2},
-    { "homeId": "Gaab", "awayId": "Vegê", "homeScore": 0, "awayScore": 0},
+    { "homeId": "Gaab", "awayId": "Vegê", "homeScore": 0, "awayScore": 2},
     { "homeId": "Borges", "awayId": "Bad", "homeScore": 0, "awayScore": 0},
     { "homeId": "Lascanor", "awayId": "Gaab", "homeScore": 0, "awayScore": 0},
     { "homeId": "Vegê", "awayId": "Dan", "homeScore": 0, "awayScore": 0},
