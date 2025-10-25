@@ -237,7 +237,7 @@
 
   function renderHeader(s){
     const cover = qs("#seasonCover");
-    if (cover) cover.src = s.cover || "assets/2.webp";
+    if (cover) cover.src = s.cover || "assets/cards/2.webp";
     const name = qs("#seasonName");
     if (name) name.textContent = s.nome || s.season || "Campeonato";
     const meta = qs("#seasonMeta");

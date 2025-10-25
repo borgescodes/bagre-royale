@@ -1,4 +1,3 @@
-/* styles.css: correções mínimas — avatar e nome no topo; toggle “^” com rotação; badges de série */
 @font-face{
   font-family:'Supercell Magic';
   src:url('assets/Supercell-Magic.eot');
@@ -52,8 +51,6 @@ body{
 img,video{max-width:100%;height:auto;display:block}
 :focus{outline:none}
 :focus-visible{box-shadow:0 0 0 3px rgba(98,230,255,.35),0 0 0 6px rgba(98,230,255,.18);border-radius:12px}
-
-/* Tipografia */
 h1,h2,h3,h4,.hero-title,.section-title,.brand-text,.panel-title,.season-name{
   font-family:'Supercell Magic',"Inter",sans-serif;
   letter-spacing:.2px;
@@ -76,7 +73,6 @@ small{color:var(--muted)}
   .brand-text,
   .hero-title,.section-title,.panel-title,.season-name{color:var(--brand);background:none;animation:none}
 }
-
 .container{
   max-width:1120px;
   margin-inline:auto;
@@ -89,12 +85,10 @@ small{color:var(--muted)}
 .section-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .input-wrap input, select{background:var(--elev);border:1px solid var(--line);padding:10px 12px;border-radius:12px;color:var(--txt);outline:none}
 .input-wrap input::placeholder{color:#98a3c4}
-
 .site-header{
   position:sticky;top:0;z-index:30;
   border-bottom:1px solid rgba(255,255,255,.08);
   background:transparent;transform:translateZ(0);
-  /* expande além do padding lateral do body para cobrir a tela toda */
   margin-left:calc(-1 * max(env(safe-area-inset-left),12px));
   margin-right:calc(-1 * max(env(safe-area-inset-right),12px));
 }
@@ -119,14 +113,11 @@ small{color:var(--muted)}
 .header-actions a{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);text-decoration:none}
 .header-actions a:hover{transform:translateY(-1px);border-color:rgba(98,230,255,.35)}
 .header-actions img{width:28px;height:28px;display:block;filter:drop-shadow(0 2px 8px rgba(98,230,255,.18))}
-
 .hero{padding:26px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 .hero-wrap{display:block}
 .hero-subtitle{color:var(--muted);margin:6px 0 0}
-
 .btn{cursor:pointer;border:1px solid var(--line);background:var(--elev);color:var(--txt);padding:9px 13px;border-radius:12px;transition:transform .15s ease,opacity .15s ease}
 .btn:hover{transform:translateY(-1px)}
-
 .btn-back{
   display:inline-flex;align-items:center;gap:10px;
   padding:10px 14px;border-radius:12px;
@@ -139,7 +130,6 @@ small{color:var(--muted)}
 }
 .btn-back::before{content:"←";font-size:16px;line-height:1}
 .btn-back:hover{transform:translateY(-1px);border-color:rgba(98,230,255,.5)}
-
 .carousel{
   display:grid;grid-auto-flow:column;grid-auto-columns:minmax(200px,240px);
   gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;
@@ -147,7 +137,6 @@ small{color:var(--muted)}
 }
 .carousel::-webkit-scrollbar{height:6px}
 .carousel::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:999px}
-
 .card{
   position:relative;display:flex;flex-direction:column;gap:8px;
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -167,8 +156,6 @@ small{color:var(--muted)}
 .card-title{margin:0;font-size:16px;align-self:center;text-align:center;}
 .card-meta{margin:2px 0 0;color:var(--muted);font-size:12px;text-align:center;align-self:center}
 .card-link{position:absolute;inset:0}
-
-/* bagres + acordeão */
 .players-grid{display:grid;grid-template-columns:1fr;gap:12px}
 .player{
   display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;
@@ -184,8 +171,6 @@ small{color:var(--muted)}
 .player-details{grid-column:1/-1;max-height:0;overflow:hidden;transition:max-height .25s ease,padding .25s ease;padding:0 6px}
 .player.is-open .player-details{max-height:180px;padding:6px}
 .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(202,166,255,.18);border:1px solid rgba(202,166,255,.35);font-size:11px;color:#efe9ff;margin:4px 6px 0 0}
-
-/* Tabelas */
 .table-wrap{
   background:var(--card);
   border:1px solid var(--line);
@@ -219,7 +204,6 @@ small{color:var(--muted)}
 .table-rank tbody tr:nth-child(2){background:linear-gradient(90deg,rgba(202,166,255,.10),transparent)}
 .table-rank tbody tr:nth-child(3){background:linear-gradient(90deg,rgba(255,210,103,.10),transparent)}
 .rank-pos-chip{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:8px;border:1px solid rgba(98,230,255,.45);background:rgba(98,230,255,.14);font-weight:700}
-
 .season-hero{padding:12px 0 0}
 .season-hero-wrap{display:grid;grid-template-columns:1fr;gap:12px;align-items:center}
 .season-cover{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow)}
@@ -238,12 +222,8 @@ small{color:var(--muted)}
 .panel-body ul{margin:0;padding-left:18px}
 .panel-body li{margin:6px 0;color:var(--txt)}
 .prose p{margin:0 0 8px}
-
-/* Grades utilitárias */
 .kpis-grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
 .grid-2-1{display:grid;gap:12px;grid-template-columns:2fr 1fr}
-
-/* Rodapé melhorado */
 .site-footer{
   padding:24px 0;
   border-top:1px solid rgba(255,255,255,.10);
@@ -253,8 +233,6 @@ small{color:var(--muted)}
 .site-footer small{color:#c7d2f1}
 .footer-dev-logo{height:48px;opacity:.95;display:block;filter:drop-shadow(0 2px 6px rgba(98,230,255,.18));transition:transform .15s ease}
 .footer-dev-logo:hover{transform:translateY(-1px)}
-
-/* Person: destaque dourado animado */
 .player--person .player-name{
   background: linear-gradient(120deg,#b6891a,#ffd267,#fff2a6,#b6891a);
   background-size:300% 100%;
@@ -263,27 +241,19 @@ small{color:var(--muted)}
   color:transparent;
   animation: brandGradient var(--chromatic-duration) linear infinite;
 }
-
-/* Bagreleirão: visual exclusivo por série (não mistura com padrão) */
 .table-rank.serie-a,
 .table-rank.serie-b{
   --edge: var(--brand);
   --row: rgba(98,230,255,.10);
 }
-
-/* Neutraliza “top 3” padrão nas séries */
 .table-rank.serie-a tbody tr:nth-child(-n+3),
 .table-rank.serie-b tbody tr:nth-child(-n+3){
   background: transparent;
 }
-
-/* Série A: cores próprias */
 .table-rank.serie-a{
   --edge: var(--ok);
   --row: rgba(53,224,161,.12);
 }
-
-/* G4 destacado (ambas as séries) */
 .table-rank.serie-a tbody tr.g4,
 .table-rank.serie-b tbody tr.g4{
   box-shadow: inset 4px 0 0 0 var(--edge);
@@ -293,8 +263,6 @@ small{color:var(--muted)}
 .table-rank.serie-b tbody tr.g4 td:first-child{
   font-weight: 700;
 }
-
-/* Zona de rebaixamento (apenas Série A: 2 últimos) */
 .table-rank.serie-a tbody tr.relegation{
   box-shadow: inset 4px 0 0 0 var(--danger);
   background: rgba(255,107,122,.12);
@@ -302,13 +270,10 @@ small{color:var(--muted)}
 .table-rank.serie-a tbody tr.relegation td:first-child{
   font-weight: 700;
 }
-
-/* Hover sutil sem sobrescrever destaque */
 .table-rank.serie-a tbody tr:hover,
 .table-rank.serie-b tbody tr:hover{
   filter: saturate(110%);
 }
-
 .badge-title,
 .badge-serie {
   display: inline-block;
@@ -320,37 +285,30 @@ small{color:var(--muted)}
   vertical-align: middle;
   border: 1px solid transparent;
 }
-
 .badge-title {
   background: #0f172a;
   color: #ffffff;
   border-color: rgba(0, 0, 0, 0.2);
 }
-
 .badge-serie-a {
   background: linear-gradient(180deg, #ffe08a 0%, #ffd54d 100%);
   color: #3a2c00;
   border-color: #d1a304;
 }
-
 .badge-serie-b {
   background: linear-gradient(180deg, #f0f0f0 0%, #cfcfcf 100%);
   color: #2a2a2a;
   border-color: #9b9b9b;
 }
-
-/* Player card: layout e organização */
 .player {
   display: grid;
   grid-template-columns: 56px 1fr auto;
   gap: 10px;
   align-items: start;
 }
-
 .player-avatar{
   align-self: start;
 }
-
 .player-toggle{
   border: none;
   background: transparent;
@@ -366,7 +324,6 @@ small{color:var(--muted)}
   transform: rotate(0deg);
 }
 .player-toggle:hover{ opacity: .85; }
-
 .player-name-row {
   display: flex;
   align-items: center;
@@ -374,13 +331,11 @@ small{color:var(--muted)}
   gap: 8px;
   margin: 0 0 2px 0;
 }
-
 .player-sub {
   margin: 2px 0 0 0;
   font-size: 12px;
   color: var(--muted);
 }
-
 .player-details {
   grid-column: 1 / -1;
   max-height: 0;
@@ -394,8 +349,6 @@ small{color:var(--muted)}
   max-height: 220px;
   padding: 8px 6px 6px;
 }
-
-/* Lista de títulos como “chips” */
 .player-achievements {
   list-style: none;
   padding: 0;
@@ -411,8 +364,6 @@ small{color:var(--muted)}
   background: rgba(255, 255, 255, .06);
   border: 1px solid rgba(255, 255, 255, .12);
 }
-
-/* Animações */
 @keyframes fadeUp{from{opacity:.0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes brandGradient{0%{background-position:0% 50%}100%{background-position:200% 50%}}
 @media (prefers-reduced-motion: reduce){
@@ -421,8 +372,6 @@ small{color:var(--muted)}
   .brand-text,
   .hero-title,.section-title,.panel-title,.season-name{animation:none!important}
 }
-
-/* Responsividade */
 @media (max-width: 719.98px){
   .kpis-grid{grid-template-columns:1fr}
   .grid-2-1{grid-template-columns:1fr}
@@ -436,4 +385,31 @@ small{color:var(--muted)}
 }
 @media (min-width: 1200px){
   .container{max-width:1240px}
+}
+/* NOVO: gradientes específicos e animados para títulos das séries */
+:root{
+  --gold-grad: linear-gradient(120deg,#b6891a 0%,#ffd267 35%,#fff2a6 60%,#b6891a 100%);
+  --silver-grad: linear-gradient(120deg,#9aa3ad 0%,#e5e7eb 35%,#ffffff 60%,#9aa3ad 100%);
+}
+.section:has(#carousel-bagreleirao-a) .section-title{
+  background: var(--gold-grad);
+  background-size:300% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:brandGradient var(--chromatic-duration) linear infinite;
+  text-shadow:0 0 12px rgba(255,210,103,.12);
+}
+.section:has(#carousel-bagreleirao-b) .section-title{
+  background: var(--silver-grad);
+  background-size:300% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:brandGradient var(--chromatic-duration) linear infinite;
+  text-shadow:0 0 12px rgba(229,231,235,.12);
+}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){
+  .section:has(#carousel-bagreleirao-a) .section-title{color:#ffd267;background:none;animation:none}
+  .section:has(#carousel-bagreleirao-b) .section-title{color:#e5e7eb;background:none;animation:none}
 }
