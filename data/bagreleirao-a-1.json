@@ -23,7 +23,7 @@
     { "homeId": "Vegê", "awayId": "Dan", "homeScore": 2, "awayScore": 0},
     { "homeId": "Borges", "awayId": "Person", "homeScore": 2, "awayScore": 1},
     { "homeId": "Lascanor", "awayId": "Vegê", "homeScore": 1, "awayScore": 2},
-    { "homeId": "Bad", "awayId": "Dan", "homeScore": 0, "awayScore": 0},
+    { "homeId": "Bad", "awayId": "Dan", "homeScore": 2, "awayScore": 0},
     { "homeId": "Borges", "awayId": "Gaab", "homeScore": 0, "awayScore": 0},
     { "homeId": "Lascanor", "awayId": "Dan", "homeScore": 0, "awayScore": 0},
     { "homeId": "Person", "awayId": "Vegê", "homeScore": 0, "awayScore": 0},
