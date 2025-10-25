@@ -15,7 +15,7 @@
     { "id": "Dan", "nome": "Dan" }
   ],
   "jogos": [
-    { "homeId": "Borges", "awayId": "Lascanor", "homeScore": 0, "awayScore": 0},
+    { "homeId": "Borges", "awayId": "Lascanor", "homeScore": 2, "awayScore": 1},
     { "homeId": "Bad", "awayId": "Person", "homeScore": 0, "awayScore": 0},
     { "homeId": "Gaab", "awayId": "Vegê", "homeScore": 0, "awayScore": 0},
     { "homeId": "Borges", "awayId": "Bad", "homeScore": 0, "awayScore": 0},
