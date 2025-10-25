@@ -1,92 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Detalhes do Campeonato • Bagre Royale</title>
-  <link rel="icon" href="assets/icon.png" sizes="any" />
-  <link rel="apple-touch-icon" href="assets/icon.png" />
-  <link rel="preload" href="assets/Supercell-Magic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a class="btn btn-back" href="index.html" aria-label="Voltar para início">Voltar</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalhes do Campeonato • Bagre Royale</title>
+    <link rel="icon" href="" sizes="any" />
+    <link rel="icon" href="assets/navbar/main-icon.webp" sizes="any" />
+    <link
+      rel="preload"
+      href="assets/Supercell-Magic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a
+          class="btn btn-back"
+          href="index.html"
+          aria-label="Voltar para início"
+          >Voltar</a
+        >
+      </div>
+    </header>
 
-  <main id="seasonRoot" class="season-root">
-    <section id="seasonHero" class="season-hero">
-      <div class="container season-hero-wrap">
-        <img id="seasonCover" class="season-cover" src="" alt="Capa do campeonato" />
-        <div class="season-hero-info">
-          <h1 id="seasonName" class="season-name"></h1>
-          <p id="seasonMeta" class="season-meta"></p>
+    <main id="seasonRoot" class="season-root">
+      <section id="seasonHero" class="season-hero">
+        <div class="container season-hero-wrap">
+          <img
+            id="seasonCover"
+            class="season-cover"
+            src=""
+            alt="Capa do campeonato"
+          />
+          <div class="season-hero-info">
+            <h1 id="seasonName" class="season-name"></h1>
+            <p id="seasonMeta" class="season-meta"></p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="container section season-panels">
-      <div class="grid-3">
-
-        <article class="panel" id="panelRanking">
-          <h2 class="panel-title">Ranking</h2>
-          <div class="panel-body">
-            <div class="table-wrap">
-              <table class="table table-rank" id="rankingTable" aria-label="Ranking do campeonato">
-                <thead>
-                  <tr>
-                    <th>Pos</th><th>Jogador</th><th>Vitórias</th><th>Derrotas</th><th>Saldo</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
+      <section class="container section season-panels">
+        <div class="grid-3">
+          <article class="panel" id="panelRanking">
+            <h2 class="panel-title">Ranking</h2>
+            <div class="panel-body">
+              <div class="table-wrap">
+                <table
+                  class="table table-rank"
+                  id="rankingTable"
+                  aria-label="Ranking do campeonato"
+                >
+                  <thead>
+                    <tr>
+                      <th>Pos</th>
+                      <th>Bagre</th>
+                      <th>PTS</th>
+                      <th>V</th>
+                      <th>D</th>
+                      <th>DV</th>
+                      <th>S</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="panel" id="panelMatches">
-          <h2 class="panel-title">Tabela de Jogos</h2>
-          <div class="panel-body">
-            <div class="table-wrap">
-              <table class="table" id="matchesTable" aria-label="Tabela de partidas">
-                <thead>
-                  <tr>
-                    <th>Jogador A</th>
-                    <th>Placar</th>
-                    <th>Jogador B</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
+          <article class="panel" id="panelMatches">
+            <h2 class="panel-title">Tabela de Jogos</h2>
+            <div class="panel-body">
+              <div class="table-wrap">
+                <table
+                  class="table"
+                  id="matchesTable"
+                  aria-label="Tabela de partidas"
+                >
+                  <thead>
+                    <tr>
+                      <th>Jogador A</th>
+                      <th>Placar</th>
+                      <th>Jogador B</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="panel" id="panelResumo">
-          <h2 class="panel-title">Resumo</h2>
-          <div id="seasonSummary" class="panel-body prose"></div>
-        </article>
+          <article class="panel" id="panelResumo">
+            <h2 class="panel-title">Resumo</h2>
+            <div id="seasonSummary" class="panel-body prose"></div>
+          </article>
 
-        <article class="panel" id="panelDestaques">
-          <h2 class="panel-title">Destaques</h2>
-          <div id="seasonHighlights" class="panel-body prose"></div>
-        </article>
+          <article class="panel" id="panelDestaques">
+            <h2 class="panel-title">Destaques</h2>
+            <div id="seasonHighlights" class="panel-body prose"></div>
+          </article>
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Bagre Royale</small>
+        <img
+          src="assets/navbar/logo-dev-horizontal.webp"
+          alt="Logo Dev"
+          class="footer-dev-logo"
+        />
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Bagre Royale</small>
-      <img src="assets/logo-dev-horizontal.png" alt="Logo Dev" class="footer-dev-logo" />
-    </div>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="engine.js"></script>
-  <script src="season.js"></script>
-</body>
+    <script src="data.js"></script>
+    <script src="engine.js"></script>
+    <script src="season.js"></script>
+  </body>
 </html>

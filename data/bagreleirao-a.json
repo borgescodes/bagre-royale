@@ -1,0 +1,12 @@
+{
+  "schema": "v1",
+  "temporadas": [
+    {
+      "id": "bagreleirao-a-1",
+      "name": "Série A - 1ª Edição",
+      "cover": "assets/cards/serie-a.webp",
+      "date": "2025-10-26",
+      "status": "upcoming"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+/* styles.css: correções mínimas — avatar e nome no topo; toggle “^” com rotação; badges de série */
 @font-face{
   font-family:'Supercell Magic';
   src:url('assets/Supercell-Magic.eot');
@@ -254,7 +255,6 @@ small{color:var(--muted)}
 .footer-dev-logo:hover{transform:translateY(-1px)}
 
 /* Person: destaque dourado animado */
-
 .player--person .player-name{
   background: linear-gradient(120deg,#b6891a,#ffd267,#fff2a6,#b6891a);
   background-size:300% 100%;
@@ -262,6 +262,154 @@ small{color:var(--muted)}
   background-clip:text;
   color:transparent;
   animation: brandGradient var(--chromatic-duration) linear infinite;
+}
+
+/* Bagreleirão: visual exclusivo por série (não mistura com padrão) */
+.table-rank.serie-a,
+.table-rank.serie-b{
+  --edge: var(--brand);
+  --row: rgba(98,230,255,.10);
+}
+
+/* Neutraliza “top 3” padrão nas séries */
+.table-rank.serie-a tbody tr:nth-child(-n+3),
+.table-rank.serie-b tbody tr:nth-child(-n+3){
+  background: transparent;
+}
+
+/* Série A: cores próprias */
+.table-rank.serie-a{
+  --edge: var(--ok);
+  --row: rgba(53,224,161,.12);
+}
+
+/* G4 destacado (ambas as séries) */
+.table-rank.serie-a tbody tr.g4,
+.table-rank.serie-b tbody tr.g4{
+  box-shadow: inset 4px 0 0 0 var(--edge);
+  background: var(--row);
+}
+.table-rank.serie-a tbody tr.g4 td:first-child,
+.table-rank.serie-b tbody tr.g4 td:first-child{
+  font-weight: 700;
+}
+
+/* Zona de rebaixamento (apenas Série A: 2 últimos) */
+.table-rank.serie-a tbody tr.relegation{
+  box-shadow: inset 4px 0 0 0 var(--danger);
+  background: rgba(255,107,122,.12);
+}
+.table-rank.serie-a tbody tr.relegation td:first-child{
+  font-weight: 700;
+}
+
+/* Hover sutil sem sobrescrever destaque */
+.table-rank.serie-a tbody tr:hover,
+.table-rank.serie-b tbody tr:hover{
+  filter: saturate(110%);
+}
+
+.badge-title,
+.badge-serie {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 600;
+  vertical-align: middle;
+  border: 1px solid transparent;
+}
+
+.badge-title {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.badge-serie-a {
+  background: linear-gradient(180deg, #ffe08a 0%, #ffd54d 100%);
+  color: #3a2c00;
+  border-color: #d1a304;
+}
+
+.badge-serie-b {
+  background: linear-gradient(180deg, #f0f0f0 0%, #cfcfcf 100%);
+  color: #2a2a2a;
+  border-color: #9b9b9b;
+}
+
+/* Player card: layout e organização */
+.player {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.player-avatar{
+  align-self: start;
+}
+
+.player-toggle{
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 6px;
+  color: var(--muted);
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.player.is-open .player-toggle{
+  transform: rotate(0deg);
+}
+.player-toggle:hover{ opacity: .85; }
+
+.player-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 2px 0;
+}
+
+.player-sub {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.player-details {
+  grid-column: 1 / -1;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 6px;
+  transition: max-height .25s ease, padding .25s ease;
+  border-top: 1px solid rgba(255, 255, 255, .06);
+  margin-top: 6px;
+}
+.player.is-open .player-details {
+  max-height: 220px;
+  padding: 8px 6px 6px;
+}
+
+/* Lista de títulos como “chips” */
+.player-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.player-achievements li {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .12);
 }
 
 /* Animações */

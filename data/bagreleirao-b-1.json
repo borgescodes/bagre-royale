@@ -1,0 +1,42 @@
+{
+  "schema": "v1",
+  "season": "bagreleirao-b-1",
+  "nome": "Bagreleirão Série B - 1ª Edição",
+  "inicio": "2025-10-26",
+  "status": "upcoming",
+  "cover": "assets/cards/serie-b.webp",
+  "jogadores": [
+    { "id": "Felps", "nome": "Felps" },
+    { "id": "Dan", "nome": "Dan" },
+    { "id": "Foox", "nome": "Foox" },
+    { "id": "Felipão", "nome": "Felipão" },
+    { "id": "Ricardo", "nome": "Ricardo" },
+    { "id": "Boaz", "nome": "Boaz" },
+    { "id": "Tuika", "nome": "Tuika" }
+  ],
+  "jogos": [
+    { "homeId": "Boaz", "awayId": "Felipão"},
+    { "homeId": "Ricardo", "awayId": "Wesl"},
+    { "homeId": "Foox", "awayId": "Felps"},
+    { "homeId": "Tuika", "awayId": "Ricardo"},
+    { "homeId": "Foox", "awayId": "Boaz"},
+    { "homeId": "Felipão", "awayId": "Felps"},
+    { "homeId": "Foox", "awayId": "Tuika"},
+    { "homeId": "Boaz", "awayId": "Ricardo"},
+    { "homeId": "Felipão", "awayId": "Tuika"},
+    { "homeId": "Wesl", "awayId": "Felps"},
+    { "homeId": "Felipão", "awayId": "Foox"},
+    { "homeId": "Boaz", "awayId": "Tuika"},
+    { "homeId": "Ricardo", "awayId": "Felps"},
+    { "homeId": "Foox", "awayId": "Wesl"},
+    { "homeId": "Boaz", "awayId": "Felps"},
+    { "homeId": "Wesl", "awayId": "Tuika"},
+    { "homeId": "Foox", "awayId": "Ricardo"},
+    { "homeId": "Wesl", "awayId": "Felipão"},
+    { "homeId": "Tuika", "awayId": "Felps"},
+    { "homeId": "Felipão", "awayId": "Ricardo"},
+    { "homeId": "Boaz", "awayId": "Wesl"}
+  ]
+}
+
+

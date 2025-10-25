@@ -1,0 +1,19 @@
+{
+  "schema": "v1",
+  "season": "bagre-s2",
+  "nome": "Bagre Royale - 2° Season",
+  "inicio": "2025-10-25",
+  "cover": "assets/cards/3.webp",
+  "status": "upcoming",
+  "jogadores": [
+    { "id": "Borges", "nome": "Borges" },
+    { "id": "Lascanor", "nome": "Lascanor" },
+    { "id": "Bad", "nome": "Bad" },
+    { "id": "Person", "nome": "Person" },
+    { "id": "Gaab", "nome": "Gaab" },
+    { "id": "Vege", "nome": "Vege" }
+  ],
+  "jogos": [
+    { "homeId": "Bagre", "awayId": "Bagre"}
+  ]
+}

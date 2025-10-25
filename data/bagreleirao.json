@@ -1,0 +1,15 @@
+{
+  "schema": "v1",
+  "atual": "bagre-s2",
+  "temporadas": [
+    {
+      "id": "bagreleirao-serie-a-s1",
+      "name": "Bagreleirão Série A - 1° Edição",
+      "cover": "assets/1.webp",
+      "date": "2025-10-28",
+      "status": "upcoming"
+    }
+  ]
+}
+
+

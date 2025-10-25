@@ -1,0 +1,42 @@
+{
+  "schema": "v1",
+  "season": "bagreleirao-a-1",
+  "nome": "Bagreleirão Série A - 1ª Edição",
+  "inicio": "2025-10-26",
+  "cover": "assets/cards/serie-a.webp",
+  "status": "upcoming",
+  "jogadores": [
+    { "id": "Borges", "nome": "Borges" },
+    { "id": "Bad", "nome": "Bad" },
+    { "id": "Person", "nome": "Person" },
+    { "id": "Gaab", "nome": "Gaab" },
+    { "id": "Lascanor", "nome": "Lascanor" },
+    { "id": "Vegê", "nome": "Vegê" },
+    { "id": "Dan", "nome": "Dan" }
+  ],
+  "jogos": [
+    { "homeId": "Borges", "awayId": "Lascanor"},
+    { "homeId": "Bad", "awayId": "Person"},
+    { "homeId": "Gaab", "awayId": "Vegê"},
+    { "homeId": "Borges", "awayId": "Bad"},
+    { "homeId": "Lascanor", "awayId": "Gaab"},
+    { "homeId": "Vegê", "awayId": "Dan"},
+    { "homeId": "Borges", "awayId": "Person"},
+    { "homeId": "Lascanor", "awayId": "Vegê"},
+    { "homeId": "Bad", "awayId": "Dan"},
+    { "homeId": "Borges", "awayId": "Gaab"},
+    { "homeId": "Lascanor", "awayId": "Dan"},
+    { "homeId": "Person", "awayId": "Vegê"},
+    { "homeId": "Lascanor", "awayId": "Bad"},
+    { "homeId": "Borges", "awayId": "Vegê"},
+    { "homeId": "Person", "awayId": "Dan"},
+    { "homeId": "Bad", "awayId": "Gaab"},
+    { "homeId": "Borges", "awayId": "Dan"},
+    { "homeId": "Bad", "awayId": "Vegê"},
+    { "homeId": "Gaab", "awayId": "Dan"},
+    { "homeId": "Lascanor", "awayId": "Person"},
+    { "homeId": "Gaab", "awayId": "Person"}
+  ]
+}
+
+

@@ -1,0 +1,30 @@
+{
+  "schema": "v1",
+  "season": "bagre-s1",
+  "nome": "Bagre Royale - 1ª Season",
+  "inicio": "2025-10-21",
+  "cover": "assets/cards/2.webp",
+  "status": "finished",
+
+  "jogadores": [
+    { "id": "Borges", "nome": "Borges" },
+    { "id": "Lascanor", "nome": "Lascanor" },
+    { "id": "Bad", "nome": "Bad" },
+    { "id": "Person", "nome": "Person" },
+    { "id": "Gaab", "nome": "Gaab" }
+  ],
+  "jogos": [
+    { "homeId": "Lascanor", "awayId": "Gaab", "homeScore": 2, "awayScore": 0},
+    { "homeId": "Lascanor", "awayId": "Bad", "homeScore": 2, "awayScore": 1},
+    { "homeId": "Lascanor", "awayId": "Borges", "homeScore": 1, "awayScore": 2},
+    { "homeId": "Lascanor", "awayId": "Person", "homeScore": 1, "awayScore": 2},
+    { "homeId": "Gaab", "awayId": "Bad", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Gaab", "awayId": "Borges", "homeScore": 2, "awayScore": 1},
+    { "homeId": "Gaab", "awayId": "Person", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Bad", "awayId": "Borges", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Bad", "awayId": "Person", "homeScore": 2, "awayScore": 1},
+    { "homeId": "Borges", "awayId": "Person", "homeScore": 2, "awayScore": 0}
+  ],
+  "resumo": "🏆 Campeão (MVP): Borges\nMelhor desempenho geral — saldo +4 em séries e 2 vitórias por 2×0. Dominou o meta do torneio.\n\n⚡ Maior Zebra:\nGaab 2×1 Borges — única vitória de Gaab e única derrota do campeão. Mudou a narrativa do camp.\n\n🔥 Melhores Jogos (equilibrados / decisivos):\n\nGaab 2×1 Borges — resultado mais inesperado.\n\nBad 2×1 Person — definiu o top 3.\n\nLascanor 2×1 Bad — consolidou o +1 de saldo e manteve a disputa viva.\n\n💥 Varridas (2×0):\n\nBorges: 2 a favor (vs Bad, Person)\n\nPerson: 1 a favor (vs Gaab) / 1 contra (vs Borges)\n\nBad: 1 a favor (vs Gaab) / 1 contra (vs Borges)\n\nLascanor: 1 a favor (vs Gaab)\n\nGaab: 3 contra",
+  "destaques": "📈 Eficiência em Séries:\nBorges 70% > Lascanor 55% > Bad / Person 50% > Gaab 22%\n\n🎯 Ranking Final Geral:\n1️⃣ Borges – 3 vitórias / 1 derrota / +4 saldo\n2️⃣ Lascanor – 2 vitórias / 2 derrotas / +1 saldo\n3️⃣ Bad – 2 vitórias / 2 derrotas / 0 saldo (venceu Person no confronto direto)\n4️⃣ Person – 2 vitórias / 2 derrotas / 0 saldo\n5️⃣ Gaab – 1 vitória / 3 derrotas / -5 saldo\n\n🧠 Curiosidades:\n\nBorges teve o melhor ataque, vencendo 7 séries no total.\n\nLascanor foi o mais consistente, sem perder por 2×0.\n\nGaab foi o rei das surpresas, tirando o único ponto do campeão.\n\nPerson manteve 50% de aproveitamento mesmo enfrentando os 3 do topo.\n\nBad teve a melhor recuperação após começar perdendo duas partidas."
+}

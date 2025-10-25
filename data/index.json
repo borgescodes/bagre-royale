@@ -1,0 +1,36 @@
+{
+  "schema": "v1",
+  "atual": "bagre-s2",
+  "temporadas": [
+    {
+      "id": "bagre-s1",
+      "name": "Bagre Royale - 1ª Season",
+      "cover": "assets/cards/2.webp",
+      "date": "2025-10-21",
+      "status": "finished"
+    },
+    {
+      "id": "bagre-estrategico-ato1",
+      "name": "Bagre Estratégico - Ato I",
+      "cover": "assets/cards/1.webp",
+      "date": "2025-10-28",
+      "status": "upcoming"
+    }
+  ],
+  "playersAgg": [
+    { "id": "Borges", "titles": 1, "serie": "a" },
+    { "id": "Lascanor", "titles": 0, "serie": "a" },
+    { "id": "Bad", "titles": 0, "serie": "a" },
+    { "id": "Person", "titles": 0, "serie": "a" },
+    { "id": "Gaab", "titles": 0, "serie": "a" },
+    { "id": "Vegê", "titles": 0, "serie": "a" },
+    { "id": "Dan", "titles": 0, "serie": "a" },
+    { "id": "Boaz", "titles": 0, "serie": "b" },
+    { "id": "Felipão", "titles": 0, "serie": "b" },
+    { "id": "Foox", "titles": 0, "serie": "b" },
+    { "id": "Ricardo", "titles": 0, "serie": "b" },
+    { "id": "Wesl", "titles": 0, "serie": "b" },
+    { "id": "Felps", "titles": 0, "serie": "b" },
+    { "id": "Tuika", "titles": 0, "serie": "b" }
+  ]
+}
