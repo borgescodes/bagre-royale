@@ -3,12 +3,12 @@ window.BAGRE_DATA = {
     Borges: {
       name: "Borges",
       avatar: "assets/bagres/borges.webp",
-      achievements: ["Campeão 1ª Season Bagre Royale","Campeão 1ª Edição BAGRELEIRÃO SÉRIE A"],
+      achievements: ["Campeão 1ª Season Bagre Royale","Campeão 1ª Edição - SÉRIE A"],
     },
     Lascanor: {
       name: "Lascanor",
       avatar: "assets/bagres/lascanor.webp",
-      achievements: ["2º Lugar – 1ª Season Bagre Royale", "2º Lugar – 1ª Edição BAGRELEIRÃO SÉRIE A"],
+      achievements: ["2º Lugar – 1ª Season Bagre Royale", "2º Lugar da 1ª Edição - SÉRIE A"],
     },
     Bad: {
       name: "Bad",
@@ -25,6 +25,6 @@ window.BAGRE_DATA = {
     Ricardo: { name: "Ricardo", avatar: "assets/bagres/ricardo.webp", achievements: [] },
     Wesl: { name: "Wesl", avatar: "assets/bagres/wesl.webp", achievements: [] },
     Felps: { name: "Felps", avatar: "assets/bagres/felps.webp", achievements: [] },
-    Tuika: { name: "Tuika", avatar: "assets/bagres/tuika.webp", achievements: [] }
+    Felipe: { name: "Felipe", avatar: "assets/bagres/felipe.webp", achievements: [] }
   },
 };

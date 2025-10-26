@@ -18,7 +18,7 @@
     }
   ],
   "playersAgg": [
-    { "id": "Borges", "titles": 1, "serie": "a" },
+    { "id": "Borges", "titles": 2, "serie": "a" },
     { "id": "Lascanor", "titles": 0, "serie": "a" },
     { "id": "Bad", "titles": 0, "serie": "a" },
     { "id": "Person", "titles": 0, "serie": "a" },
@@ -31,6 +31,6 @@
     { "id": "Ricardo", "titles": 0, "serie": "b" },
     { "id": "Wesl", "titles": 0, "serie": "b" },
     { "id": "Felps", "titles": 0, "serie": "b" },
-    { "id": "Tuika", "titles": 0, "serie": "b" }
+    { "id": "Felipe", "titles": 0, "serie": "b" }
   ]
 }
