@@ -15,7 +15,7 @@
     { "id": "Felipe - W.O", "nome": "Felipe - W.O" }
   ],
   "jogos": [
-    { "homeId": "Boaz", "awayId": "Felipão - W.O", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Boaz", "awayId": "Felipão - W.O", "homeScore": 2, "awayScore": 0},
     { "homeId": "Ricardo", "awayId": "Wesl", "homeScore": 0, "awayScore": 2},
     { "homeId": "Foox - W.O", "awayId": "Felps", "homeScore": 0, "awayScore": 2},
     { "homeId": "Felipe - W.O", "awayId": "Ricardo", "homeScore": 0, "awayScore": 2},
