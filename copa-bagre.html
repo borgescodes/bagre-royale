@@ -1,0 +1,58 @@
+<!-- copa-bagre.html: usa o mesmo padrão de painel/table-wrap da Season para scroll lateral isolado -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+  />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Copa Bagre do Brasil — Chaveamento</title>
+  <link rel="preload" href="assets/Supercell-Magic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="copa-bagre.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="btn btn-back" href="index.html" aria-label="Voltar para início">Voltar</a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <article class="panel">
+      <h1 class="panel-title">Chaveamento - Copa</h1>
+      <div class="panel-body">
+        <div class="table-wrap bracket-wrap">
+          <div class="bracket" id="bracket">
+            <svg class="wires" id="wires" aria-hidden="true"></svg>
+
+            <div class="round" data-round="quartas">
+              <div class="round-title">Quartas</div>
+            </div>
+            <div class="round" data-round="semis">
+              <div class="round-title">Semifinais</div>
+            </div>
+            <div class="round" data-round="final">
+              <div class="round-title">Final</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Bagre Royale</small>
+      <img src="assets/navbar/logo-dev-horizontal.webp" alt="Logo Dev" class="footer-dev-logo">
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="copa-bagre.js"></script>
+</body>
+</html>

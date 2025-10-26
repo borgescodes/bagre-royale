@@ -1,0 +1,60 @@
+{
+  "meta": { "title": "Copa Bagre do Brasil", "timezone": "America/Belem", "version": 4 },
+  "rounds": {
+    "quartas": [
+      {
+        "id": "Q1",
+        "stage": "Q1",
+        "meta": {},
+        "a": { "name": "Borges", "photo": "assets/bagres/borges.webp", "score": null, "winner": false },
+        "b": { "name": "4° SÉRIE B",  "photo": "assets/bagres/poraqu.webp",  "score": null, "winner": false }
+      },
+      {
+        "id": "Q2",
+        "stage": "Q2",
+        "meta": {},
+        "a": { "name": "Vegê",  "photo": "assets/bagres/vege.webp",   "score": null, "winner": false },
+        "b": { "name": "2° SÉRIE B", "photo": "assets/bagres/dourad.webp",  "score": null, "winner": false }
+      },
+      {
+        "id": "Q3",
+        "stage": "Q3",
+        "meta": {},
+        "a": { "name": "Person", "photo": "assets/bagres/person.webp", "score": null, "winner": false },
+        "b": { "name": "1° SÉRIE B",  "photo": "assets/bagres/piranh.webp",  "score": null, "winner": false }
+      },
+      {
+        "id": "Q4",
+        "stage": "Q4",
+        "meta": {},
+        "a": { "name": "Lascanor", "photo": "assets/bagres/lascanor.webp", "score": null, "winner": false },
+        "b": { "name": "3° SÉRIE B","photo": "assets/bagres/matrinx.webp", "score": null, "winner": false }
+      }
+    ],
+    "semis": [
+      {
+        "id": "S1",
+        "stage": "S1",
+        "meta": { "from": ["Q1", "Q2"] },
+        "a": { "name": "Vencedor Q1", "photo": null, "score": null, "winner": false },
+        "b": { "name": "Vencedor Q2", "photo": null, "score": null, "winner": false }
+      },
+      {
+        "id": "S2",
+        "stage": "S2",
+        "meta": { "from": ["Q3", "Q4"] },
+        "a": { "name": "Vencedor Q3", "photo": null, "score": null, "winner": false },
+        "b": { "name": "Vencedor Q4", "photo": null, "score": null, "winner": false }
+      }
+    ],
+    "final": [
+      {
+        "id": "F1",
+        "stage": "Final",
+        "meta": { "from": ["S1", "S2"] },
+        "a": { "name": "Vencedor S1", "photo": null, "score": null, "winner": false },
+        "b": { "name": "Vencedor S2", "photo": null, "score": null, "winner": false }
+      }
+    ]
+  }
+}

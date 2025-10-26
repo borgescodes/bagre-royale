@@ -1,3 +1,4 @@
+/* styles.css: padroniza e corrige o fundo da home, mantendo o resto intacto */
 @font-face{
   font-family:'Supercell Magic';
   src:url('assets/Supercell-Magic.eot');
@@ -31,7 +32,11 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:80px;
+  background:var(--bg);
+}
 body{
   margin:0;
   padding-top:env(safe-area-inset-top);
@@ -39,14 +44,27 @@ body{
   padding-right:max(env(safe-area-inset-right),12px);
   font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
   color:var(--txt);
-  background:
-    radial-gradient(1000px 600px at 80% -10%,rgba(202,166,255,.10),transparent 60%),
-    radial-gradient(900px 600px at 0% 20%,rgba(98,230,255,.10),transparent 60%),
-    var(--bg);
+  background:var(--bg);
   line-height:1.55;
   -webkit-text-size-adjust:100%;
   overflow-x:hidden;
   -webkit-tap-highlight-color:transparent;
+}
+/* fundo especial só na home (detecta .hero sem alterar HTML) */
+body:has(.hero)::before{
+  content:"";
+  position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(1000px 600px at 80% -10%,rgba(202,166,255,.10),transparent 60%),
+    radial-gradient(900px 600px at 0% 20%,rgba(98,230,255,.10),transparent 60%);
+  opacity:.8;
+}
+body:has(.hero)::after{
+  content:"";
+  position:fixed; inset:-40% -40% auto; height:60vh; z-index:-1; pointer-events:none;
+  background:var(--chromatic-grad);
+  filter:blur(80px); opacity:.22;
+  animation:brandGradient var(--chromatic-duration) linear infinite;
 }
 img,video{max-width:100%;height:auto;display:block}
 :focus{outline:none}
@@ -228,6 +246,9 @@ small{color:var(--muted)}
   padding:24px 0;
   border-top:1px solid rgba(255,255,255,.10);
   background:linear-gradient(180deg,rgba(255,255,255,.02),transparent 60%);
+  margin-left: calc(-1 * max(env(safe-area-inset-left), 12px));
+  margin-right: calc(-1 * max(env(safe-area-inset-right), 12px));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
 }
 .site-footer .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .site-footer small{color:#c7d2f1}

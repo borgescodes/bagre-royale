@@ -1,0 +1,224 @@
+/* copa-bagre.css: scroll do chaveamento corrigido e com overrides contra styles.css */
+:root {
+  --bg: #0f1115;
+  --elev: #151821;
+  --elev-2: #1b2030;
+  --text: #e6e8ef;
+  --muted: #9aa3b2;
+  --brand: #6ee7b7;
+  --accent: #60a5fa;
+  --danger: #ef4444;
+  --ok: #22c55e;
+  --wire: #2a3145;
+  --chip: #22283a;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  --radius-lg: 16px;
+  --radius-sm: 12px;
+  --gap: 14px;
+  --col-w: 320px;
+  --match-h: 86px;
+  --wire-w: 3px;
+  --focus: 0 0 0 2px rgba(110, 231, 183, 0.35), 0 0 0 6px rgba(110, 231, 183, 0.15);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow-x: visible !important; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 10% -10%, #10131c 10%, #0b0d12 60%, #0a0c10 100%), var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+  padding: 10px 14px;
+  background: rgba(10, 12, 16, 0.7); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper { display: grid; place-items: start center; padding: 14px; }
+
+.copa-card {
+  width: min(1400px, 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent), var(--elev);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: visible !important;
+}
+
+.copa-card-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.06), transparent);
+}
+.copa-card-title {
+  margin: 0; font-size: clamp(18px, 2.6vw, 26px); line-height: 1.2;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.copa-card-badge {
+  font-size: 12px; color: var(--accent);
+  background: rgba(96, 165, 250, 0.12);
+  padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(96, 165, 250, 0.25);
+  white-space: nowrap;
+}
+
+/* SCROLL DO CARD — permite pan nos dois eixos e força trilho horizontal */
+.copa-scroll{
+  position: relative !important;
+  display: block !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-x pan-y !important;
+  scrollbar-color:#2f3547 transparent;
+}
+.copa-scroll::-webkit-scrollbar { height: 12px; }
+.copa-scroll::-webkit-scrollbar-track { background: transparent; }
+.copa-scroll::-webkit-scrollbar-thumb {
+  background: #2f3547; border-radius: 999px; border: 3px solid transparent; background-clip: padding-box;
+}
+
+/* O inner expande pela largura do conteúdo para criar área rolável horizontal */
+.copa-scroll-inner {
+  position: relative !important;
+  padding: 14px;
+  width: max-content !important;
+  max-width: none !important;
+  min-width: 100% !important;
+}
+
+/* Grid do chaveamento com largura intrínseca total */
+.bracket {
+  position: relative;
+  display: inline-grid !important;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--col-w);
+  gap: clamp(14px, 2vw, 24px);
+  align-items: start;
+  min-height: 100%;
+  width: max-content !important;
+  inline-size: max-content !important;
+}
+
+.round-col { display: grid; grid-auto-rows: minmax(var(--match-h), auto); }
+
+.wires {
+  position: absolute; inset: 0; pointer-events: none;
+  width: 100%; height: 100%;
+}
+
+.round { display: grid; grid-template-rows: auto 1fr; gap: 10px; }
+.round-title {
+  font-size: 12px; color: var(--muted); letter-spacing: .6px; text-transform: uppercase;
+  padding-inline: 4px; white-space: nowrap;
+}
+
+.match {
+  display: grid; gap: 10px; margin-bottom: var(--gap);
+  background: var(--elev-2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  padding: 10px; min-height: var(--match-h);
+}
+.match[data-state="finished"] { border-color: rgba(34, 197, 94, 0.25); }
+.match[data-state="scheduled"] { border-color: rgba(96, 165, 250, 0.25); }
+.match[data-walkover="true"] { border-style: dashed; }
+
+.match-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 22px; }
+.match-stage { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.match-meta { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 8px; background: var(--chip);
+  border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 999px;
+  white-space: nowrap;
+}
+.chip.ok { color: var(--ok); border-color: rgba(34, 197, 94, 0.25); }
+.chip.warn { color: var(--danger); border-color: rgba(239, 68, 68, 0.25); }
+
+.team {
+  display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center;
+  padding: 8px; border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.team.is-winner { background: rgba(34, 197, 94, 0.08); border-color: rgba(34, 197, 94, 0.25); }
+.team-name { display: flex; align-items: center; gap: 10px; min-width: 0; font-weight: 600; }
+.team-flag {
+  width: 28px; height: 28px; background: #2a3145; border-radius: 8px; flex: none;
+  background-size: cover; background-position: center;
+}
+.team-name .label { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.team-name .label.is-placeholder{ overflow: visible; text-overflow: clip; white-space: nowrap; }
+.team-name .label.is-placeholder{ font-size: .95em; }
+
+.team-score {
+  font-variant-numeric: tabular-nums; font-weight: 700;
+  padding: 6px 10px; border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  min-width: 42px; text-align: center; white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  :root { --col-w: 300px; --match-h: 84px; }
+  .copa-card { border-radius: 14px; }
+  .copa-scroll-inner { padding: 12px; }
+}
+
+@media (max-width: 760px) {
+  :root { --col-w: 274px; --match-h: 82px; }
+  .topbar { grid-template-columns: auto 1fr auto; }
+  .brand { font-size: 14px; }
+  .copa-card-head { padding: 12px 14px; }
+  .copa-scroll { scroll-snap-type: x proximity; }
+  .round { scroll-snap-align: start; }
+  .round-title { font-size: 11px; }
+  .team { padding: 10px; }
+  .team-flag { width: 30px; height: 30px; border-radius: 8px; }
+  .team-score { min-width: 44px; }
+}
+
+@media (max-width: 560px) {
+  :root { --col-w: 248px; --match-h: 78px; }
+  .wrapper { padding: 10px; }
+  .copa-card { border-radius: 12px; }
+  .match { padding: 10px; }
+  .match-meta { display: none; }
+  .team-name { gap: 8px; }
+  .team-flag { width: 32px; height: 32px; }
+  .copa-scroll-inner { padding: 10px; }
+}
+
+@media (max-width: 420px) {
+  :root { --col-w: 232px; }
+  .copa-card-title { font-size: 18px; }
+  .team-score { min-width: 46px; }
+  .topbar .back-btn { padding: 8px 12px; border-radius: 10px; }
+}
+
+@media (hover: hover) {
+  .team:hover { transform: translateY(-1px); transition: transform .15s ease; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #eef2f7; --elev: #ffffff; --elev-2: #ffffff;
+    --text: #0b1020; --muted: #52607a; --wire: #e6e9f0; --chip: #f2f4f8;
+  }
+  .topbar { background: rgba(255, 255, 255, 0.9); }
+  .team-flag { background: #cfd6e6; }
+}
