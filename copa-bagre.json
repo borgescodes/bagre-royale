@@ -7,28 +7,28 @@
         "stage": "Q1",
         "meta": {},
         "a": { "name": "Borges", "photo": "assets/bagres/borges.webp", "score": null, "winner": false },
-        "b": { "name": "4° SÉRIE B",  "photo": "assets/bagres/poraqu.webp",  "score": null, "winner": false }
+        "b": { "name": "Wesl",  "photo": "assets/bagres/wesl.webp",  "score": null, "winner": false }
       },
       {
         "id": "Q2",
         "stage": "Q2",
         "meta": {},
         "a": { "name": "Vegê",  "photo": "assets/bagres/vege.webp",   "score": null, "winner": false },
-        "b": { "name": "2° SÉRIE B", "photo": "assets/bagres/dourad.webp",  "score": null, "winner": false }
+        "b": { "name": "Felps", "photo": "assets/bagres/felps.webp",  "score": null, "winner": false }
       },
       {
         "id": "Q3",
         "stage": "Q3",
         "meta": {},
         "a": { "name": "Person", "photo": "assets/bagres/person.webp", "score": null, "winner": false },
-        "b": { "name": "1° SÉRIE B",  "photo": "assets/bagres/piranh.webp",  "score": null, "winner": false }
+        "b": { "name": "Boaz",  "photo": "assets/bagres/boaz.webp",  "score": null, "winner": false }
       },
       {
         "id": "Q4",
         "stage": "Q4",
         "meta": {},
         "a": { "name": "Lascanor", "photo": "assets/bagres/lascanor.webp", "score": null, "winner": false },
-        "b": { "name": "3° SÉRIE B","photo": "assets/bagres/matrinx.webp", "score": null, "winner": false }
+        "b": { "name": "Felipão","photo": "assets/bagres/felipão.webp", "score": null, "winner": false }
       }
     ],
     "semis": [
