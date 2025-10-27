@@ -25,12 +25,12 @@
     { "id": "Gaab", "titles": 0, "serie": "b" },
     { "id": "Vegê", "titles": 1, "serie": "a" },
     { "id": "Dan", "titles": 0, "serie": "b" },
-    { "id": "Boaz", "titles": 0, "serie": "b" },
-    { "id": "Felipão", "titles": 0, "serie": "b" },
+    { "id": "Boaz", "titles": 1, "serie": "a" },
+    { "id": "Felipão", "titles": 1, "serie": "b" },
     { "id": "Foox", "titles": 0, "serie": "b" },
     { "id": "Ricardo", "titles": 0, "serie": "b" },
     { "id": "Wesl", "titles": 0, "serie": "b" },
-    { "id": "Felps", "titles": 0, "serie": "b" },
+    { "id": "Felps", "titles": 1, "serie": "a" },
     { "id": "Felipe", "titles": 0, "serie": "b" }
   ]
 }

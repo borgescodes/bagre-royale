@@ -37,12 +37,12 @@ window.BAGRE_DATA = {
     },
     
     Dan: { name: "Dan", avatar: "assets/bagres/dan.webp", achievements: [] },
-    Boaz: { name: "Boaz", avatar: "assets/bagres/boaz.webp", achievements: [] },
-    Felipão: { name: "Felipão", avatar: "assets/bagres/felipão.webp", achievements: [] },
+    Boaz: { name: "Boaz", avatar: "assets/bagres/boaz.webp", achievements: ["Campeão 1ª Edição BAGRELEIRÃO SÉRIE B"] },
+    Felipão: { name: "Felipão", avatar: "assets/bagres/felipão.webp", achievements: ["3º Lugar – 1ª Edição BAGRELEIRÃO SÉRIE B"] },
     Foox: { name: "Foox", avatar: "assets/bagres/kenedy.webp", achievements: [] },
     Ricardo: { name: "Ricardo", avatar: "assets/bagres/ricardo.webp", achievements: [] },
     Wesl: { name: "Wesl", avatar: "assets/bagres/wesl.webp", achievements: [] },
-    Felps: { name: "Felps", avatar: "assets/bagres/felps.webp", achievements: [] },
+    Felps: { name: "Felps", avatar: "assets/bagres/felps.webp", achievements: ["2º Lugar – 1ª Edição BAGRELEIRÃO SÉRIE B"] },
     Felipe: { name: "Felipe", avatar: "assets/bagres/felipe.webp", achievements: [] }
   },
 };
