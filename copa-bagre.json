@@ -1,59 +1,158 @@
 {
-  "meta": { "title": "Copa Bagre do Brasil", "timezone": "America/Belem", "version": 4 },
+  "meta": {
+    "title": "Copa Bagre do Brasil",
+    "timezone": "America/Belem",
+    "version": 5
+  },
   "rounds": {
     "quartas": [
       {
         "id": "Q1",
         "stage": "Q1",
         "meta": {},
-        "a": { "name": "Borges", "photo": "assets/bagres/borges.webp", "score": null, "winner": false },
-        "b": { "name": "Wesl",  "photo": "assets/bagres/wesl.webp",  "score": null, "winner": false }
+        "a": {
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Wesl",
+          "photo": "assets/bagres/wesl.webp",
+          "score": null,
+          "winner": false
+        }
       },
       {
         "id": "Q2",
         "stage": "Q2",
         "meta": {},
-        "a": { "name": "Vegê",  "photo": "assets/bagres/vege.webp",   "score": null, "winner": false },
-        "b": { "name": "Felps", "photo": "assets/bagres/felps.webp",  "score": null, "winner": false }
+        "a": {
+          "name": "Vegê",
+          "photo": "assets/bagres/vege.webp",
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Felps",
+          "photo": "assets/bagres/felps.webp",
+          "score": null,
+          "winner": false
+        }
       },
       {
         "id": "Q3",
         "stage": "Q3",
         "meta": {},
-        "a": { "name": "Person", "photo": "assets/bagres/person.webp", "score": null, "winner": false },
-        "b": { "name": "Boaz",  "photo": "assets/bagres/boaz.webp",  "score": null, "winner": false }
+        "a": {
+          "name": "Lascanor",
+          "photo": "assets/bagres/lascanor.webp",
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Felipão",
+          "photo": "assets/bagres/felipão.webp",
+          "score": null,
+          "winner": false
+        }
       },
       {
         "id": "Q4",
         "stage": "Q4",
         "meta": {},
-        "a": { "name": "Lascanor", "photo": "assets/bagres/lascanor.webp", "score": null, "winner": false },
-        "b": { "name": "Felipão","photo": "assets/bagres/felipão.webp", "score": null, "winner": false }
+        "a": {
+          "name": "Person",
+          "photo": "assets/bagres/person.webp",
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
+          "score": null,
+          "winner": false
+        }
       }
     ],
     "semis": [
       {
         "id": "S1",
         "stage": "S1",
-        "meta": { "from": ["Q1", "Q2"] },
-        "a": { "name": "Vencedor Q1", "photo": null, "score": null, "winner": false },
-        "b": { "name": "Vencedor Q2", "photo": null, "score": null, "winner": false }
+        "meta": {
+          "from": ["Q1", "Q2"]
+        },
+        "a": {
+          "name": "Vencedor Q1",
+          "photo": null,
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Vencedor Q2",
+          "photo": null,
+          "score": null,
+          "winner": false
+        }
       },
       {
         "id": "S2",
         "stage": "S2",
-        "meta": { "from": ["Q3", "Q4"] },
-        "a": { "name": "Vencedor Q3", "photo": null, "score": null, "winner": false },
-        "b": { "name": "Vencedor Q4", "photo": null, "score": null, "winner": false }
+        "meta": {
+          "from": ["Q3", "Q4"]
+        },
+        "a": {
+          "name": "Vencedor Q3",
+          "photo": null,
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Vencedor Q4",
+          "photo": null,
+          "score": null,
+          "winner": false
+        }
       }
     ],
     "final": [
       {
         "id": "F1",
         "stage": "Final",
-        "meta": { "from": ["S1", "S2"] },
-        "a": { "name": "Vencedor S1", "photo": null, "score": null, "winner": false },
-        "b": { "name": "Vencedor S2", "photo": null, "score": null, "winner": false }
+        "meta": {
+          "from": ["S1", "S2"]
+        },
+        "a": {
+          "name": "Vencedor S1",
+          "photo": null,
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Vencedor S2",
+          "photo": null,
+          "score": null,
+          "winner": false
+        }
+      },
+      {
+        "id": "3P",
+        "stage": "3º Lugar",
+        "meta": {
+          "fromLosers": ["S1", "S2"]
+        },
+        "a": {
+          "name": "Perdedor S1",
+          "photo": null,
+          "score": null,
+          "winner": false
+        },
+        "b": {
+          "name": "Perdedor S1",
+          "photo": null,
+          "score": null,
+          "winner": false
+        }
       }
     ]
   }
