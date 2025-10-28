@@ -85,14 +85,14 @@
         "a": {
           "name": "Ricardo",
           "photo": "assets/bagres/ricardo.webp",
-          "score": null,
+          "score": 0,
           "winner": false
         },
         "b": {
           "name": "Borges",
           "photo": "assets/bagres/borges.webp",
-          "score": null,
-          "winner": false
+          "score": 1,
+          "winner": true
         }
       },
       {
@@ -104,14 +104,14 @@
         "a": {
           "name": "Lascanor",
           "photo": "assets/bagres/lascanor.webp",
-          "score": null,
+          "score": 0,
           "winner": false
         },
         "b": {
           "name": "Barnes",
           "photo": "assets/bagres/felipe.webp",
-          "score": null,
-          "winner": false
+          "score": 1,
+          "winner": true
         }
       }
     ],
@@ -123,14 +123,14 @@
           "from": ["S1", "S2"]
         },
         "a": {
-          "name": "Vencedor S1",
-          "photo": null,
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
           "score": null,
           "winner": false
         },
         "b": {
-          "name": "Vencedor S2",
-          "photo": null,
+          "name": "Barnes",
+          "photo": "assets/bagres/felipe.webp",
           "score": null,
           "winner": false
         }
