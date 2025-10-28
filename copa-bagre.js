@@ -402,9 +402,9 @@
       if (team?.photo) avatar.style.backgroundImage = `url(${team.photo})`;
       return el;
     };
-    host.appendChild(card("Campeão","rank1", first, "Aguardando..."));
-    host.appendChild(card("2º Lugar","rank2", second, "Aguardando..."));
-    host.appendChild(card("3º Lugar","rank3", third, "Aguardando..."));
+    host.appendChild(card("Campeão","rank1", first, "Aguardando"));
+    host.appendChild(card("2º Lugar","rank2", second, "Aguardando"));
+    host.appendChild(card("3º Lugar","rank3", third, "Aguardando"));
     host.setAttribute("aria-busy","false");
   }
 })();
