@@ -11,14 +11,14 @@
         "stage": "Q1",
         "meta": {},
         "a": {
-          "name": "Borges",
-          "photo": "assets/bagres/borges.webp",
+          "name": "Wesl",
+          "photo": "assets/bagres/wesl.webp",
           "score": null,
           "winner": false
         },
         "b": {
-          "name": "Wesl",
-          "photo": "assets/bagres/wesl.webp",
+          "name": "Ricardo",
+          "photo": "assets/bagres/ricardo.webp",
           "score": null,
           "winner": false
         }
@@ -28,14 +28,14 @@
         "stage": "Q2",
         "meta": {},
         "a": {
-          "name": "Vegê",
-          "photo": "assets/bagres/vege.webp",
+          "name": "Person",
+          "photo": "assets/bagres/person.webp",
           "score": null,
           "winner": false
         },
         "b": {
-          "name": "Felps",
-          "photo": "assets/bagres/felps.webp",
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
           "score": null,
           "winner": false
         }
@@ -51,8 +51,8 @@
           "winner": false
         },
         "b": {
-          "name": "Felipão",
-          "photo": "assets/bagres/felipão.webp",
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
           "score": null,
           "winner": false
         }
@@ -62,14 +62,14 @@
         "stage": "Q4",
         "meta": {},
         "a": {
-          "name": "Person",
-          "photo": "assets/bagres/person.webp",
+          "name": "Bad",
+          "photo": "assets/bagres/bad.webp",
           "score": null,
           "winner": false
         },
         "b": {
-          "name": "Boaz",
-          "photo": "assets/bagres/boaz.webp",
+          "name": "Barnes",
+          "photo": "assets/bagres/felipe.webp",
           "score": null,
           "winner": false
         }
