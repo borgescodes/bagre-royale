@@ -209,7 +209,7 @@
       $logo = document.createElement("img");
       $logo.id = "copaLogo";
       $logo.className = "copa-logo";
-      $logo.src = "assets/cards/royale.png";
+      $logo.src = "assets/cards/copa.webp";
       $logo.alt = "Copa Bagre do Brasil";
       $bracket.appendChild($logo);
     }
