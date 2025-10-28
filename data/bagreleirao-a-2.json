@@ -1,0 +1,22 @@
+{
+  "schema": "v1",
+  "season": "bagreleirao-a-2",
+  "nome": "Bagreleirão Série A - 2ª Edição",
+  "inicio": "2025-11-02",
+  "cover": "assets/cards/serie-a.webp",
+  "status": "upcoming",
+  "jogadores": [
+    { "id": "Borges", "nome": "Borges" },
+    { "id": "Bad", "nome": "Bad" },
+    { "id": "Person", "nome": "Person" },
+    { "id": "Felps", "nome": "Felps" },
+    { "id": "Lascanor", "nome": "Lascanor" },
+    { "id": "Vegê", "nome": "Vegê" },
+    { "id": "Boaz", "nome": "Boaz" }
+  ],
+  "jogos": [],
+  "resumo": "",
+  "destaques": "Em Breve..."
+}
+
+

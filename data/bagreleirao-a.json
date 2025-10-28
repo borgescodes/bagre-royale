@@ -7,6 +7,13 @@
       "cover": "assets/cards/serie-a.webp",
       "date": "2025-10-26",
       "status": "finished"
+    },
+    {
+      "id": "bagreleirao-a-2",
+      "name": "Série A - 2ª Edição",
+      "cover": "assets/cards/serie-a.webp",
+      "date": "2025-11-02",
+      "status": "upcoming"
     }
   ]
 }
