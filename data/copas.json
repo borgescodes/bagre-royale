@@ -10,9 +10,9 @@
       "status": "upcoming"
     },
     {
-      "id": "copa-2",
+      "id": "estrategico-1",
       "name": "1° Torneio Estratégico",
-      "cover": "assets/cards/1.webp",
+      "cover": "assets/cards/estrate-final.webp",
       "logo":  "assets/cards/royale.png",
       "date": "2025-10-28",
       "status": "finished"
