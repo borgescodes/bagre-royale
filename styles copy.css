@@ -11,6 +11,7 @@
   font-display: swap;
 }
 :root {
+  --bg: #070b18;
   --surface: #0a1024;
   --card: #0f1936;
   --elev: #121e41;
@@ -206,6 +207,30 @@ select {
   transform: translateZ(0);
   margin-left: calc(-1 * max(env(safe-area-inset-left), 12px));
   margin-right: calc(-1 * max(env(safe-area-inset-right), 12px));
+}
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-backdrop-filter: saturate(120%) blur(8px);
+  backdrop-filter: saturate(120%) blur(8px);
+  background: linear-gradient(
+      180deg,
+      rgba(7, 11, 24, 0.95),
+      rgba(7, 11, 24, 0.7) 60%,
+      transparent
+    ),
+    radial-gradient(
+      600px 120px at 10% 0%,
+      rgba(98, 230, 255, 0.12),
+      transparent 70%
+    ),
+    radial-gradient(
+      600px 120px at 90% 0%,
+      rgba(202, 166, 255, 0.1),
+      transparent 70%
+    );
 }
 .header-wrap {
   display: flex;
@@ -593,6 +618,18 @@ select {
   gap: 12px;
   grid-template-columns: 2fr 1fr;
 }
+.site-footer {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    transparent 60%
+  );
+  margin-left: calc(-1 * max(env(safe-area-inset-left), 12px));
+  margin-right: calc(-1 * max(env(safe-area-inset-right), 12px));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+}
 .site-footer .container {
   display: flex;
   align-items: center;
@@ -769,25 +806,23 @@ select {
     animation: none;
   }
 }
-/* Canonical solid background */
+
+
+/* Fundo sólido único */
 :root { --bg: #070b18; }
 
-html, body {
-  background-color: var(--bg) !important;
-  background-image: none !important;
+html, body { background: var(--bg) !important; }
+
+/* Remove brilhos/gradientes da home */
+body:has(.hero)::before,
+body:has(.hero)::after { content: none !important; }
+
+/* Header sem véu/blur */
+.site-header::before {
+  background: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
 
-header, .site-header, .navbar, nav {
-  position: static !important;
-  top: auto !important;
-}
-
-html, body, #root, .app, .page, .layout, .wrapper {
-  background-image: none !important;
-}
-
-body::before, body::after,
-.page::before, .layout::before,
-.wrapper::before, .wrapper::after {
-  content: none !important;
-}
+/* Footer sem gradiente */
+.site-footer { background: none !important; }

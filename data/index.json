@@ -8,13 +8,6 @@
       "cover": "assets/cards/2.webp",
       "date": "2025-10-21",
       "status": "finished"
-    },
-    {
-      "id": "bagre-estrategico-ato1",
-      "name": "Bagre Estratégico - Ato I",
-      "cover": "assets/cards/1.webp",
-      "date": "2025-10-29",
-      "status": "upcoming"
     }
   ],
   "playersAgg": [

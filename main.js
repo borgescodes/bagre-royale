@@ -59,14 +59,14 @@
     return Array.isArray(D.tournaments) ? D.tournaments.slice() : [];
   }
 
-  function buildTournamentCard(t) {
+  function buildTournamentCard(t, hrefFn) {
     const cover = el("img", { className: "card-cover", src: text(t.cover || ""), alt: text(t.name || "Capa") });
     const body = el("div", { className: "card-body" });
     const title = el("h3", { className: "card-title" }, [text(t.name || "Campeonato")]);
     const when = fmtDate(t.date);
     const metaText = when ? `${statusText(t.status)} • ${when}` : statusText(t.status);
     const meta = el("p", { className: "card-meta" }, [metaText]);
-    const link = el("a", { className: "card-link", href: `season.html?id=${encodeURIComponent(t.id || "")}`, "aria-label": `Abrir ${text(t.name || "campeonato")}` });
+    const link = el("a", { className: "card-link", href: (typeof hrefFn === "function" ? hrefFn(t) : `season.html?id=${encodeURIComponent(t.id || "")}`), "aria-label": `Abrir ${text(t.name || "campeonato")}` });
     body.appendChild(title);
     body.appendChild(meta);
     return el("article", { className: "card" }, [cover, body, link]);
@@ -201,15 +201,14 @@
     if (!root) return;
     root.innerHTML = "";
     const items = sortTournaments(tournamentsFromSource());
-    for (const t of items) root.appendChild(buildTournamentCard(t));
-  }
+    for (const t of items) root.appendChild(buildTournamentCard(t));}
 
-  function renderExternalCarousel(containerId, catalog) {
+  function renderExternalCarousel(containerId, catalog, hrefFn) {
     const root = document.getElementById(containerId);
     if (!root || !catalog) return;
     root.innerHTML = "";
     const items = sortTournaments(mapTemporadas(catalog.temporadas));
-    for (const t of items) root.appendChild(buildTournamentCard(t));
+    for (const t of items) root.appendChild(buildTournamentCard(t, hrefFn));
   }
 
   function renderPlayers() {
@@ -233,9 +232,11 @@
     IDX = await fetchJSON("data/index.json");
     const bagreA = await fetchJSON("data/bagreleirao-a.json");
     const bagreB = await fetchJSON("data/bagreleirao-b.json");
+    const copas = await fetchJSON("data/copas.json");
     renderCarousel();
     renderExternalCarousel("carousel-bagreleirao-a", bagreA);
     renderExternalCarousel("carousel-bagreleirao-b", bagreB);
+    renderExternalCarousel("carousel-copa", copas, (t)=>`copa-bagre.html?id=${encodeURIComponent(t.id||"")}`);
     const sort = document.getElementById("playerSort");
     if (sort) sort.addEventListener("change", renderPlayers);
     renderPlayers();

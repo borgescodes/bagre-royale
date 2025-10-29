@@ -98,81 +98,114 @@
   }
 
   function computeRanking(data){
-    const PV = Number((((data||{}).config||{}).pontos||{}).vitoria ?? 3);
-    const map = new Map();
-    const h2h = new Map();
-    const ensure = (id, name) => {
-      if (!map.has(id)) map.set(id, { id, name: name || id, wins: 0, losses: 0, draws: 0, dv: 0, ga: 0, saldo: 0, series: 0, points: 0 });
-      return map.get(id);
-    };
-    const ensureH2H = (a, b) => {
-      if (!h2h.has(a)) h2h.set(a, new Map());
-      const row = h2h.get(a);
-      if (!row.has(b)) row.set(b, { pts: 0, dv: 0, diff: 0 });
-      return row.get(b);
-    };
-    const roster = Array.isArray(data.jogadores) ? data.jogadores : [];
-    for (const j of roster) ensure(j.id, j.nome || j.name || j.id);
-    for (const m of (data.jogos || [])) {
-      const done = (m.homeScore != null) && (m.awayScore != null);
-      if (!done) continue;
-      const A = ensure(m.homeId, m.homeName);
-      const B = ensure(m.awayId, m.awayName);
-      const as = Number(m.homeScore || 0), bs = Number(m.awayScore || 0);
-      A.series++; B.series++;
-      A.dv += as; B.dv += bs;
-      A.ga += bs; B.ga += as;
-      A.saldo += as - bs; B.saldo += bs - as;
-      if (as > bs) { A.wins++; B.losses++; A.points += PV; }
-      else if (bs > as) { B.wins++; A.losses++; B.points += PV; }
-      else { A.draws++; B.draws++; }
-      A.points += as;
-      B.points += bs;
-      const hAB = ensureH2H(A.id, B.id);
-      const hBA = ensureH2H(B.id, A.id);
-      if (as > bs) { hAB.pts += PV; }
-      else if (bs > as) { hBA.pts += PV; }
-      hAB.dv += as; hBA.dv += bs;
-      hAB.diff += (as - bs); hBA.diff += (bs - as);
-    }
-    const list = Array.from(map.values());
-    list.sort((x, y) => (y.points - x.points) || 0);
-    let i = 0;
-    while (i < list.length) {
-      let j = i + 1;
-      while (j < list.length && list[j].points === list[i].points) j++;
-      if (j - i > 1) {
-        const group = list.slice(i, j);
-        const ids = new Set(group.map(p => p.id));
-        group.sort((a, b) => {
-          const ha = h2h.get(a.id) || new Map();
-          const hb = h2h.get(b.id) || new Map();
-          let pa = 0, pb = 0, dva = 0, dvb = 0, da = 0, db = 0;
-          for (const opp of ids) {
-            if (opp === a.id || opp === b.id) continue;
-            const ra = ha.get(opp); if (ra) { pa += ra.pts; dva += ra.dv; da += ra.diff; }
-            const rb = hb.get(opp); if (rb) { pb += rb.pts; dvb += rb.dv; db += rb.diff; }
-          }
-          const rab = ha.get(b.id); if (rab) { pa += rab.pts; dva += rab.dv; da += rab.diff; }
-          const rba = hb.get(a.id); if (rba) { pb += rba.pts; dvb += rba.dv; db += rba.diff; }
-          return (pb - pa) || (dvb - dva) || (db - da) || (b.dv - a.dv) || (b.saldo - a.saldo) || a.name.localeCompare(b.name);
-        });
-        for (let k = 0; k < group.length; k++) list[i + k] = group[k];
-      }
-      i = j;
-    }
-    return list.map((p, idx) => ({
-      pos: idx + 1,
-      playerId: p.id,
-      name: p.name,
-      points: p.points,
-      wins: p.wins,
-      losses: p.losses,
-      dv: p.dv,
-      saldo: p.saldo,
-      series: p.series
-    }));
+  const PV = Number((((data||{}).config||{}).pontos||{}).vitoria ?? 3);
+  const map = new Map();
+  const h2h = new Map();
+
+  const ensure = (id, name) => {
+    if (!map.has(id)) map.set(id, { id, name: name || id, wins: 0, losses: 0, draws: 0, dv: 0, ga: 0, saldo: 0, series: 0, points: 0 });
+    return map.get(id);
+  };
+  const ensureH2H = (a, b) => {
+    if (!h2h.has(a)) h2h.set(a, new Map());
+    const row = h2h.get(a);
+    if (!row.has(b)) row.set(b, { pts: 0, dv: 0, diff: 0 });
+    return row.get(b);
+  };
+
+  const roster = Array.isArray(data.jogadores) ? data.jogadores : [];
+  for (const j of roster) ensure(j.id, j.nome || j.name || j.id);
+
+  for (const m of (data.jogos || [])) {
+    const done = (m.homeScore != null) && (m.awayScore != null);
+    if (!done) continue;
+    const A = ensure(m.homeId, m.homeName);
+    const B = ensure(m.awayId, m.awayName);
+    const as = Number(m.homeScore || 0), bs = Number(m.awayScore || 0);
+
+    A.series++; B.series++;
+    A.dv += as; B.dv += bs;
+    A.ga += bs; B.ga += as;
+    A.saldo += as - bs; B.saldo += bs - as;
+
+    if (as > bs) { A.wins++; B.losses++; A.points += PV; }
+    else if (bs > as) { B.wins++; A.losses++; B.points += PV; }
+    else { A.draws++; B.draws++; }
+
+    // regra existente: pontos também somam DV por partida
+    A.points += as;
+    B.points += bs;
+
+    const hAB = ensureH2H(A.id, B.id);
+    const hBA = ensureH2H(B.id, A.id);
+    if (as > bs) { hAB.pts += PV; }
+    else if (bs > as) { hBA.pts += PV; }
+    hAB.dv += as; hBA.dv += bs;
+    hAB.diff += (as - bs); hBA.diff += (bs - as);
   }
+
+  const list = Array.from(map.values());
+
+  // Ordenação base: PTS desc, V desc, D asc, DV desc, SALDO desc, nome
+  list.sort((a, b) =>
+    (b.points - a.points) ||
+    (b.wins   - a.wins)   ||
+    (a.losses - b.losses) ||
+    (b.dv     - a.dv)     ||
+    (b.saldo  - a.saldo)  ||
+    a.name.localeCompare(b.name)
+  );
+
+  // Confronto direto só se PTS, V, D, DV e SALDO forem idênticos
+  let i = 0;
+  while (i < list.length) {
+    let j = i + 1;
+    while (
+      j < list.length &&
+      list[j].points === list[i].points &&
+      list[j].wins   === list[i].wins   &&
+      list[j].losses === list[i].losses &&
+      list[j].dv     === list[i].dv     &&
+      list[j].saldo  === list[i].saldo
+    ) j++;
+
+    if (j - i > 1) {
+      const group = list.slice(i, j);
+      const ids = new Set(group.map(p => p.id));
+
+      group.sort((a, b) => {
+        const ha = h2h.get(a.id) || new Map();
+        const hb = h2h.get(b.id) || new Map();
+        let pa = 0, pb = 0, da = 0, db = 0, dva = 0, dvb = 0;
+
+        for (const opp of ids) {
+          if (opp === a.id) { const r = hb.get(a.id); if (r) { pb += r.pts; db += r.diff; dvb += r.dv; } continue; }
+          if (opp === b.id) { const r = ha.get(b.id); if (r) { pa += r.pts; da += r.diff; dva += r.dv; } continue; }
+          const ra = ha.get(opp); if (ra) { pa += ra.pts; da += ra.diff; dva += ra.dv; }
+          const rb = hb.get(opp); if (rb) { pb += rb.pts; db += rb.diff; dvb += rb.dv; }
+        }
+
+        // confronto direto: pontos, saldo do confronto, DV do confronto
+        return (pb - pa) || (db - da) || (dvb - dva) || a.name.localeCompare(b.name);
+      });
+
+      for (let k = 0; k < group.length; k++) list[i + k] = group[k];
+    }
+    i = j;
+  }
+
+  return list.map((p, idx) => ({
+    pos: idx + 1,
+    playerId: p.id,
+    name: p.name,
+    points: p.points,
+    wins: p.wins,
+    losses: p.losses,
+    dv: p.dv,
+    saldo: p.saldo,
+    series: p.series
+  }));
+}
 
   function enrichRanking(ranking, data){
     const PV = Number((((data||{}).config||{}).pontos||{}).vitoria ?? 3);

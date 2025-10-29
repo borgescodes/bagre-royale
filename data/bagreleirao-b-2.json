@@ -4,7 +4,7 @@
   "nome": "Bagreleirão Série B - 2ª Edição",
   "inicio": "2025-11-02",
   "status": "upcoming",
-  "cover": "assets/cards/serie-b.webp",
+  "cover": "assets/cards/serie-b-2.webp",
   "jogadores": [
     { "id": "Gaab", "nome": "Gaab" },
     { "id": "Wesl", "nome": "Wesl" },

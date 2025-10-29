@@ -3,7 +3,7 @@
   "season": "bagreleirao-a-2",
   "nome": "Bagreleirão Série A - 2ª Edição",
   "inicio": "2025-11-02",
-  "cover": "assets/cards/serie-a.webp",
+  "cover": "assets/cards/serie-a-2.webp",
   "status": "upcoming",
   "jogadores": [
     { "id": "Borges", "nome": "Borges" },

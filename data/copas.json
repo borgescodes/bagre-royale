@@ -1,0 +1,21 @@
+{
+  "schema": "v1",
+  "temporadas": [
+    {
+      "id": "copa-1",
+      "name": "1° Edição Copa Bagre do Brasil",
+      "cover": "assets/cards/copa-card.webp",
+      "logo":  "assets/cards/copa.webp",
+      "date": "2025-11-02",
+      "status": "upcoming"
+    },
+    {
+      "id": "copa-2",
+      "name": "1° Torneio Estratégico",
+      "cover": "assets/cards/1.webp",
+      "logo":  "assets/cards/royale.png",
+      "date": "2025-10-28",
+      "status": "finished"
+    }
+  ]
+}

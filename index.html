@@ -15,7 +15,7 @@
       crossorigin
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="copa.css" />
+    <link rel="stylesheet" href="copa-bagre.css" />
   </head>
   <body>
     <header class="site-header">
@@ -29,19 +29,14 @@
           <span class="brand-text">Bagre Royale</span>
         </a>
         <div class="header-actions">
-                    <a
-            href="https://www.instagram.com/bagreroyale/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram do Pedro Borges"
-          >
+          <a href="bagres/bagres.html" aria-label="Cardume de Bagres">
             <img src="assets/navbar/bagre.webp" alt="" />
           </a>
           <a
-            href="https://www.instagram.com/borgesdev/"
+            href="https://www.instagram.com/bagreroyale/"
             target="_blank"
             rel="noopener"
-            aria-label="Instagram do Pedro Borges"
+            aria-label="Nosso Instagram"
           >
             <img src="assets/navbar/insta.webp" alt="" />
           </a>
@@ -49,7 +44,7 @@
             href="https://www.linkedin.com/in/pedro-borgesdev/"
             target="_blank"
             rel="noopener"
-            aria-label="LinkedIn do Pedro Borges"
+            aria-label="LinkedIn do Desenvolvedor"
           >
             <img src="assets/navbar/in.webp"" />
           </a>
@@ -61,9 +56,10 @@
       <section class="hero">
         <div class="container hero-wrap">
           <div>
-            <h1 class="hero-title">Histórico de Ligas</h1>
+            <h1 class="hero-title">Seja Bem-Vindo ao Bagre Royale!</h1>
             <p class="hero-subtitle">
-              Acompanhe Campeonatos, Resultados e Estatísticas dos Bagres.
+              Acompanhe os resultados do Bagreleirão e de todos os torneios.
+              Confira as estatísticas dos bagres!
             </p>
           </div>
         </div>
@@ -71,26 +67,9 @@
 
       <section class="container section">
         <div class="section-head">
-          <h2 class="section-title">Copa Bagre do Brasil</h2>
+          <h2 class="section-title">Torneios</h2>
         </div>
-        <div class="carousel" aria-live="polite">
-          <article class="card">
-            <img
-              class="card-cover"
-              src="assets/cards/copa-card.webp"
-              alt="Copa Bagre do Brasil"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Copa Bagre do Brasil</h3>
-              <p class="card-meta">Eliminatórias • 01/11/2025</p>
-            </div>
-            <a
-              class="card-link"
-              href="copa-bagre.html"
-              aria-label="Abrir Copa Bagre do Brasil"
-            ></a>
-          </article>
-        </div>
+        <div id="carousel-copa" class="carousel" aria-live="polite"></div>
       </section>
 
       <section class="container section">
@@ -121,16 +100,8 @@
         </div>
         <div id="carousel" class="carousel" aria-live="polite"></div>
       </section>
-
-      <section class="container section">
-        <div class="section-head">
-          <h2 class="section-title">Bagres</h2>
-          <div class="section-actions"></div>
-        </div>
-        <div id="playersGrid" class="players-grid" aria-live="polite"></div>
-      </section>
     </main>
-        <footer class="site-footer">
+    <footer class="site-footer">
       <div class="container">
         <small>© <span id="year"></span> Bagre Royale</small>
         <img

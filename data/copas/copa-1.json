@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Copa Bagre do Brasil",
+    "title": "Copa - 1ª Edição",
     "timezone": "America/Belem",
     "version": 5
   },
@@ -80,7 +80,10 @@
         "id": "S1",
         "stage": "S1",
         "meta": {
-          "from": ["Q1", "Q2"]
+          "from": [
+            "Q1",
+            "Q2"
+          ]
         },
         "a": {
           "name": "Vencedor Q1",
@@ -99,7 +102,10 @@
         "id": "S2",
         "stage": "S2",
         "meta": {
-          "from": ["Q3", "Q4"]
+          "from": [
+            "Q3",
+            "Q4"
+          ]
         },
         "a": {
           "name": "Vencedor Q3",
@@ -120,7 +126,10 @@
         "id": "F1",
         "stage": "Final",
         "meta": {
-          "from": ["S1", "S2"]
+          "from": [
+            "S1",
+            "S2"
+          ]
         },
         "a": {
           "name": "Vencedor S1",
@@ -139,7 +148,10 @@
         "id": "3P",
         "stage": "3º Lugar",
         "meta": {
-          "fromLosers": ["S1", "S2"]
+          "fromLosers": [
+            "S1",
+            "S2"
+          ]
         },
         "a": {
           "name": "Perdedor S1",

@@ -8,23 +8,61 @@
 
   const ROUND_KEYS = ["quartas", "semis", "final"];
   const ROUND_TITLES = { quartas: "Quartas", semis: "Semifinais", final: "Final" };
-  const state = { data: null, slotsByRound: new Map(), matchMap: new Map(), resizeRaf: 0 };
+  const state = { data: null, slotsByRound: new Map(), matchMap: new Map(), resizeRaf: 0, uiMeta: { title: "Copa Bagre do Brasil", logoSrc: "assets/cards/copa.webp" } };
 
-  init();
-
-  async function init() {
-    const data = await loadJSON("copa-bagre.json");
-    state.data = normalizeData(data);
-    buildBracket(state.data);
-    requestAnimationFrame(() => {
-      alignRounds();
-      drawWires();
-      positionCopaLogo();
-      renderPodium();
-    });
-    bindGlobal();
-    enableAxisLock($scroller);
+  
+function getEditionId(){
+  try { return new URL(location.href).searchParams.get("id"); } catch { return null; }
+}
+async function loadFirst(paths){
+  for (const path of paths){
+    try {
+      const res = await fetch(path, { cache: "no-store" });
+      if (res.ok) return await res.json();
+    } catch(_) {}
   }
+  return { rounds: {}, meta: {} };
+}
+let _catalogCache = null;
+async function fetchCatalog(){
+  if (_catalogCache) return _catalogCache;
+  try { const r = await fetch("data/copas.json", { cache: "no-store" }); if (r.ok) _catalogCache = await r.json(); } catch(_){}
+  return _catalogCache || { temporadas: [] };
+}
+async function applyEditionMeta(meta, id){
+  const catalog = await fetchCatalog();
+  const item = (catalog?.temporadas||[]).find(x => String(x.id).toLowerCase()===String(id||"").toLowerCase());
+  const displayName = item?.name || meta?.title || "Copa Bagre do Brasil";
+  const logoSrc = meta?.logo || meta?.logoSrc || item?.logo || "assets/cards/copa.webp";
+  state.uiMeta = { title: displayName, logoSrc };
+  const h1 = qs(".panel-title"); if (h1) h1.textContent = "Chaveamento Eliminatórias";
+  const podTitle = qs("#podium-title"); if (podTitle) podTitle.textContent = `Pódio - ${displayName}`;
+  const $logo = document.getElementById("copaLogo"); if ($logo){ $logo.src = logoSrc; $logo.alt = displayName; }
+}
+
+init();
+
+async function init() {
+  const id = getEditionId();
+  const data = await loadFirst(id ? [
+    `data/copas/${id}.json`,
+    `${id}.json`,
+    `copa-${id}.json`,
+    `data/${id}.json`
+  ] : []);
+  state.data = normalizeData(data);
+  await applyEditionMeta(state.data.meta, id);
+  buildBracket(state.data);
+  requestAnimationFrame(() => {
+    alignRounds();
+    drawWires();
+    positionCopaLogo();
+    renderPodium();
+  });
+  bindGlobal();
+  enableAxisLock($scroller);
+}
+
 
   async function loadJSON(path) {
     try {
@@ -209,10 +247,10 @@
       $logo = document.createElement("img");
       $logo.id = "copaLogo";
       $logo.className = "copa-logo";
-      $logo.src = "assets/cards/copa.webp";
-      $logo.alt = "Copa Bagre do Brasil";
       $bracket.appendChild($logo);
     }
+    $logo.src = state.uiMeta?.logoSrc || "assets/cards/copa.webp";
+    $logo.alt = state.uiMeta?.title || "Copa Bagre do Brasil";
     return $logo;
   }
 
