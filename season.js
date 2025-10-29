@@ -37,7 +37,7 @@
   }
   async function fetchJSON(url){
     try {
-      const r = await fetch(url, { cache: "no-store" });
+      const r = await fetch(url, { cache: "default" });
       if (!r.ok) return null;
       return await r.json();
     } catch(_) { return null; }

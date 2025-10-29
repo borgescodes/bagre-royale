@@ -791,3 +791,8 @@ body::before, body::after,
 .wrapper::before, .wrapper::after {
   content: none !important;
 }
+
+/* Perf: evitar trabalho fora da viewport */
+.panel, .carousel, .players-grid, .season-hero, .section { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
+.player, .card { contain: content; }
+img[loading="lazy"] { content-visibility: auto; }
