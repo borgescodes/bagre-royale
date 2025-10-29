@@ -4,7 +4,7 @@
     {
       "id": "copa-1",
       "name": "1° Edição Copa Bagre do Brasil",
-      "cover": "assets/cards/copa-card.webp",
+      "cover": "assets/cards/miniaturas/copa-card.webp",
       "logo":  "assets/cards/copa.webp",
       "date": "2025-11-02",
       "status": "upcoming"
@@ -12,7 +12,7 @@
     {
       "id": "estrategico-1",
       "name": "1° Torneio Estratégico",
-      "cover": "assets/cards/estrate-final.webp",
+      "cover": "assets/cards/miniaturas/strategic-f.webp",
       "logo":  "assets/cards/estrategico.webp",
       "date": "2025-10-28",
       "status": "finished"
