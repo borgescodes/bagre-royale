@@ -1,4 +1,3 @@
-// copa-bagre.js: alinhamento vertical de S1/S2/Final aos meios das fases anteriores + redesenho dos fios
 (function () {
   const qs = (s, el = document) => el.querySelector(s);
   const qsa = (s, el = document) => [...el.querySelectorAll(s)];
