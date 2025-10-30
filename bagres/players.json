@@ -129,6 +129,7 @@
     "titulos": 1,
     "asset": "../assets/bagres/bad.webp",
     "titles": [
+    { "Organizador do Server no Discord": 1, "asset": "./titulos/organizacao.webp" },
     { "3° Lugar - Bagre Royale": 1, "asset": "./titulos/bagre-royale.webp" }
     ]
   },
