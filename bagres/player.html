@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resumo do Jogador</title>
+    <link rel="icon" href="../assets/navbar/bagre-main.webp" sizes="any" />
+    <link rel="apple-touch-icon" href="../assets/navbar/bagre-main.webp" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./bagre.css">
+    <style>
+      /* layout da página de resumo */
+      .resume{margin-block:16px 56px}
+      .header-resume{display:flex; gap:16px; align-items:center; margin-bottom:16px}
+      .header-resume img.avatar{width:68px;height:68px;border-radius:12px;border:1px solid var(--line);object-fit:cover}
+      .clan-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+      .clan-badge img{width:24px;height:24px}
+      .grid{display:grid; gap:12px}
+      @media(min-width:800px){ .grid{ grid-template-columns: 1fr 1fr; } }
+      .card{padding:16px;border:1px solid var(--line);background:var(--card);border-radius:12px}
+      .deck{display:flex; flex-wrap:wrap; gap:10px}
+      .deck img{width:56px;height:56px;border-radius:8px;border:1px solid var(--line);background:rgba(0,0,0,.2)}
+      .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+      .badges img{width:100%;border-radius:10px;border:1px solid var(--line)}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="btn btn-back" href="./bagres.html">Voltar</a>
+      </div>
+    </header>
+
+    <main class="container resume">
+      <h1 class="hero-title title-gradient">Resumo do Jogador</h1>
+
+      <section class="header-resume" id="headerResume">
+        <!-- preenchido via JS -->
+      </section>
+      <!-- bloco de info do clã entre header e estatísticas -->
+      <section class="clan-info" id="clanInfo"></section>
+
+
+      
+
+<!-- Deck atual antes de Estatísticas, sem card azul -->
+<section class="deck-section">
+  <h2>Deck do Bagre</h2>
+  <div id="deck" class="deck"></div>
+<!-- Títulos do Bagre: após Deck Mais Usado -->
+<section class="titles-section">
+  <h2>Títulos do Bagre</h2>
+  <div id="bagreTitles" class="titles-list"></div>
+</section>
+
+
+<section class="season-section" id="arenaCard"></section>
+<section class="stats-section" id="statsCard"></section>
+<section class="achievements-section" style="margin-top:12px">
+  <h2>Conquistas</h2>
+  <div id="badges" class="achievements-grid"></div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Bagre Royale</small>
+        <img src="../assets/navbar/logo-dev-horizontal.webp" alt="Logo Dev" class="footer-dev-logo"/>
+      </div>
+    </footer>
+
+    <script type="module" src="./player.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

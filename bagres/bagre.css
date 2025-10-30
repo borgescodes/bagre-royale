@@ -1,4 +1,15 @@
-/* bagre.css — estilos específicos da página bagres, seguindo tokens de styles.css */
+@font-face{
+  font-family:'Supercell Magic';
+  src:
+    url('./font/Supercell-Magic.woff2') format('woff2'),
+    url('./font/Supercell-Magic.woff') format('woff'),
+    url('./font/Supercell-Magic.ttf') format('truetype'),
+    url('./font/Supercell-Magic.eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .hero-media {
   display: flex;
   align-items: center;
@@ -29,7 +40,6 @@
   margin-bottom: clamp(24px, 6vw, 72px);
 }
 
-/* herdado do styles.css para o rodapé */
 .site-footer .container {
   display: flex;
   align-items: center;
@@ -50,10 +60,818 @@
   transform: translateY(-1px);
 }
 
-
-/* linha separadora do rodapé, igual ao cabeçalho */
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-left: calc(-1 * max(env(safe-area-inset-left), 12px));
   margin-right: calc(-1 * max(env(safe-area-inset-right), 12px));
+}
+
+.players-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));padding:8px 16px}
+.player-card{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);background:var(--card);border-radius:12px;text-decoration:none;color:inherit;position:relative;min-height:84px}
+.player-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.player-card img{width:72px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:rgba(0,0,0,.15)}
+.player-card .info{display:flex;flex-direction:column;gap:8px;min-width:0}
+.player-card .top-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.player-card .name-tag{min-width:0}
+.player-card .name{display:block;font-size:1rem;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player-card .tag{display:block;font-size:.9rem;color:var(--muted)}
+.badge{padding:4px 10px;border-radius:999px;font-size:.75rem;font-weight:600;color:#111;text-transform:uppercase;white-space:nowrap;border:1px solid rgba(0,0,0,.15);background-size:200% 200%;animation:shine 3s linear infinite}
+.serie-a{background-image:linear-gradient(120deg,#f9d976,#f39f86 25%,#f6e27a 50%,#f39f86 75%,#f9d976)}
+.serie-b{background-image:linear-gradient(120deg,#d7d7d7,#b5b5b5 25%,#efefef 50%,#b5b5b5 75%,#d7d7d7)}
+@keyframes shine{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.player-card .meta{display:flex;align-items:center;justify-content:flex-start;gap:12px}
+.titles{display:inline-flex;align-items:center;gap:6px;font-size:.9rem;color:var(--text)}
+.titles::before{content:"🏆";font-size:1rem;line-height:1}
+@media (min-width:540px){
+  .player-card .meta{justify-content:flex-start}
+}
+
+.players-grid{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding:8px 16px;
+}
+.player-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:8px 12px;
+  height:72px;
+  border:1px solid var(--line);
+  background:var(--card);
+  border-radius:10px;
+  text-decoration:none;
+  color:inherit;
+  position:relative;
+}
+.player-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+
+.player-card img{
+  width:40px;
+  height:40px;
+  object-fit:cover;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:rgba(0,0,0,.1);
+  flex:0 0 auto;
+}
+
+.player-card .info{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:4px;
+  min-width:0;
+  flex:1 1 auto;
+}
+.player-card .top-row{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+}
+.player-card .name-tag{min-width:0}
+.player-card .name{
+  display:block;
+  font-size:0.95rem;
+  line-height:1.1;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.player-card .tag{
+  display:block;
+  font-size:.85rem;
+  color:var(--muted);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.player-card .badge{
+  margin-left:auto;
+  align-self:flex-start;
+  white-space:nowrap;
+}
+.player-card .meta{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:2px;
+  white-space:nowrap;
+}
+
+.player-card *{word-break:keep-all}
+
+.player-card > img{
+  width:40px !important;
+  height:40px !important;
+  aspect-ratio:1/1;
+  flex:0 0 40px;
+  object-fit:cover;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:rgba(0,0,0,.1);
+  display:block;
+}
+
+.player-card .right{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:4px;
+  margin-left:auto;
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
+.player-card .meta{display:none}
+
+.player-card{
+  display:flex;
+  align-items:center; 
+}
+.player-card .right{
+  display:flex;
+  flex-direction:row;      
+  align-items:center;     
+  gap:8px;
+  margin-left:auto;
+  align-self:center;       
+  white-space:nowrap;
+}
+.player-card .right .titles{order:0}
+.player-card .right .badge{order:1}
+
+.player-card .name,
+.player-card .tag{
+  font-family:'Supercell Magic', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.player-card{
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+.player-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  border-color: color-mix(in oklab, var(--line) 70%, transparent);
+}
+.player-card:active{
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0,0,0,.12) inset;
+}
+
+.player-card:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, #fff 70%, transparent),
+    0 0 0 4px color-mix(in oklab, #4c9fff 60%, transparent);
+  transform: translateY(-1px);
+}
+
+.player-card > img{ 
+  transition: filter .2s ease, transform .2s ease;
+}
+.player-card:hover>img{
+  filter: saturate(110%) contrast(105%);
+  transform: scale(1.03);
+}
+
+.badge{
+  position: relative;
+  isolation: isolate;
+}
+.badge::after{
+  content:"";
+  position:absolute; inset:-2px;
+  border-radius:inherit;
+  background: radial-gradient(120px 40px at 10% 50%, rgba(255,255,255,.25), transparent 60%);
+  opacity:0; pointer-events:none;
+  transition: opacity .25s ease;
+  z-index:-1;
+}
+.player-card:hover .badge::after{ opacity:.9; }
+
+.titles{
+  position: relative;
+  transform-origin: left center;
+  transition: transform .18s ease;
+}
+.player-card:hover .titles{ transform: translateX(-1px); }
+.titles::before{ transition: transform .18s ease; }
+.player-card:hover .titles::before{ transform: rotate(-6deg); }
+
+@keyframes fadeInUp{
+  from{ opacity:0; transform: translateY(6px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+.players-grid > .player-card{
+  opacity:0;
+  animation: fadeInUp .32s ease both;
+}
+
+.players-grid > .player-card:nth-child(1){ animation-delay: .02s; }
+.players-grid > .player-card:nth-child(2){ animation-delay: .04s; }
+.players-grid > .player-card:nth-child(3){ animation-delay: .06s; }
+.players-grid > .player-card:nth-child(4){ animation-delay: .08s; }
+.players-grid > .player-card:nth-child(5){ animation-delay: .10s; }
+.players-grid > .player-card:nth-child(6){ animation-delay: .12s; }
+.players-grid > .player-card:nth-child(7){ animation-delay: .14s; }
+.players-grid > .player-card:nth-child(8){ animation-delay: .16s; }
+.players-grid > .player-card:nth-child(9){ animation-delay: .18s; }
+.players-grid > .player-card:nth-child(10){ animation-delay: .20s; }
+.players-grid > .player-card:nth-child(11){ animation-delay: .22s; }
+.players-grid > .player-card:nth-child(12){ animation-delay: .24s; }
+
+.player-card{
+  background:
+    linear-gradient(to right, color-mix(in oklab, var(--card) 98%, transparent), color-mix(in oklab, var(--card) 98%, transparent)) padding-box,
+    linear-gradient(to right, color-mix(in oklab, var(--line) 60%, transparent), transparent 30%) border-box;
+  border:1px solid var(--line);
+}
+.player-card:hover{
+  background:
+    linear-gradient(to right, color-mix(in oklab, var(--card) 96%, transparent), color-mix(in oklab, var(--card) 96%, transparent)) padding-box,
+    linear-gradient(90deg, color-mix(in oklab, #ffd466 35%, transparent), transparent 40%) border-box;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .player-card,
+  .player-card>img,
+  .titles::before,
+  .players-grid > .player-card{
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+.player-card:hover{
+  --card-bg: linear-gradient(to right, color-mix(in oklab, var(--card) 96%, transparent), color-mix(in oklab, var(--card) 96%, transparent));
+}
+
+@media (prefers-reduced-motion: reduce){
+  }
+
+.player-card .avatar{
+  width:40px;
+  height:40px;
+  flex:0 0 40px;
+  border-radius:8px;
+  display:inline-block;
+  padding:2px;               
+  background: var(--avatar-border, var(--line));
+  background-size:200% 200%;
+  background-position:0% 50%;
+  box-sizing:border-box;
+}
+.player-card .avatar>img{
+  width:100%;
+  height:100%;
+  display:block;
+  border-radius:6px;         
+  object-fit:cover;
+  background:rgba(0,0,0,.1);
+  border:1px solid color-mix(in oklab, var(--line) 70%, transparent);
+}
+
+.player-card .avatar.serie-a{ --avatar-border: linear-gradient(120deg,#f9d976,#f39f86 25%,#f6e27a 50%,#f39f86 75%,#f9d976); }
+/* Prata animado para Série B */
+.player-card .avatar.serie-b{ --avatar-border: linear-gradient(120deg,#d7d7d7,#b5b5b5 25%,#efefef 50%,#b5b5b5 75%,#d7d7d7); }
+
+@keyframes avatarShift{
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 200% 50%; }
+}
+.player-card .avatar{ animation: avatarShift 3s linear infinite; }
+
+.player-card:hover .avatar>img{ filter: saturate(110%) contrast(105%); }
+
+@media(prefers-reduced-motion:reduce){
+  .player-card .avatar{ animation:none !important; }
+}
+
+:root{
+  --card-radius: 12px;
+  --card-gap: 12px;
+  --ring: #4c9fff;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.06);
+  --shadow-2: 0 8px 24px rgba(0,0,0,.10);
+}
+
+.player-card{
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-1);
+}
+.player-card:hover{
+  box-shadow: var(--shadow-2);
+}
+
+.player-card .right{
+  position: relative;
+  padding-left: 12px;
+}
+.player-card .right::before{
+  content:"";
+  position:absolute;
+  left:0; top:50%;
+  transform: translateY(-50%);
+  width:1px; height:28px;
+  background: color-mix(in oklab, var(--line) 60%, transparent);
+  opacity:.6;
+}
+
+.badge{
+  font-weight: 700;
+  letter-spacing:.3px;
+  padding:6px 12px;
+  border-radius: 999px;
+  border:1px solid rgba(0,0,0,.12);
+  background-clip: padding-box;
+  position: relative;
+}
+.badge::before{
+  content:"";
+  position:absolute; inset:-2px;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, rgba(255,255,255,.7), transparent 40%, rgba(255,255,255,.7));
+  filter: blur(8px);
+  opacity: .0;
+  transition: opacity .25s ease;
+  pointer-events:none;
+}
+.player-card:hover .badge::before{ opacity:.45; }
+
+.badge.serie-a::after{ content:"  ⭐"; }
+.badge.serie-b::after{ content:"  ✦"; }
+
+.titles{
+  padding:4px 8px;
+  border-radius:999px;
+  background: color-mix(in oklab, var(--card) 92%, transparent);
+  border:1px solid color-mix(in oklab, var(--line) 70%, transparent);
+  font-weight:600;
+}
+
+.player-card:focus-visible{
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, #fff 70%, transparent),
+    0 0 0 5px var(--ring),
+    var(--shadow-2);
+}
+
+@media (prefers-color-scheme: dark){
+  .player-card{
+    background: color-mix(in oklab, var(--card) 96%, black 4%);
+    border-color: color-mix(in oklab, var(--line) 70%, black 30%);
+    box-shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.35);
+  }
+  .player-card .right::before{
+    background: color-mix(in oklab, var(--line) 40%, white 10%);
+    opacity:.5;
+  }
+  .titles{
+    background: color-mix(in oklab, var(--card) 88%, black 12%);
+    border-color: color-mix(in oklab, var(--line) 60%, black 40%);
+  }
+}
+
+.player-card:active::after{
+  content:"";
+  position:absolute; inset:0;
+  border-radius: inherit;
+  background: radial-gradient(120px 60px at var(--x,50%) var(--y,50%), rgba(0,0,0,.08), transparent 60%);
+  pointer-events:none;
+}
+
+.player-card .badge{
+  font-size: .62rem;
+  padding: 4px 8px;
+}
+.player-card .tag{
+  font-size: .58rem;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .players-grid > .player-card{ opacity: 1 !important; }
+}
+
+@media (min-width: 992px){
+  .players-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 12px 16px;
+  }
+  .players-grid .player-card{
+    width: 100%;
+  }
+}
+
+.players-grid .player-card{
+  background:
+    linear-gradient(180deg, color-mix(in oklab, var(--card) 96%, transparent), color-mix(in oklab, var(--card) 92%, transparent)) padding-box,
+    linear-gradient(180deg, color-mix(in oklab, var(--line) 70%, transparent), transparent 45%) border-box;
+  border: 1px solid color-mix(in oklab, var(--line) 80%, transparent);
+}
+
+.players-grid .player-card .name{ color: var(--text); }
+.players-grid .player-card .tag{ color: color-mix(in oklab, var(--muted) 92%, var(--text) 8%); }
+
+.players-grid .player-card .right{
+  padding-left: 10px;
+}
+.players-grid .player-card .right::before{
+  height: 22px;
+  background: color-mix(in oklab, var(--line) 40%, transparent);
+  opacity: .7;
+}
+
+.players-grid .player-card .badge{
+  letter-spacing: .2px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset;
+  transition: background-color .2s ease, box-shadow .2s ease, opacity .2s ease;
+}
+.players-grid .player-card:hover .badge{
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08) inset, 0 1px 8px rgba(0,0,0,.10);
+}
+
+.players-grid .player-card .titles{
+  background: color-mix(in oklab, var(--card) 90%, transparent);
+  border-color: color-mix(in oklab, var(--line) 65%, transparent);
+  transition: background-color .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.players-grid .player-card:hover .titles{
+  background: color-mix(in oklab, var(--card) 86%, transparent);
+  border-color: color-mix(in oklab, var(--line) 55%, transparent);
+}
+
+.players-grid .player-card:focus-visible{
+  outline: 2px solid color-mix(in oklab, #4c9fff 60%, transparent);
+  outline-offset: 2px;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (prefers-color-scheme: dark){
+  .players-grid .player-card{
+    background:
+      linear-gradient(180deg, color-mix(in oklab, var(--card) 90%, black 10%), color-mix(in oklab, var(--card) 86%, black 14%)) padding-box,
+      linear-gradient(180deg, color-mix(in oklab, var(--line) 50%, black 40%), transparent 45%) border-box;
+    border-color: color-mix(in oklab, var(--line) 65%, black 35%);
+  }
+  .players-grid .player-card .right::before{
+    background: color-mix(in oklab, var(--line) 35%, white 10%);
+    opacity:.6;
+  }
+}
+
+.players-grid .player-card{
+  position: relative;
+  cursor: pointer;
+}
+
+.players-grid .player-card::after{
+  content: "›";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-2px);
+  opacity: .28;
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.players-grid .player-card:hover::after{
+  opacity: .5;
+  transform: translateY(-50%) translateX(0);
+}
+
+.players-grid .player-card .right{ padding-right: 18px; }
+
+.players-grid .player-card:hover .name{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (hover: none){
+  .players-grid .player-card:active{ filter: brightness(0.98); }
+}
+
+.players-grid .player-card::after{
+  font-size: 30px;
+  opacity: .45;
+  text-shadow: 0 1px 0 rgba(0,0,0,.18);
+}
+
+.players-grid .player-card .titles{
+  font-size: .72rem;
+  padding: 2px 6px;
+}
+.players-grid .player-card .titles::before{
+  font-size: .9rem;
+}
+
+.resume{ margin-block:16px 56px }
+.header-resume{ display:flex; gap:16px; align-items:flex-start; margin-bottom:16px }
+.header-resume .avatar{ width:68px; height:68px; border-radius:12px; border:1px solid var(--line); object-fit:cover; flex:0 0 68px; background:rgba(0,0,0,.1) }
+
+.player-head{ display:flex; flex-direction:column; gap:8px; min-width:0; flex:1 }
+.player-head .top-row{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.player-head .nick{ margin:0; font-family:'Supercell Magic', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.player-head .nick .tag{ color:var(--muted); font-weight:400 }
+.player-head .trophy-info{ padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:var(--card); font-weight:600; white-space:nowrap }
+
+.player-head .bottom-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap }
+.player-head .clan-icon{ width:24px; height:24px; object-fit:contain; border-radius:6px; border:1px solid var(--line); background:rgba(0,0,0,.05) }
+.player-head .clan-name{ font-weight:600 }
+.player-head .sep{ color:var(--muted); margin:0 2px }
+.player-head .clan-role{ color:var(--muted) }
+.player-head .clan-role strong{ color:var(--text); font-weight:600 }
+
+.resume .card{ padding:16px; border:1px solid var(--line); background:var(--card); border-radius:12px }
+
+#deck.deck{ display:grid; grid-template-columns:repeat(4, 60px); gap:10px }
+.deck-card{ width:60px; height:60px; border-radius:8px; border:1px solid var(--line); object-fit:contain; background:rgba(0,0,0,.05) }
+
+#badges.badges{ display:grid; grid-template-columns:repeat(4, 1fr); gap:10px }
+#badges .badge-img{ width:100%; aspect-ratio:1/1; object-fit:contain; border-radius:10px; border:1px solid var(--line); background:rgba(0,0,0,.05) }
+
+@media (min-width: 900px){
+  .resume .grid{ display:grid; grid-template-columns: 1fr 1fr; gap:12px }
+}
+
+.header-resume{ display:flex; gap:16px; align-items:flex-start; margin-bottom:16px }
+.header-resume .avatar{ width:68px; height:68px; border-radius:12px; border:1px solid var(--line); object-fit:cover; flex:0 0 68px; background:rgba(0,0,0,.1) }
+
+.player-head{ display:flex; flex-direction:column; gap:8px; min-width:0; flex:1 }
+.player-head .top-row{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px }
+.player-head .nick{ margin:0; font-family:'Supercell Magic', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif }
+.player-head .nick .tag{ color:var(--muted); font-weight:400 }
+.player-head .trophy-info{ padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:var(--card); font-weight:600; white-space:nowrap }
+.player-head .bottom-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap }
+.player-head .clan-icon{ width:24px; height:24px; object-fit:contain; border-radius:6px; border:1px solid var(--line); background:rgba(0,0,0,.05) }
+.player-head .clan-name{ font-weight:600 }
+.player-head .sep{ color:var(--muted); margin:0 2px }
+.player-head .clan-role{ color:var(--muted) }
+.player-head .clan-role strong{ color:var(--text); font-weight:600 }
+
+#deck.deck{ display:grid; grid-template-columns:repeat(4, 60px); gap:10px }
+.deck-card{ width:60px; height:60px; border-radius:8px; border:1px solid var(--line); object-fit:contain; background:rgba(0,0,0,.05) }
+
+#badges.badges{ display:grid; grid-template-columns:repeat(4, 1fr); gap:10px }
+#badges .badge-img{ width:100%; aspect-ratio:1/1; object-fit:contain; border-radius:10px; border:1px solid var(--line); background:rgba(0,0,0,.05) }
+
+.clan-info{
+  display:flex;
+  justify-content:center;   
+  align-items:center;      
+  gap:8px;
+  flex-wrap:wrap;         
+  margin:12px auto;        
+}
+
+#headerResume #clanInfo{ flex:0 1 auto }
+
+/* Restante intacto */
+.clan-info .clan-icon{
+  width:24px; height:24px; object-fit:contain;
+  border-radius:6px; background:rgba(0,0,0,.05);
+}
+.clan-info .clan-name{ font-weight:600 }
+.clan-info .sep{ color:var(--muted); margin:0 2px }
+.clan-info .clan-role{ color:var(--muted) }
+.clan-info .clan-role strong{ color:var(--text); font-weight:600 }
+
+.deck img{
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  image-rendering:auto;
+  display:block;
+  border:none;
+  background:transparent;
+  border-radius:0;
+}
+
+.deck-section{ margin:12px 0 12px }
+.deck-section > h2{ margin:0 0 8px; font-size:1.1rem }
+
+.stats-section{
+  padding: 8px 0 4px;
+}
+.stats-section > h2{
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+.stats-section .kv{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+@media (max-width: 520px){
+  .stats-section .kv{ grid-template-columns: 1fr; }
+}
+.stats-section .kv li{
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in oklab, var(--card) 90%, transparent);
+}
+
+.achievements-section > h2{
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+.achievements-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  place-items: center;
+}
+.achievements-grid .badge-img{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+@media (max-width: 420px){
+  .achievements-grid{ gap: 10px }
+  .achievements-grid .badge-img{ width: 40px; height: 40px }
+}
+
+.deck img,
+.deck .deck-card{
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  display:block;
+  border:none;
+  background:transparent;
+  border-radius:0;
+}
+
+.stats-section > h2,
+#arenaCard > h2,
+.achievements-section > h2{
+  text-align:center;
+}
+
+.deck-section{ text-align:center }
+.deck{ display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap:wrap }
+
+.season-section{
+  padding: 8px 0 4px;
+}
+.season-section > h2{
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  text-align:center;
+}
+.season-section .kv{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:8px;
+}
+@media (max-width:520px){
+  .season-section .kv{ grid-template-columns: 1fr; }
+}
+.season-section .kv li{
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background: color-mix(in oklab, var(--card) 90%, transparent);
+}
+
+.titles-section{ margin:12px 0 }
+.titles-section > h2{ text-align:center; margin:0 0 8px; font-size:1.1rem }
+.titles-list{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:8px }
+@media (max-width:520px){ .titles-list{ grid-template-columns: 1fr } }
+.titles-item{
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px; border:1px solid var(--line);
+  border-radius:10px; background: color-mix(in oklab, var(--card) 90%, transparent);
+}
+.titles-item img{ width:24px; height:24px; object-fit:contain; display:block }
+.titles-item .label{ flex:1 }
+.titles-item .count{
+  min-width:22px; height:22px; padding:0 8px;
+  display:inline-flex; align-items:center; justify-content:center;
+  font-size:.8rem; border-radius:999px; border:1px solid var(--line);
+  background:rgba(255,255,255,.04)
+}
+
+.loading-overlay{
+  position: fixed; inset: 0;
+  display: grid; place-items: center;
+  background: color-mix(in oklab, var(--bg, #0b0d12) 40%, transparent);
+  z-index: 9999;
+}
+.spinner{ width:44px; height:44px; border-radius:50%;
+  border:4px solid rgba(255,255,255,.25); border-top-color: rgba(255,255,255,.9);
+  animation: spin .9s linear infinite;
+}
+@keyframes spin{ to{ transform: rotate(360deg) } }
+
+#arenaCard .kv,
+#statsCard .kv{
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 12px 0 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  row-gap: 8px !important;
+}
+#arenaCard .kv > li,
+#statsCard .kv > li{
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  padding: 10px 12px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 10px !important;
+  background: color-mix(in oklab, var(--card) 92%, transparent) !important;
+}
+#arenaCard .kv > li > span,
+#statsCard .kv > li > span{ font-size:.95rem !important; opacity:.9 !important; }
+#arenaCard .kv > li > strong,
+#statsCard .kv > li > strong{ font-weight:700 !important; font-size:1rem !important; }
+
+#arenaCard h2, #statsCard h2{ margin:0 0 8px !important; }
+
+#deck.deck{
+  display:grid !important;
+  grid-template-columns: repeat(4, 56px) !important;
+  gap:8px !important;
+  justify-content:center !important;
+}
+@media (min-width: 768px){
+  #deck.deck{ grid-template-columns: repeat(8, 56px) !important; }
+}
+#deck.deck img.deck-card{ width:56px !important; height:56px !important; object-fit:contain !important; border:none !important; background:transparent !important; border-radius:0 !important; }
+
+.btn-whats{
+  --whats: #25D366;
+  --whats-dark: #1EAD53;
+  --ring: rgba(37, 211, 102, .35);
+
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+
+  padding:.625rem .9rem;
+  border:0;
+  border-radius:.75rem;
+
+  background:var(--whats);
+  color:#fff;
+  font:600 0.95rem/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  text-decoration:none;
+
+  box-shadow:0 6px 16px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.08);
+  transition:transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+  cursor:pointer;
+}
+
+.btn-whats:hover{ 
+  background:var(--whats-dark);
+  transform:translateY(-1px);
+  box-shadow:0 10px 20px rgba(0,0,0,.16), 0 3px 8px rgba(0,0,0,.12);
+}
+
+.btn-whats:active{
+  transform:translateY(0);
+  box-shadow:0 4px 10px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.10);
+}
+
+.btn-whats:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 3px var(--ring), 0 6px 16px rgba(0,0,0,.12);
+}
+
+.btn-whats__icon{
+  width:18px; height:18px; flex:0 0 18px;
+  margin-right:.5rem; display:inline-block;
+}
+
+.notice.api-down a:not(.btn-whats){
+  color: inherit;
+  text-decoration: underline;
+}
+
+.notice.api-down a:not(.btn-whats):hover{
+  text-decoration-thickness: 2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .btn-whats{ transition:none }
+  .btn-whats:hover, .btn-whats:active{ transform:none }
 }

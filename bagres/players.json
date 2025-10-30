@@ -1,0 +1,156 @@
+[
+  {
+    "displayName": "Wesley",
+    "tag": "#QC2280YRP",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Wesl.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Bruno",
+    "tag": "#U2PYYCY8L",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Bruno.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Kenedy",
+    "tag": "#992V82CC9",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Kenedy.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Danilo",
+    "tag": "#VQGVYLQYQ",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Dan.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Gustavo",
+    "tag": "#PU9GQ09CJ",
+    "serie": "A",
+    "titulos": 3,
+    "asset": "../assets/bagres/Lascanor.webp",
+    "titles": [
+    { "Organizador de Jogos": 1, "asset": "./titulos/organizacao.webp" },
+    { "3° Lugar - Bagre Estratégico": 1, "asset": "./titulos/strategic.webp" },
+    { "2° Lugar - SÉRIE A": 1, "asset": "./titulos/serie-a.webp" },
+    { "2° Lugar - Bagre Royale": 1, "asset": "./titulos/bagre-royale.webp" }
+    ]
+  },
+  {
+    "displayName": "Vg",
+    "tag": "#Y02LRRULR",
+    "serie": "A",
+    "titulos": 1,
+    "asset": "../assets/bagres/vege.webp",
+    "titles": [
+    { "3° Lugar - SÉRIE A": 1, "asset": "./titulos/serie-a.webp" }
+    ]
+  },
+  {
+    "displayName": "C. Barnes",
+    "tag": "#29QR0UYCL",
+    "serie": "B",
+    "titulos": 1,
+    "asset": "../assets/bagres/felipe.webp",
+    "titles": [
+    { "Campeão - Bagre Estratégico": 1, "asset": "./titulos/strategic.webp" }
+    ]
+  },
+  {
+    "displayName": "Ricardo",
+    "tag": "#209JCVJPR9",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Ricardo.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Gaab",
+    "tag": "#809QURJQG",
+    "serie": "B",
+    "titulos": 0,
+    "asset": "../assets/bagres/Gaab.webp",
+    "titles": [
+    { "Social Media do Projeto": 1, "asset": "./titulos/staff.webp" }
+    ]
+  },
+  {
+    "displayName": "Henrique",
+    "tag": "#LUPL29Y8",
+    "serie": "A",
+    "titulos": 0,
+    "asset": "../assets/bagres/person.webp",
+    "titles": [
+    { "Investidor e Líder do Projeto": 1, "asset": "./titulos/staff.webp" }
+    ]
+  },
+  {
+    "displayName": "Felps",
+    "tag": "#LVR9YL2QV",
+    "serie": "A",
+    "titulos": 1,
+    "asset": "../assets/bagres/Felps.webp",
+    "titles": [
+    { "2° Lugar - SÉRIE B": 1, "asset": "./titulos/serie-b.webp" }
+    ]
+  },
+  {
+    "displayName": "Felipão",
+    "tag": "#CUCPUY0RL",
+    "serie": "B",
+    "titulos": 1,
+    "asset": "../assets/bagres/Felipão.webp",
+    "titles": [
+    { "3° Lugar - SÉRIE B": 1, "asset": "./titulos/serie-b.webp" }
+    ]
+  },
+  {
+    "displayName": "Boaz",
+    "tag": "#JR8Q0QY88",
+    "serie": "A",
+    "titulos": 1,
+    "asset": "../assets/bagres/Boaz.webp",
+    "titles": [
+    { "Campeão - SÉRIE B": 1, "asset": "./titulos/serie-b.webp" }
+    ]
+  },
+  {
+    "displayName": "Bad",
+    "tag": "#2CVVCPRR8",
+    "serie": "A",
+    "titulos": 1,
+    "asset": "../assets/bagres/Bad.webp",
+    "titles": [
+    { "3° Lugar - Bagre Royale": 1, "asset": "./titulos/bagre-royale.webp" }
+    ]
+  },
+  {
+    "displayName": "Flakes Power",
+    "tag": "Mande um pix pro dev 💔",
+    "serie": "A",
+    "titulos": 2.5,
+    "asset": "../assets/bagres/flakes.webp",
+    "titles": []
+  },
+  {
+    "displayName": "Borges",
+    "tag": "#8RPRGP0G0",
+    "serie": "A",
+    "titulos": 3,
+    "asset": "../assets/bagres/Borges.webp",
+    "titles": [
+    { "Criador e Dev do Projeto": 1, "asset": "./titulos/staff.webp" },
+    { "2° Lugar - Bagre Estratégico": 1, "asset": "./titulos/strategic.webp" },
+    { "Campeão - SÉRIE A": 1, "asset": "./titulos/serie-a.webp" },
+    { "Campeão - Bagre Royale": 1, "asset": "./titulos/bagre-royale.webp" }
+    ]
+  }
+]
