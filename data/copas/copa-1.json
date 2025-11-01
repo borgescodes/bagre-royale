@@ -86,14 +86,14 @@
           ]
         },
         "a": {
-          "name": "Vencedor Q1",
-          "photo": null,
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
           "score": null,
           "winner": false
         },
         "b": {
           "name": "Felps",
-          "photo": null,
+          "photo": "assets/bagres/felps.webp",
           "score": null,
           "winner": false
         }
