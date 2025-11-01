@@ -64,13 +64,13 @@
         "a": {
           "name": "Person",
           "photo": "assets/bagres/person.webp",
-          "score": null,
-          "winner": false
+          "score": 1,
+          "winner": true
         },
         "b": {
           "name": "Boaz",
           "photo": "assets/bagres/boaz.webp",
-          "score": null,
+          "score": 2,
           "winner": false
         }
       }
@@ -108,8 +108,8 @@
           ]
         },
         "a": {
-          "name": "Vencedor Q3",
-          "photo": null,
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
           "score": null,
           "winner": false
         },
