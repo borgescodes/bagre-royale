@@ -2,6 +2,90 @@
   "tournamentId": "copa-1",
   "updatedAt": "2025-11-01T12:00:00-03:00",
   "tickets": [
+    {
+      "name": "Mykaelly",
+      "token": "GPDVESJ5",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felps" }
+      }
+    },
+    {
+      "name": "Silvaa",
+      "token": "ZXYBAYYX",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Lascanor" }
+      }
+    },
+    {
+      "name": "Bruno Maciel",
+      "token": "RY8DGT4F",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Vegê" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Boaz" },
+        "T3": { "third": "Lascanor" }
+      }
+    },
+    {
+      "name": "Wesley",
+      "token": "ZYW58GYE",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Lascanor" }
+      }
+    },
+    {
+      "name": "Gustavo",
+      "token": "YUPK8LLX",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Vegê" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Lascanor" },
+        "T3": { "third": "Vegê" }
+      }
+    },
+    {
+      "name": "Bad",
+      "token": "4AN5UTYL",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felps" }
+      }
+    }
   ],
   "winners": []
 }

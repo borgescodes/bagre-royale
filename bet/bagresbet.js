@@ -163,7 +163,7 @@
 
     // Campeão
     const champPanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Probabilidade de Campeão"]),
+      el("h4",{className:"kpi-title"},["Favorito a Campeão"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.championPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])]))),
       el("div",{className:"kpi-foot"},[`Amostra: ${ticketsCount} aposta(s)`])
     ]);
@@ -171,14 +171,14 @@
 
     // 2º Lugar
     const vicePanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Probabilidade de 2° Lugar"]),
+      el("h4",{className:"kpi-title"},["Favorito pro 2° Lugar"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.runnerUpPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])])))
     ]);
     box.appendChild(vicePanel);
 
     // 3º Lugar
     const thirdPanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Probabilidade de 3° Lugar"]),
+      el("h4",{className:"kpi-title"},["Favorito pro 3° Lugar"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.thirdPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])])))
     ]);
     box.appendChild(thirdPanel);
