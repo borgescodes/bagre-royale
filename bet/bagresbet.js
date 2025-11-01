@@ -81,9 +81,19 @@
     setupCountdown(dl || "2025-11-01T14:00:00-03:00", card.querySelector("#countdownHome"), ()=>{
       openBtn.setAttribute("disabled","disabled");
       openBtn.textContent = "Apostas encerradas";
+      // Garante que o Resumo continue visível após o prazo
+      try {
+        const panel = document.querySelector(".panel-kpis");
+        const box = document.getElementById("metricsBox");
+        if (panel) panel.classList.remove("hidden");
+        if (box) {
+          // re-render para evitar estados vazios
+          if (state && state.metrics) renderMetrics(state.metrics);
+          box.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      } catch(_) {}
     });
-
-    openBtn.addEventListener("click",()=>openBetCard(t, cover, title));
+openBtn.addEventListener("click",()=>openBetCard(t, cover, title));
   }
 
   
@@ -99,9 +109,24 @@
         el.setAttribute("disabled","disabled");
       });
     };
-    setupCountdown(dl, document.querySelector("#betView .countdown-bet"), lockForm);
-    if(new Date() >= new Date(dl)) lockForm();
-  }
+    setupCountdown(dl, document.querySelector("#betView .countdown-bet"), ()=>{
+      lockForm();
+      // Redireciona para Home para manter o Resumo visível
+      try {
+        go("home");
+        const panel = document.querySelector(".panel-kpis");
+        const box = document.getElementById("metricsBox");
+        if (panel) panel.classList.remove("hidden");
+        if (box) box.scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch(_) {}
+    });
+    if(new Date() >= new Date(dl)) {
+      lockForm();
+      try {
+        go("home");
+      } catch(_) {}
+    }
+}
 
   /* ---------- MÉTRICAS: Campeão, 2º Lugar, 3º Lugar + Quartas ---------- */
   function computeMetricsFromTickets(data){
@@ -163,7 +188,7 @@
 
     // Campeão
     const champPanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Favorito a Campeão"]),
+      el("h4",{className:"kpi-title"},["Probabilidade de Campeão"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.championPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])]))),
       el("div",{className:"kpi-foot"},[`Amostra: ${ticketsCount} aposta(s)`])
     ]);
@@ -171,14 +196,14 @@
 
     // 2º Lugar
     const vicePanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Favorito pro 2° Lugar"]),
+      el("h4",{className:"kpi-title"},["Probabilidade de 2° Lugar"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.runnerUpPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])])))
     ]);
     box.appendChild(vicePanel);
 
     // 3º Lugar
     const thirdPanel=el("div",{className:"kpi-card"},[
-      el("h4",{className:"kpi-title"},["Favorito pro 3° Lugar"]),
+      el("h4",{className:"kpi-title"},["Probabilidade de 3° Lugar"]),
       el("div",{className:"kpi-list"}, Object.entries(pct.thirdPct).map(([name,p])=> el("div",{className:"kpi-row"},[el("span",{className:"kpi-name"},[name]), el("span",{className:"kpi-val"},[`${p}%`])])))
     ]);
     box.appendChild(thirdPanel);
@@ -306,11 +331,28 @@
     return { ok:true };
   }
 
-  function onFinish(){
+    function onFinish(){
     const v = validate();
-    if(!v.ok){ showNotice(v.msg, false); return; } hideNotice(); showNotice("Aposta pronta para envio.", true);
+    if(!v.ok){ showNotice(v.msg, false); return; }
+    hideNotice();
+    showNotice("Aposta pronta para envio.", true);
+
+    // Abre o WhatsApp em nova aba
     sendWhatsApp();
+
+    // Volta para a Home e destaca o "Resumo das Apostas"
+    go("home");
+    const panel = document.querySelector(".panel-kpis");
+    const box = document.getElementById("metricsBox");
+    if (box) {
+      box.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    if (panel) {
+      panel.classList.add("flash");
+      setTimeout(() => panel.classList.remove("flash"), 1800);
+    }
   }
+
 
   function sendWhatsApp(){ const phone=(state.tournament?.betting?.whatsappPhone||WHATSAPP_DEFAULT).replace(/[^\d]/g,""); const msg=buildTicket(); const url=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`; window.open(url,"_blank"); }
 
