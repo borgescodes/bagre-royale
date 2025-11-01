@@ -155,6 +155,20 @@
         "F1": { "champion": "Borges" },
         "T3": { "third": "Lascanor" }
       }
+    },
+        {
+      "name": "Tiago",
+      "token": "SW3HV7ZM",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felps" }
+      }
     }
   ],
   "winners": []
