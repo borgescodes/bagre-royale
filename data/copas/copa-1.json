@@ -13,13 +13,13 @@
         "a": {
           "name": "Borges",
           "photo": "assets/bagres/borges.webp",
-          "score": null,
-          "winner": false
+          "score": 2,
+          "winner": true
         },
         "b": {
           "name": "Wesl",
           "photo": "assets/bagres/wesl.webp",
-          "score": null,
+          "score": 0,
           "winner": false
         }
       },
