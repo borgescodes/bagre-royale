@@ -85,6 +85,48 @@
         "F1": { "champion": "Borges" },
         "T3": { "third": "Felps" }
       }
+    },
+    {
+      "name": "Henrique",
+      "token": "URQFXUSF",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Person" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Lascanor" }
+      }
+    },
+    {
+      "name": "Borges",
+      "token": "573YHXGN",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Vege" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Person" }
+      }
+    },
+        {
+      "name": "Gaab",
+      "token": "XJ8GQ2GX",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Lascanor" },
+        "T3": { "third": "Boaz" }
+      }
     }
   ],
   "winners": []
