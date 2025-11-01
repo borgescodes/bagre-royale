@@ -30,14 +30,14 @@
         "a": {
           "name": "Vegê",
           "photo": "assets/bagres/vege.webp",
-          "score": null,
+          "score": 0,
           "winner": false
         },
         "b": {
           "name": "Felps",
           "photo": "assets/bagres/felps.webp",
-          "score": null,
-          "winner": false
+          "score": 2,
+          "winner": true
         }
       },
       {
@@ -92,7 +92,7 @@
           "winner": false
         },
         "b": {
-          "name": "Vencedor Q2",
+          "name": "Felps",
           "photo": null,
           "score": null,
           "winner": false
