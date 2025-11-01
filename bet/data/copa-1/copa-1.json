@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "id": "copa-1",
+    "title": "Copa Bagre do Brasil",
+    "timezone": "America/Belem",
+    "version": 8,
+    "cardCover": "../assets/cards/copa-aposta-card.webp",
+    "betCover": "../assets/cards/copa-aposta-card-2.webp",
+    "startText": "Hoje às 14h"
+  },
+  "rounds": {
+    "quartas": [
+      {
+        "id": "Q1",
+        "stage": "Q1",
+        "meta": {
+          "date": "2025-11-02T20:00:00-03:00",
+          "when": "Hoje às 17:30h"
+        },
+        "a": {
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp"
+        },
+        "b": {
+          "name": "Wesl",
+          "photo": "assets/bagres/wesl.webp"
+        }
+      },
+      {
+        "id": "Q2",
+        "stage": "Q2",
+        "meta": {
+          "date": "2025-11-02T21:00:00-03:00",
+          "when": "Hoje às 14h"
+        },
+        "a": {
+          "name": "Vegê",
+          "photo": "assets/bagres/vege.webp"
+        },
+        "b": {
+          "name": "Felps",
+          "photo": "assets/bagres/felps.webp"
+        }
+      },
+      {
+        "id": "Q3",
+        "stage": "Q3",
+        "meta": {
+          "date": "2025-11-03T20:00:00-03:00",
+          "when": "02/11/2025"
+        },
+        "a": {
+          "name": "Lascanor",
+          "photo": "assets/bagres/lascanor.webp"
+        },
+        "b": {
+          "name": "Felipão",
+          "photo": "assets/bagres/felipão.webp"
+        }
+      },
+      {
+        "id": "Q4",
+        "stage": "Q4",
+        "meta": {
+          "date": "2025-11-03T21:00:00-03:00",
+          "when": "A Definir"
+        },
+        "a": {
+          "name": "Person",
+          "photo": "assets/bagres/person.webp"
+        },
+        "b": {
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp"
+        }
+      }
+    ],
+    "semis": [
+      {
+        "id": "S1",
+        "stage": "S1",
+        "meta": {
+          "from": [
+            "Q1",
+            "Q2"
+          ],
+          "date": "2025-11-04T20:00:00-03:00",
+          "when": "Amanhã às 20h"
+        }
+      },
+      {
+        "id": "S2",
+        "stage": "S2",
+        "meta": {
+          "from": [
+            "Q3",
+            "Q4"
+          ],
+          "date": "2025-11-04T21:00:00-03:00",
+          "when": "Amanhã às 20h"
+        }
+      }
+    ],
+    "final": [
+      {
+        "id": "F1",
+        "stage": "Final",
+        "meta": {
+          "from": [
+            "S1",
+            "S2"
+          ],
+          "date": "2025-11-05T20:00:00-03:00",
+          "when": "Data a definir"
+        }
+      },
+      {
+        "id": "3P",
+        "stage": "3º Lugar",
+        "meta": {
+          "fromLosers": [
+            "S1",
+            "S2"
+          ],
+          "date": "2025-11-05T19:00:00-03:00",
+          "when": "Data a definir"
+        }
+      }
+    ]
+  },
+  "betting": {
+    "open": true,
+    "deadline": "2025-11-01T14:00:00-03:00",
+    "whatsappPhone": "5591987338595"
+  }
+}

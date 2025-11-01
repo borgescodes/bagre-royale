@@ -1,0 +1,535 @@
+@font-face {
+  font-family: "Supercell Magic";
+  src: url("./font/Supercell-Magic.woff2") format("woff2"),
+    url("./font/Supercell-Magic.woff") format("woff"),
+    url("./font/Supercell-Magic.ttf") format("truetype"),
+    url("./font/Supercell-Magic.eot");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hero-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image {
+  width: min(520px, 90vw);
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.lead {
+  color: var(--muted);
+  margin-top: 8px;
+}
+.notice {
+  text-align: center;
+  margin-top: clamp(24px, 6vw, 48px);
+  padding: var(--pad);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.notice {
+  margin-bottom: clamp(24px, 6vw, 72px);
+}
+
+.site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-footer small {
+  color: #c7d2f1;
+}
+.footer-dev-logo {
+  height: 48px;
+  opacity: 0.95;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(98, 230, 255, 0.18));
+  transition: transform 0.15s ease;
+}
+.footer-dev-logo:hover {
+  transform: translateY(-1px);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-left: calc(-1 * max(env(safe-area-inset-left), 12px));
+  margin-right: calc(-1 * max(env(safe-area-inset-right), 12px));
+}
+
+.hidden {
+  display: none;
+}
+.space-top {
+  margin-top: 24px;
+}
+.nav--bet .btn-back {
+  visibility: visible;
+}
+.card-bet {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.stage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 720px) {
+  .stage-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.match-block {
+  background: var(--elev);
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 12px;
+}
+.match-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.match-row {
+  display: flex;
+  gap: 8px;
+}
+.match-row select {
+  flex: 1;
+}
+.preview {
+  white-space: pre-wrap;
+  background: var(--elev);
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 12px;
+  min-height: 220px;
+}
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+.btn-primary {
+  background: var(--text);
+  color: var(--bg);
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+}
+.panel-kpis {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), transparent);
+}
+.metrics-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+.metrics-grid {
+  display: grid;
+  gap: 12px;
+}
+.kpi-card {
+  background: var(--elev);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+.kpi-title {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+.kpi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.kpi-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--line);
+  padding: 4px 0;
+}
+.kpi-row:last-child {
+  border-bottom: none;
+}
+.kpi-name {
+  font-size: 14px;
+}
+.kpi-val {
+  font-variant-numeric: tabular-nums;
+}
+.kpi-foot {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.kpi-grid-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 900px) {
+  .kpi-grid-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card .card-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.btn-primary {
+  background: #10b981;
+  color: #0b1220;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+.btn-ghost:hover {
+  filter: brightness(1.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+#siteNav .brand {
+  display: none;
+}
+
+.nav--bet .btn-back {
+  visibility: visible;
+}
+
+#bettorName {
+  width: 100%;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card .card-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.card .countdown {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  border-top: 1px dashed var(--line);
+  padding-top: 2px;
+  margin: 2px 0 2px;
+}
+
+.card .card-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.btn-primary {
+  background: #10b981;
+  color: #0b1220;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.btn-primary[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 1024px) {
+  .card-bet .card-cover {
+    max-height: 220px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+.btn-ghost:hover {
+  filter: brightness(1.1);
+}
+
+.form-notice {
+  background: rgba(255, 99, 71, 0.12);
+  border: 1px solid rgba(255, 99, 71, 0.35);
+  color: #ff6547;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.form-notice.success {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #10b981;
+}
+.countdown {
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .carousel .card {
+    height: auto !important;
+    min-height: unset !important;
+    overflow: visible;
+  }
+  .carousel .card .card-cover {
+    max-height: 140px;
+    object-fit: cover;
+  }
+  .carousel .card .card-body {
+    padding-bottom: 12px;
+  }
+  .carousel .card .countdown {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    border-top: 1px dashed var(--line);
+    padding-top: 2px;
+    margin: 2px 0 2px;
+  }
+}
+
+.card .countdown {
+  font-size: clamp(12px, 3.2vw, 14px);
+}
+@media (max-width: 480px) {
+  .carousel .card .countdown {
+    font-size: clamp(11px, 4.2vw, 13px);
+  }
+}
+
+/* Centralizar infos do card no carrossel */
+.carousel .card .card-body {
+  align-items: center;
+}
+.carousel .card .card-title,
+.carousel .card .card-info,
+.carousel .card .countdown {
+  text-align: center;
+}
+
+.carousel .card .card-info {
+  align-items: center;
+}
+.carousel .card .card-info li {
+  text-align: center;
+}
+
+.bet-subtitle {
+  margin: 10px 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (min-width: 1024px) {
+  .bet-subtitle {
+    font-size: 18px;
+  }
+}
+
+.bet-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .bet-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card 1: mídia */
+.bet-card-media .card-cover {
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .bet-card-media .card-cover {
+    max-height: 220px;
+  }
+}
+.bet-card-media .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.bet-card-media .card-title {
+  text-align: center;
+}
+.bet-card-media .countdown {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  border-top: 1px dashed var(--line);
+  padding-top: 2px;
+  margin: 2px 0 2px;
+  font-size: clamp(12px, 3.2vw, 14px);
+}
+@media (max-width: 480px) {
+  .bet-card-media .countdown {
+    font-size: clamp(11px, 4.2vw, 13px);
+  }
+}
+
+/* Card 2: formulário */
+.bet-card-form .bet-subtitle {
+  margin: 10px 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (min-width: 1024px) {
+  .bet-card-form .bet-subtitle {
+    font-size: 18px;
+  }
+}
+
+.bet-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .bet-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.bet-card-preview .section-title {
+  margin: 10px 0 8px;
+}
+.bet-card-preview .preview {
+  min-height: 220px;
+}
+.bet-card-preview .form-actions {
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .bet-card-form .stage-grid {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 12px;
+    overflow-x: auto; 
+    overflow-y: visible;
+    padding-bottom: 8px; 
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+  }
+  .bet-card-form .stage-grid .match-block {
+    min-width: 280px; 
+    scroll-snap-align: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bet-card-form .stage-grid {
+    scrollbar-width: thin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bet-card-form .stage-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+  .bet-card-form .stage-grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .bet-card-form .stage-grid::-webkit-scrollbar-thumb {
+    background: var(--line);
+    border-radius: 8px;
+  }
+}
+
+
+/* ====== Layout PC: mídia à esquerda, prévia à direita, formulário embaixo ====== */
+/* Áreas de grid */
+.bet-card-media{ grid-area: media; }
+.bet-card-preview{ grid-area: preview; }
+.bet-card-form{ grid-area: form; }
+/* Ordem no mobile segue a ordem do HTML: media -> form -> preview */
+.bet-grid{ grid-template-areas: "media" "form" "preview"; }
+/* Desktop: duas colunas no topo e formulário embaixo ocupando toda a largura */
+@media (min-width:1024px){
+  .bet-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "media   preview"
+      "form    form";
+    align-items: start;
+  }
+  /* Formulário totalmente visível (sem scroll horizontal no desktop) */
+  .bet-card-form .stage-grid{
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 12px;
+    overflow: visible !important;
+    padding-bottom: 0 !important;
+    scroll-snap-type: none !important;
+  }
+  .bet-card-form .stage-grid .match-block{ min-width: 0 !important; }
+}
+
+/* Mapear cada card para uma área */
+.bet-card-form{    grid-area: form; }
+.bet-card-media{   grid-area: media; }
+.bet-card-preview{ grid-area: preview; }
+
+@media (min-width:1024px){
+  .bet-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "form   form"
+      "media  preview";
+    align-items: start;
+  }
+}

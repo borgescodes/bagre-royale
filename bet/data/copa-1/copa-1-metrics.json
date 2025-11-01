@@ -1,0 +1,77 @@
+{
+  "tournamentId": "copa-1",
+  "updatedAt": "2025-11-01T12:00:00-03:00",
+  "tickets": [
+    {
+      "name": "Fulano",
+      "token": "AB12CD34",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Felipão" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Felipão" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Person" }
+      }
+    },
+    {
+      "name": "Ciclana",
+      "token": "EF56GH78",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Vegê" },
+        "Q3": { "winner": "Felipão" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Person" },
+        "F1": { "champion": "Person" },
+        "T3": { "third": "Felipão" }
+      }
+    },
+    {
+      "name": "João",
+      "token": "JK90LM12",
+      "picks": {
+        "Q1": { "winner": "Wesl" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Felipão" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Felps" },
+        "S2": { "winner": "Felipão" },
+        "F1": { "champion": "Felipão" },
+        "T3": { "third": "Borges" }
+      }
+    },
+    {
+      "name": "Maria",
+      "token": "NP34QR56",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Felps" },
+        "S2": { "winner": "Person" },
+        "F1": { "champion": "Felps" },
+        "T3": { "third": "Lascanor" }
+      }
+    },
+    {
+      "name": "Pedro",
+      "token": "ST78UV90",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Felipão" },
+        "Q4": { "winner": "Person" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Person" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felipão" }
+      }
+    }
+  ],
+  "winners": []
+}
