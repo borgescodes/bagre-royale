@@ -114,7 +114,7 @@
         "T3": { "third": "Person" }
       }
     },
-        {
+    {
       "name": "Gaab",
       "token": "XJ8GQ2GX",
       "picks": {
@@ -126,6 +126,20 @@
         "S2": { "winner": "Lascanor" },
         "F1": { "champion": "Lascanor" },
         "T3": { "third": "Boaz" }
+      }
+    },
+    {
+      "name": "Kelly",
+      "token": "5RXBX9WS",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felps" }
       }
     }
   ],
