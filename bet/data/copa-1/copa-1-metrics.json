@@ -156,13 +156,55 @@
         "T3": { "third": "Lascanor" }
       }
     },
-        {
+    {
       "name": "Tiago",
       "token": "SW3HV7ZM",
       "picks": {
         "Q1": { "winner": "Borges" },
         "Q2": { "winner": "Felps" },
         "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Boaz" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Felps" }
+      }
+    },
+    {
+      "name": "Kauan",
+      "token": "2L2Z8RR8",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Borges" },
+        "T3": { "third": "Boaz" }
+      }
+    },
+    {
+      "name": "Ricardo",
+      "token": "TJ9CYWE9",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Lascanor" },
+        "Q4": { "winner": "Boaz" },
+        "S1": { "winner": "Borges" },
+        "S2": { "winner": "Lascanor" },
+        "F1": { "champion": "Lascanor" },
+        "T3": { "third": "Boaz" }
+      }
+    },
+    {
+      "name": "Ícaro",
+      "token": "DJBJS52G",
+      "picks": {
+        "Q1": { "winner": "Borges" },
+        "Q2": { "winner": "Felps" },
+        "Q3": { "winner": "Felipão" },
         "Q4": { "winner": "Boaz" },
         "S1": { "winner": "Borges" },
         "S2": { "winner": "Boaz" },
