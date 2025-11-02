@@ -875,3 +875,22 @@
   .btn-whats{ transition:none }
   .btn-whats:hover, .btn-whats:active{ transform:none }
 }
+
+/* passe dourado: texto com gradiente animado */
+.gold-pass{
+  background: linear-gradient(90deg,#8A6B13,#FFD700,#FFF3B0,#FFD700,#8A6B13);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gold-shimmer 3s linear infinite;
+  font-weight: 700;
+}
+@keyframes gold-shimmer{
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 200% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .gold-pass{ animation: none; }
+}

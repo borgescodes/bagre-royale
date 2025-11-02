@@ -14,6 +14,22 @@ const nick = params.get("nick") || "";
 const RAW_TOKEN = `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImE5ODEwNDA2LWE2YmItNDM4Ny1iNTZkLWExMDM3YWExMDU3MCIsImlhdCI6MTc2MTc0MjkyOCwic3ViIjoiZGV2ZWxvcGVyLzI3OTRlOTAzLWIxZWMt MDk4Ny01NjIzLWU3OTIzNjEwOTI3ZCIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIj pbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJja WRycyI6WyI0NS43OS4yMTguNzkiXSwidHlwZSI6ImNsaWVudCJ9XX0.kwTd90q8nbAWeDy4CswkrGR2dWQ4r4SCrkoRcYrWp6-T2CIrxtqqCHTOCuiePLETpIAwHCbfjf2J_o-cNXXe4g`;
 const TOKEN = RAW_TOKEN.replace(/\s+/g, "");
 
+/** Estiliza o nick em dourado quando o jogador tem "passe": true no players.json */
+async function applyPasseGold(currentName, currentTag){
+  try{
+    const res = await fetch('./players.json', {cache:'no-store'});
+    if(!res.ok) return;
+    const players = await res.json();
+    const norm = (s) => String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+    const hit = players.find(p => norm(p.displayName) === norm(currentName) || norm(p.tag) === norm(currentTag));
+    if(hit && hit.passe){
+      const el = document.querySelector('.nick');
+      if(el) el.classList.add('gold-pass');
+    }
+  }catch(_){}
+}
+
+
 function translateRole(role) {
   const m = {
     coLeader: "Colíder",
@@ -199,6 +215,7 @@ function renderHeader(data) {
       </div>
     </div>
   `;
+applyPasseGold(data.name, data.tag);
 }
 
 function renderClanInfo(data){

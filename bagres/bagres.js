@@ -52,7 +52,7 @@ async function loadPlayers(){
         <a class="player-card" href="${href}" aria-label="Ver ${alt}">
           <img src="${img}" alt="${alt}" loading="lazy" onerror="this.style.visibility='hidden'">
           <div class="info">
-            <strong class="name">${alt}</strong>
+            <strong class="name ${p.passe ? 'gold-pass' : ''}">${alt}</strong>
             <span class="tag">#${tag}</span>
           </div>
           <div class="right">
