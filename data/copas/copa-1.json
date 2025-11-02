@@ -65,13 +65,13 @@
           "name": "Person",
           "photo": "assets/bagres/person.webp",
           "score": 1,
-          "winner": true
+          "winner": false
         },
         "b": {
           "name": "Boaz",
           "photo": "assets/bagres/boaz.webp",
           "score": 2,
-          "winner": false
+          "winner": true
         }
       }
     ],
