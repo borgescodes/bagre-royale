@@ -122,10 +122,6 @@
       {
         "Investidor e Líder do Projeto": 1,
         "asset": "./titulos/staff.webp"
-      },
-      {
-        "PERDEDOR MÁXIMO DAS QUARTAS": 1,
-        "asset": "./titulos/copa-badge.webp"
       }
     ],
     "passe": true
