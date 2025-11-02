@@ -132,9 +132,8 @@
           ]
         },
         "a": {
-          "name": "Vencedor S1",
-          "photo": null,
-          "score": null,
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
           "winner": false
         },
         "b": {
