@@ -156,13 +156,13 @@
         "a": {
           "name": "Felps",
           "photo": "assets/bagres/felps.webp",
-          "score": null,
-          "winner": false
+          "score": 2,
+          "winner": true
         },
         "b": {
           "name": "Felipão",
           "photo": "assets/bagres/felipão.webp",
-          "score": null,
+          "score": 1,
           "winner": false
         }
       }
