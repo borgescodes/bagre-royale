@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Copa Bagre do Brasil",
+    "title": "Copa - 1ª Edição",
     "timezone": "America/Belem",
     "version": 5
   },
@@ -110,13 +110,13 @@
         "a": {
           "name": "Boaz",
           "photo": "assets/bagres/boaz.webp",
-          "score": null,
-          "winner": false
+          "score": 2,
+          "winner": true
         },
         "b": {
           "name": "Felipão",
           "photo": "assets/bagres/felipão.webp",
-          "score": null,
+          "score": 0,
           "winner": false
         }
       }
@@ -134,11 +134,12 @@
         "a": {
           "name": "Borges",
           "photo": "assets/bagres/borges.webp",
+          "score": null,
           "winner": false
         },
         "b": {
-          "name": "Vencedor S2",
-          "photo": null,
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
           "score": null,
           "winner": false
         }
@@ -153,14 +154,14 @@
           ]
         },
         "a": {
-          "name": "Perdedor S1",
-          "photo": null,
+          "name": "Felps",
+          "photo": "assets/bagres/felps.webp",
           "score": null,
           "winner": false
         },
         "b": {
-          "name": "Perdedor S1",
-          "photo": null,
+          "name": "Felipão",
+          "photo": "assets/bagres/felipão.webp",
           "score": null,
           "winner": false
         }
