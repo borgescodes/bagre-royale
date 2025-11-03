@@ -47,14 +47,14 @@
         "a": {
           "name": "Lascanor",
           "photo": "assets/bagres/lascanor.webp",
-          "score": null,
+          "score": 1,
           "winner": false
         },
         "b": {
           "name": "Felipão",
           "photo": "assets/bagres/felipão.webp",
-          "score": null,
-          "winner": false
+          "score": 2,
+          "winner": true
         }
       },
       {
