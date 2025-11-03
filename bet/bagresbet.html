@@ -26,10 +26,60 @@
     <main id="root">
       <!-- VIEW: HOME -->
       <section class="container section" id="homeView">
-        <div class="section-head">
-          <h2 class="section-title">Apostas Disponíveis</h2>
-        </div>
         <div id="bet-carousel" class="carousel" aria-live="polite"></div>
+
+        <section id="ticket-status-zone">
+          <div class="section-head space-top">
+            <h2 class="section-title">Ver Status do Meu Bilhete</h2>
+          </div>
+          <article class="panel">
+            <div class="panel-body">
+              <form
+                id="ticketStatusForm"
+                class="ticket-status-form"
+                onsubmit="return false;"
+              >
+                <div class="input-wrap" style="max-width: 360px">
+                  <label for="ticketToken">Token do bilhete</label><br />
+                  <input
+                    id="ticketToken"
+                    type="text"
+                    placeholder="Ex.: ABCD1234"
+                    maxlength="8"
+                    autofocus
+                  />
+                </div>
+                <div class="form-actions" style="margin-top: 10px">
+                  <button
+                    id="checkTicketBtn"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Buscar
+                  </button>
+                  <button
+                    id="clearTicketBtn"
+                    type="button"
+                    class="btn btn-ghost"
+                  >
+                    Limpar
+                  </button>
+                </div>
+              </form>
+
+              <div id="ticketStatusBox" class="ticket-status"></div>
+            </div>
+          </article>
+        </section>
+        <script>
+          (function () {
+            const inp = document.getElementById("ticketToken");
+            if (!inp) return;
+            inp.addEventListener("blur", () => {
+              inp.value = (inp.value || "").trim().toUpperCase();
+            });
+          })();
+        </script>
 
         <div class="section-head space-top">
           <h2 class="section-title">Resumo das Apostas</h2>
@@ -76,19 +126,36 @@
             <div class="card-body">
               <h3 class="section-title">Preencha seu Ticket:</h3>
 
-              <form id="betForm" onsubmit="return false;">
-                <!-- Campo de nome com estilo "antigo" -->
-                <div class="input-wrap" style="margin-bottom: 10px">
-                  <label for="bettorName">Apostador</label><br />
+              <form
+                id="ticketStatusForm"
+                class="ticket-status-form"
+                onsubmit="return false;"
+              >
+                <div class="input-wrap">
+                  <label for="ticketToken">Token do bilhete</label><br />
                   <input
-                    id="bettorName"
+                    id="ticketToken"
                     type="text"
-                    placeholder="Seu nome"
-                    required
+                    placeholder="Ex.: ABCD1234"
+                    maxlength="8"
                   />
                 </div>
-
-                <div id="stageSelectors" class="stage-grid"></div>
+                <div class="form-actions">
+                  <button
+                    id="checkTicketBtn"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Buscar
+                  </button>
+                  <button
+                    id="clearTicketBtn"
+                    type="button"
+                    class="btn btn-ghost"
+                  >
+                    Limpar
+                  </button>
+                </div>
               </form>
             </div>
           </article>

@@ -533,3 +533,348 @@
     align-items: start;
   }
 }
+
+
+/* --- Ticket Status (bagresbet) --- */
+.ticket-status {
+  margin-top: 12px;
+}
+.ticket-status .status-head {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.ticket-status .status-grid {
+  display: grid;
+  gap: 8px;
+}
+.ticket-status .row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.ticket-status .row.ok { border-color: rgba(34,197,94,.35); }
+.ticket-status .row.warn { border-color: rgba(255,210,103,.35); }
+.ticket-status .row.err { border-color: rgba(255,107,122,.35); }
+.ticket-status .row .match { color: var(--txt); }
+.ticket-status .row .your { color: var(--muted); font-size: 12px; }
+.ticket-status .row .pts { font-variant-numeric: tabular-nums; font-weight: 700; }
+.ticket-status .summary {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,255,255,.12);
+  color: var(--muted);
+  font-size: 12px;
+}
+.ticket-status .badge-level {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  font-size: 12px;
+}
+
+
+/* --- Ticket Status: estados e legenda --- */
+.ticket-status .row.pend { border-color: rgba(180,180,180,.25); opacity: .9; }
+.ticket-status .row .state {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.4;
+  border: 1px solid rgba(255,255,255,.12);
+  color: var(--muted);
+}
+.ticket-status .legend {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.ticket-status .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.ticket-status .legend-item .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.ticket-status .legend-item.ok .dot { background: rgba(34,197,94,.9); }
+.ticket-status .legend-item.warn .dot { background: rgba(255,210,103,.9); }
+.ticket-status .legend-item.err .dot { background: rgba(255,107,122,.9); }
+.ticket-status .legend-item.pend .dot { background: rgba(180,180,180,.9); }
+.ticket-status .status-head .muted { color: var(--muted); font-weight: 400; }
+
+
+/* Ticket form inline layout */
+.ticket-status-form{ display:flex; gap:8px; align-items:end; flex-wrap:nowrap; }
+.ticket-status-form .input-wrap{ min-width:220px; }
+.ticket-status-form .btn{ white-space:nowrap; }
+.ticket-status .status-head{ flex-wrap:nowrap; overflow-x:auto; }
+
+
+/* Ticket form responsivo e compacto */
+.ticket-status-form {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  flex-wrap: wrap;            /* permite quebra em telas pequenas */
+}
+.ticket-status-form .input-wrap {
+  min-width: 120px;
+  max-width: 160px;           /* token é 8 chars */
+  flex: 1 0 140px;
+}
+#ticketToken { width: 100%; }
+
+.ticket-status-form .form-actions {
+  display: flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+.ticket-status-form .btn {
+  white-space: nowrap;        /* títulos curtos não quebram */
+  flex: 0 1 auto;             /* evita estourar o card */
+}
+
+/* Cabeçalho do status em 1 linha, com fallback para wrap */
+.ticket-status .status-head {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  overflow-x: auto;           /* rolagem horizontal se necessário */
+}
+
+@media (max-width: 480px) {
+  .ticket-status-form { gap: 6px; }
+  .ticket-status .status-head { flex-wrap: wrap; }
+}
+
+
+.ticket-status .status-head { white-space: nowrap; }
+
+
+/* ===== Ranking parcial (zona de ganhadores) ===== */
+#winnersBox {
+  display: grid;
+  gap: 12px;
+}
+
+.ranking-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.ranking-head .section-title {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ranking-head .muted {
+  opacity: .7;
+  font-size: .8rem;
+}
+
+.ranking-list {
+  display: grid;
+  gap: 8px;
+}
+
+.ranking-row {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  background: rgba(255,255,255,.72);
+  backdrop-filter: saturate(120%) blur(4px);
+}
+
+@media (prefers-color-scheme: dark){
+  .ranking-row {
+    border-color: rgba(255,255,255,.10);
+    background: rgba(20,20,24,.6);
+  }
+}
+
+.rk-pos {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  border: 1px solid rgba(0,0,0,.1);
+  background: white;
+}
+
+@media (prefers-color-scheme: dark){
+  .rk-pos {
+    border-color: rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+  }
+}
+
+.rk-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-inline: 8px;
+}
+
+.rk-pts {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+/* Realce do 1º e 2º colocados */
+.ranking-row[data-pos="1"] {
+  border-color: rgba(234,179,8,.45);
+  box-shadow: 0 0 0 3px rgba(234,179,8,.10) inset;
+}
+.ranking-row[data-pos="1"] .rk-pos {
+  background: linear-gradient(180deg, #fff7d6, #f7e08a);
+}
+
+.ranking-row[data-pos="2"] {
+  border-color: rgba(148,163,184,.45);
+  box-shadow: 0 0 0 3px rgba(148,163,184,.12) inset;
+}
+.ranking-row[data-pos="2"] .rk-pos {
+  background: linear-gradient(180deg, #f5f7fa, #dfe6ee);
+}
+
+/* Toque sutil ao passar o mouse */
+.ranking-row:hover {
+  transform: translateY(-1px);
+  transition: transform .12s ease;
+}
+
+
+/* ===== Ajustes de contraste e premiação no ranking ===== */
+.ranking-bar{
+  display:flex;
+  gap:8px;
+  align-items:baseline;
+  font-size:.92rem;
+}
+.ranking-bar .sep{ opacity:.6; }
+
+.ranking-list{ gap:10px; }
+.ranking-row{
+  grid-template-columns: 44px 1fr auto auto;
+  column-gap: 12px;
+}
+
+.rk-pos{
+  color:#111;
+  background:#fffbea;
+  border-color:#eab308;
+}
+@media (prefers-color-scheme: dark){
+  .rk-pos{
+    color:#111;
+    background:#ffe9a6;
+    border-color:#f2c94c;
+  }
+}
+
+.rk-award{
+  font-weight:700;
+  padding:2px 8px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius: 999px;
+  background: #fff;
+}
+@media (prefers-color-scheme: dark){
+  .rk-award{
+    border-color: rgba(255,255,255,.16);
+    background: rgba(255,255,255,.08);
+  }
+}
+
+/* Card de aviso quando apostas estão encerradas */
+.card--notice {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 16px;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: saturate(120%) blur(4px);
+}
+@media (prefers-color-scheme: dark){
+  .card--notice{ border-color: rgba(255,255,255,.12); background: rgba(20,20,24,.6); }
+}
+
+.card--notice .notice-icon{
+  font-size: 24px;
+  line-height: 1;
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: #fff3c4;
+  border: 1px solid #eab308;
+  margin-bottom: 8px;
+}
+@media (prefers-color-scheme: dark){
+  .card--notice .notice-icon{ background: #ffe8a3; border-color:#f2c94c; }
+}
+
+.card--notice .card-title{ margin: 4px 0 6px; font-size: 1.125rem; }
+.card--notice .card-text{ margin: 0 0 8px; opacity: .9; }
+.card--notice .card-hints{ margin: 0 0 12px 18px; opacity: .85; }
+.card--notice .btn[disabled]{ cursor: not-allowed; opacity: .9; }
+
+/* Container sem carrossel: um único card responsivo */
+#bet-carousel{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+@media (min-width: 640px){
+  #bet-carousel{ justify-items: center; }
+  #bet-carousel > .card{ width: min(720px, 100%); }
+}
+
+/* Card de aviso */
+.card--notice{
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 16px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(120%) blur(4px);
+}
+@media (prefers-color-scheme: dark){
+  .card--notice{ border-color: rgba(255,255,255,.12); background: rgba(20,20,24,.6); }
+}
+.card--notice .notice-icon{
+  font-size: 24px; line-height: 1;
+  width: 36px; height: 36px; display: grid; place-items: center;
+  border-radius: 50%;
+  background: #fff3c4; border: 1px solid #eab308; margin-bottom: 8px;
+}
+@media (prefers-color-scheme: dark){
+  .card--notice .notice-icon{ background: #ffe8a3; border-color:#f2c94c; }
+}
+.card--notice .card-title{ margin: 4px 0 6px; font-size: 1.125rem; }
+.card--notice .card-text{ margin: 0 0 8px; opacity: .9; }
+.card--notice .card-hints{ margin: 0 0 12px 18px; opacity: .85; }
+.card--notice .btn[disabled]{ cursor: not-allowed; opacity: .9; }
+
+/* Opcional: se existir qualquer navegação de carrossel no CSS anterior, neutraliza */
+#bet-carousel .carousel-nav,
+#bet-carousel .swiper,
+#bet-carousel .splide,
+#bet-carousel .glide{ display: none !important; }
+
