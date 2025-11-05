@@ -147,7 +147,7 @@
   {
     "displayName": "Felipão",
     "tag": "#CUCPUY0RL",
-    "serie": "B",
+    "serie": "A",
     "titulos": 1,
     "asset": "../assets/bagres/felipão.webp",
     "titles": [
@@ -192,15 +192,6 @@
         "asset": "./titulos/bagre-royale.webp"
       }
     ],
-    "passe": false
-  },
-  {
-    "displayName": "Flakes Power",
-    "tag": "Mande um pix pro dev 💔",
-    "serie": "A",
-    "titulos": 2.5,
-    "asset": "../assets/bagres/flakes.webp",
-    "titles": [],
     "passe": false
   },
   {
