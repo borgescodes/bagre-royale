@@ -1,0 +1,227 @@
+/* rounds.css — single-line rows without horizontal scroll, responsive font sizing */
+
+/* Scope */
+#panelMatches #roundsZone {
+  color: var(--txt);
+}
+
+/* Grid of rounds */
+#panelMatches .rodadas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 640px) {
+  #panelMatches .rodadas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #panelMatches .rodadas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cards */
+#panelMatches .rodada-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+#panelMatches .rodada-top {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(
+      1200px 120px at -10% -40%,
+      rgba(98, 230, 255, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      1200px 120px at 110% -40%,
+      rgba(202, 166, 255, 0.1),
+      transparent 60%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+}
+#panelMatches .rodada-name {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  color: var(--txt);
+}
+#panelMatches .rodada-tag {
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  color: var(--txt);
+  border: 1px solid var(--line);
+  background: var(--elev);
+}
+
+/* Day */
+#panelMatches .day-block {
+  padding: 10px 12px 12px;
+}
+#panelMatches .day-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--muted);
+  margin: 6px 0 8px;
+}
+
+/* Games list */
+#panelMatches .games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* One-line item with responsive typography (no horizontal scroll) */
+#panelMatches .game-line {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+  overflow: hidden; /* no horizontal scroll */
+}
+@media (min-width: 1024px) {
+  #panelMatches .game-line {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
+
+#panelMatches .game-line:hover {
+  border-color: rgba(98, 230, 255, 0.35);
+  transform: translateY(-1px);
+  filter: saturate(108%);
+}
+
+#panelMatches .game-time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 4px 0;
+  background: var(--elev);
+  color: var(--txt);
+}
+
+/* Inline row: force a single line but scale text to fit via clamp */
+#panelMatches .game-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  /* Base font size scales with viewport; tune for mobile */
+  font-size: clamp(11px, 2.6vw, 15px);
+  line-height: 1.1;
+}
+@media (min-width: 480px) {
+  #panelMatches .game-row {
+    font-size: clamp(12px, 2vw, 16px);
+  }
+}
+@media (min-width: 1024px) {
+  #panelMatches .game-row {
+    font-size: clamp(12px, 1.3vw, 16px);
+  }
+}
+
+/* Make internal pieces inherit and compress spacing on small screens */
+#panelMatches .team {
+  font-weight: 800;
+  color: var(--txt);
+}
+#panelMatches .score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  min-width: 28px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--elev);
+}
+#panelMatches .vs {
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  padding: 0 8px;
+  border-radius: 999px;
+  color: var(--txt);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid var(--line);
+}
+
+/* Series accents for scores */
+#panelMatches .series-a .score-a {
+  background: rgba(98, 230, 255, 0.18);
+  border-color: rgba(98, 230, 255, 0.35);
+}
+#panelMatches .series-a .score-b {
+  background: rgba(202, 166, 255, 0.18);
+  border-color: rgba(202, 166, 255, 0.35);
+}
+#panelMatches .series-b .score-a {
+  background: rgba(202, 166, 255, 0.18);
+  border-color: rgba(202, 166, 255, 0.35);
+}
+#panelMatches .series-b .score-b {
+  background: rgba(98, 230, 255, 0.18);
+  border-color: rgba(98, 230, 255, 0.35);
+}
+
+/* Tighter layout on very small screens */
+@media (max-width: 380px) {
+  #panelMatches .game-line {
+    grid-template-columns: 52px minmax(0, 1fr);
+    padding: 10px;
+    gap: 10px;
+  }
+  #panelMatches .game-time {
+    padding: 2px 0;
+  }
+  #panelMatches .game-row {
+    gap: 8px;
+    font-size: clamp(11px, 3vw, 14px);
+  }
+  #panelMatches .score {
+    min-width: 24px;
+    height: 22px;
+    padding: 0 5px;
+  }
+}
+
+/* Empty */
+#panelMatches .rounds-empty {
+  padding: 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+}
+
+/* Layout fix: stack Ranking (top) and Matches (bottom) on desktop */
+.season-panels .grid-3 #panelRanking,
+.season-panels .grid-3 #panelMatches {
+  grid-column: 1 / -1; /* span full width -> stack */
+}

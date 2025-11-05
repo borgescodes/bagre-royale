@@ -36,12 +36,14 @@
     const v = String(s || "").toLowerCase();
     if (v === "finished" || v === "done" || v === "finalizado" || v === "concluido" || v === "concluído") return "done";
     if (v === "upcoming" || v === "em breve") return "upcoming";
+    // Novo: estados "em andamento"
+    if (v === "live" || v === "current" || v === "ongoing" || v === "em andamento") return "current";
     return "current";
   }
   function statusText(s) {
     if (s === "upcoming") return "Em breve";
     if (s === "done") return "Finalizado";
-    return "Atual";
+    return "Em andamento";
   }
 
   function mapTemporadas(t) {

@@ -3,7 +3,7 @@
   "season": "bagreleirao-b-1",
   "nome": "Bagreleirão Série B - 1ª Edição",
   "inicio": "2025-10-27",
-  "status": "upcoming",
+  "status": "finished",
   "cover": "assets/cards/serie-b.webp",
   "jogadores": [
     { "id": "Felps", "nome": "Felps" },

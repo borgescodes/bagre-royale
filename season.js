@@ -1,4 +1,13 @@
 (function(){ 
+function getEdition(s){
+  if (s && typeof s.edicao === "number") return s.edicao;
+  const id = s && s.season;
+  if (typeof id === "string"){
+    const m = id.match(/-(\d+)(?:\.json)?$/);
+    if (m) return parseInt(m[1], 10);
+  }
+  return 1;
+}
   const D = window.BAGRE_DATA || {};
   const E = window.BAGRE_ENGINE || {};
 
@@ -232,7 +241,9 @@
       if (D && Array.isArray(D.tournaments) && D.tournaments[0]) return normalizeFromLegacy(D.tournaments[0]);
       return null;
     }
-    const json = await fetchJSON(`data/${encodeURIComponent(id)}.json`);
+    let json = null;
+    try { json = await fetchJSON(`./${encodeURIComponent(id)}.json`); } catch(_e) {}
+    if (!json) { try { json = await fetchJSON(`data/${encodeURIComponent(id)}.json`); } catch(_e) {} }
     if (json) {
       const s = {
         season: json.season || id,
@@ -256,6 +267,13 @@
         destaques: json.destaques || null,
         config: json.config || { pontos: { vitoria: 3, empate: 1, derrota: 0 }, criterios: ["points","wins","gd","goalsFor","nameAsc"] }
       };
+
+      // normalização forte: usar o id da URL como season e deduzir edição
+      try {
+        const mId = String(id||"").match(/-(\d+)(?:\.json)?$/);
+        if (mId) s.edicao = Number(mId[1]);
+        s.season = String(id || s.season || "");
+      } catch(_) {}
       if (!s.jogadores.length) s.jogadores = derivePlayers(s);
       if (!s.ranking || !s.ranking.length) s.ranking = computeRanking(s);
       else s.ranking = enrichRanking(s.ranking, s);
@@ -319,6 +337,28 @@
   }
 
   function renderMatches(s){
+
+  // edição >= 2: substitui por cronograma de rodadas e oculta tabela legada
+  try {
+    if (typeof getEdition === "function" && getEdition(s) >= 2) {
+      const panel = document.querySelector("#panelMatches");
+      if (!panel) return;
+      const body = panel.querySelector(".panel-body") || panel;
+      // oculta qualquer tabela legada visível
+      const legacyTable = panel.querySelector("#matchesTable");
+      if (legacyTable) { legacyTable.style.display = "none"; }
+      // se rounds.js estiver disponível, renderiza a zona de rodadas
+      if (window.Rounds && window.Rounds.render) {
+        body.innerHTML = "";
+        return Promise.resolve(window.Rounds.render(panel, s)).catch(err => console.warn("Rounds.render falhou:", err));
+      }
+      // fallback: sem rounds, não mostra tabela antiga
+      body.innerHTML = "";
+      return;
+    }
+  } catch(_) {}
+
+
     const panel = qs("#panelMatches");
     const tbody = qs("#matchesTable tbody");
     if (!panel || !tbody) return;
@@ -338,6 +378,15 @@
   }
 
   function renderSummary(s){
+// edição >= 2: esconde "Resumo"
+  try {
+    if (typeof getEdition === "function" && getEdition(s) >= 2) {
+      const panel = document.querySelector("#panelResumo");
+      if (panel) panel.style.display = "none";
+      return;
+    }
+  } catch(_) {}
+
     const panel = qs("#panelResumo");
     const box = qs("#seasonSummary");
     if (!panel || !box) return;
@@ -357,6 +406,15 @@
   }
 
   function renderHighlights(s){
+// edição >= 2: esconde "Destaques"
+  try {
+    if (typeof getEdition === "function" && getEdition(s) >= 2) {
+      const panel = document.querySelector("#panelDestaques");
+      if (panel) panel.style.display = "none";
+      return;
+    }
+  } catch(_) {}
+
     const panel = qs("#panelDestaques");
     const box = qs("#seasonHighlights");
     if (!panel || !box) return;

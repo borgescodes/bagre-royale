@@ -1,0 +1,94 @@
+{
+  "schema": "v2-schedule",
+  "serie": "A",
+  "edicao": 2,
+  "rodadas": [
+    {
+      "id": 1,
+      "titulo": "Rodada 1",
+      "dias": [
+        {
+          "label": "QUARTA FEIRA - 05/11",
+          "jogos": [
+            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Felps",   "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Felipão",  "awayId": "Person",  "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Lascanor", "awayId": "Boaz",    "placar": "?x?" },
+            { "hora": "23:00", "homeId": "Borges",   "awayId": "Bad",     "placar": "?x?" }
+          ]
+        },
+        {
+          "label": "DOMINGO - 09/11",
+          "jogos": [
+            { "hora": "14:00", "homeId": "Boaz",     "awayId": "Felipão", "placar": "?x?" },
+            { "hora": "14:20", "homeId": "Vegê",     "awayId": "Borges",  "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Bad",      "awayId": "Lascanor","placar": "?x?" },
+            { "hora": "15:00", "homeId": "Person",   "awayId": "Felps",   "placar": "?x?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Rodada 2",
+      "dias": [
+        {
+          "label": "QUARTA FEIRA - 12/11",
+          "jogos": [
+            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Person",  "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Felps",    "awayId": "Boaz",    "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Felipão",  "awayId": "Bad",     "placar": "?x?" },
+            { "hora": "23:00", "homeId": "Lascanor", "awayId": "Borges",  "placar": "?x?" }
+          ]
+        },
+        {
+          "label": "DOMINGO - 16/11",
+          "jogos": [
+            { "hora": "14:00", "homeId": "Bad",      "awayId": "Felps",   "placar": "?x?" },
+            { "hora": "14:20", "homeId": "Borges",   "awayId": "Felipão", "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Vegê",     "awayId": "Lascanor","placar": "?x?" },
+            { "hora": "15:00", "homeId": "Boaz",     "awayId": "Person",  "placar": "?x?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Rodada 3",
+      "dias": [
+        {
+          "label": "QUARTA FEIRA - 19/11",
+          "jogos": [
+            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Boaz",    "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Person",   "awayId": "Bad",     "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Felps",    "awayId": "Borges",  "placar": "?x?" },
+            { "hora": "23:00", "homeId": "Felipão",  "awayId": "Lascanor","placar": "?x?" }
+          ]
+        },
+        {
+          "label": "DOMINGO - 23/11",
+          "jogos": [
+            { "hora": "14:00", "homeId": "Vegê",     "awayId": "Felipão", "placar": "?x?" },
+            { "hora": "14:20", "homeId": "Lascanor", "awayId": "Felps",   "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Borges",   "awayId": "Person",  "placar": "?x?" },
+            { "hora": "15:00", "homeId": "Bad",      "awayId": "Boaz",    "placar": "?x?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Rodada 4",
+      "dias": [
+        {
+          "label": "DOMINGO - 30/11",
+          "jogos": [
+            { "hora": "14:00", "homeId": "Vegê",     "awayId": "Bad",     "placar": "?x?" },
+            { "hora": "14:20", "homeId": "Boaz",     "awayId": "Borges",  "placar": "?x?" },
+            { "hora": "14:40", "homeId": "Person",   "awayId": "Lascanor","placar": "?x?" },
+            { "hora": "15:00", "homeId": "Felps",    "awayId": "Felipão", "placar": "?x?" }
+          ]
+        }
+      ]
+    }
+  ]
+}

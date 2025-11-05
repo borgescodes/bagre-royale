@@ -4,10 +4,10 @@
     {
       "id": "copa-1",
       "name": "1° Edição Copa Bagre do Brasil",
-      "cover": "assets/cards/miniaturas/copa-card.webp",
+      "cover": "assets/cards/miniaturas/copa-card-f.webp",
       "logo":  "assets/cards/copa.webp",
       "date": "2025-11-02",
-      "status": "upcoming"
+      "status": "finished"
     },
     {
       "id": "estrategico-1",

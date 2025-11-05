@@ -2,7 +2,7 @@
   "schema": "v1",
   "season": "bagreleirao-a-2",
   "nome": "Bagreleirão Série A - 2ª Edição",
-  "inicio": "2025-11-09",
+  "inicio": "2025-11-06",
   "cover": "assets/cards/serie-a-2.webp",
   "status": "upcoming",
   "jogadores": [
@@ -12,11 +12,10 @@
     { "id": "Felps", "nome": "Felps" },
     { "id": "Lascanor", "nome": "Lascanor" },
     { "id": "Vegê", "nome": "Vegê" },
-    { "id": "Boaz", "nome": "Boaz" }
+    { "id": "Boaz", "nome": "Boaz" },
+    { "id": "Felipão", "nome": "Felipão" }
   ],
-  "jogos": [],
-  "resumo": "",
-  "destaques": "Em Breve..."
+  "jogos": []
 }
 
 
