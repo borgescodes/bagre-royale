@@ -11,18 +11,18 @@
           "label": "QUINTA FEIRA - 06/11",
           "jogos": [
             { "hora": "22:00", "homeId": "Dan",     "awayId": "Gaab",     "placar": "?x?" },
-            { "hora": "22:20", "homeId": "Ricardo", "awayId": "2° Vaga",  "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Ricardo", "awayId": "Lobato",  "placar": "?x?" },
             { "hora": "22:40", "homeId": "Bruno",   "awayId": "Barnes",   "placar": "?x?" },
-            { "hora": "23:00", "homeId": "1° Vaga", "awayId": "Wesl",     "placar": "?x?" }
+            { "hora": "23:00", "homeId": "Mc Kaua", "awayId": "Wesl",     "placar": "?x?" }
           ]
         },
         {
           "label": "DOMINGO - 09/11",
           "jogos": [
             { "hora": "15:00", "homeId": "Barnes",  "awayId": "Ricardo",  "placar": "?x?" },
-            { "hora": "15:20", "homeId": "Dan",     "awayId": "1° Vaga",  "placar": "?x?" },
+            { "hora": "15:20", "homeId": "Dan",     "awayId": "Mc Kaua",  "placar": "?x?" },
             { "hora": "15:40", "homeId": "Wesl",    "awayId": "Bruno",    "placar": "?x?" },
-            { "hora": "16:00", "homeId": "2° Vaga", "awayId": "Gaab",     "placar": "?x?" }
+            { "hora": "16:00", "homeId": "Lobato", "awayId": "Gaab",     "placar": "?x?" }
           ]
         }
       ]
@@ -34,19 +34,19 @@
         {
           "label": "QUINTA FEIRA - 13/11",
           "jogos": [
-            { "hora": "22:00", "homeId": "Dan",     "awayId": "2° Vaga",  "placar": "?x?" },
+            { "hora": "22:00", "homeId": "Dan",     "awayId": "Lobato",  "placar": "?x?" },
             { "hora": "22:20", "homeId": "Gaab",    "awayId": "Barnes",   "placar": "?x?" },
             { "hora": "22:40", "homeId": "Ricardo", "awayId": "Wesl",     "placar": "?x?" },
-            { "hora": "23:00", "homeId": "Bruno",   "awayId": "1° Vaga",  "placar": "?x?" }
+            { "hora": "23:00", "homeId": "Bruno",   "awayId": "Mc Kaua",  "placar": "?x?" }
           ]
         },
         {
           "label": "DOMINGO - 16/11",
           "jogos": [
             { "hora": "15:00", "homeId": "Wesl",    "awayId": "Gaab",     "placar": "?x?" },
-            { "hora": "15:20", "homeId": "1° Vaga", "awayId": "Ricardo",  "placar": "?x?" },
+            { "hora": "15:20", "homeId": "Mc Kaua", "awayId": "Ricardo",  "placar": "?x?" },
             { "hora": "15:40", "homeId": "Dan",     "awayId": "Bruno",    "placar": "?x?" },
-            { "hora": "16:00", "homeId": "Barnes",  "awayId": "2° Vaga",  "placar": "?x?" }
+            { "hora": "16:00", "homeId": "Barnes",  "awayId": "Lobato",  "placar": "?x?" }
           ]
         }
       ]
@@ -59,15 +59,15 @@
           "label": "QUINTA FEIRA - 20/11",
           "jogos": [
             { "hora": "22:00", "homeId": "Dan",     "awayId": "Barnes",   "placar": "?x?" },
-            { "hora": "22:20", "homeId": "2° Vaga", "awayId": "Wesl",     "placar": "?x?" },
-            { "hora": "22:40", "homeId": "Gaab",    "awayId": "1° Vaga",  "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Lobato", "awayId": "Wesl",     "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Gaab",    "awayId": "Mc Kaua",  "placar": "?x?" },
             { "hora": "23:00", "homeId": "Ricardo", "awayId": "Bruno",    "placar": "?x?" }
           ]
         },
         {
           "label": "DOMINGO - 23/11",
           "jogos": [
-            { "hora": "15:00", "homeId": "1° Vaga", "awayId": "2° Vaga",  "placar": "?x?" },
+            { "hora": "15:00", "homeId": "Mc Kaua", "awayId": "Lobato",  "placar": "?x?" },
             { "hora": "15:20", "homeId": "Bruno",   "awayId": "Gaab",     "placar": "?x?" },
             { "hora": "15:40", "homeId": "Dan",     "awayId": "Ricardo",  "placar": "?x?" },
             { "hora": "16:00", "homeId": "Wesl",    "awayId": "Barnes",   "placar": "?x?" }
@@ -83,8 +83,8 @@
           "label": "DOMINGO - 30/11",
           "jogos": [
             { "hora": "15:00", "homeId": "Dan",     "awayId": "Wesl",     "placar": "?x?" },
-            { "hora": "15:20", "homeId": "Barnes",  "awayId": "1° Vaga",  "placar": "?x?" },
-            { "hora": "15:40", "homeId": "2° Vaga", "awayId": "Bruno",    "placar": "?x?" },
+            { "hora": "15:20", "homeId": "Barnes",  "awayId": "Mc Kaua",  "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Lobato", "awayId": "Bruno",    "placar": "?x?" },
             { "hora": "16:00", "homeId": "Gaab",    "awayId": "Ricardo",  "placar": "?x?" }
           ]
         }
