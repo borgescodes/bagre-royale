@@ -8,7 +8,8 @@
   "jogadores": [
     { "id": "Gaab", "nome": "Gaab" },
     { "id": "Wesl", "nome": "Wesl" },
-    { "id": "Foox", "nome": "Foox" },
+    { "id": "1° Vaga", "nome": "1° Vaga" },
+    { "id": "2° Vaga", "nome": "2° Vaga" },
     { "id": "Felipão", "nome": "Felipão" },
     { "id": "Ricardo", "nome": "Ricardo" },
     { "id": "Dan", "nome": "Dan" },
@@ -17,5 +18,3 @@
   "jogos": [],
   "destaques": "Em breve..."
 }
-
-
