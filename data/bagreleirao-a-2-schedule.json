@@ -10,7 +10,7 @@
         {
           "label": "QUARTA FEIRA - 05/11",
           "jogos": [
-            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Felps",   "placar": "?x?" },
+            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Felps",   "placar": "0x0" },
             { "hora": "22:20", "homeId": "Felipão",  "awayId": "Person",  "placar": "1x2" },
             { "hora": "22:40", "homeId": "Lascanor", "awayId": "Boaz",    "placar": "0x2" },
             { "hora": "23:00", "homeId": "Borges",   "awayId": "Bad",     "placar": "2x1" }
