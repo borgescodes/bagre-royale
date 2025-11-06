@@ -15,7 +15,9 @@
     { "id": "Boaz", "nome": "Boaz" },
     { "id": "Felipão", "nome": "Felipão" }
   ],
-  "jogos": []
+  "jogos": [
+    { "homeId": "Felipão", "awayId": "Person", "homeScore": 1, "awayScore": 2}
+  ]
 }
 
 
