@@ -222,7 +222,7 @@
         "asset": "./titulos/bagre-royale.webp"
       }
     ],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "João",
@@ -239,7 +239,12 @@
     "serie": "B",
     "titulos": 0,
     "asset": "../assets/bagres/kaua.webp",
-    "titles": [],
+    "titles": [
+      {
+        "Campeão QUALIFERS - SÉRIE B": 1,
+        "asset": "./titulos/serie-b.webp"
+      }
+    ],
     "passe": false
   },
   {
