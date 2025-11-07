@@ -10,11 +10,13 @@
     { "id": "Wesl", "nome": "Wesl" },
     { "id": "Mc Kaua", "nome": "Mc Kaua" },
     { "id": "Lobato", "nome": "Lobato" },
-    { "id": "C. Barnes", "nome": "C. Barnes" },
+    { "id": "Barnes", "nome": "Barnes" },
     { "id": "Ricardo", "nome": "Ricardo" },
     { "id": "Dan", "nome": "Dan" },
     { "id": "Bruno", "nome": "Bruno" }
   ],
-  "jogos": [],
-  "destaques": "Em breve..."
+  "jogos": [
+            { "hora": "22:00", "homeId": "Barnes", "awayId": "Bruno", "placar": "2x0" },
+            { "hora": "22:20", "homeId": "Wesl", "awayId": "Mc Kaua", "placar": "0x1" }
+  ]
 }
