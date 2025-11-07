@@ -96,7 +96,7 @@
     "titulos": 0,
     "asset": "../assets/bagres/ricardo.webp",
     "titles": [],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "Gaab",
