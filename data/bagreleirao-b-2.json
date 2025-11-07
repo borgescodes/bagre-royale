@@ -16,7 +16,7 @@
     { "id": "Bruno", "nome": "Bruno" }
   ],
   "jogos": [
-            { "hora": "22:00", "homeId": "Barnes", "awayId": "Bruno", "placar": "2x0" },
-            { "hora": "22:20", "homeId": "Wesl", "awayId": "Mc Kaua", "placar": "0x1" }
+    { "homeId": "Barnes", "awayId": "Bruno", "homeScore": 2, "awayScore": 0 },
+    { "homeId": "Wesl", "awayId": "Mc Kaua", "homeScore": 0, "awayScore": 2 }
   ]
 }
