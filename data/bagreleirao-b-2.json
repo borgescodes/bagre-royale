@@ -17,6 +17,7 @@
   ],
   "jogos": [
     { "homeId": "Barnes", "awayId": "Bruno", "homeScore": 2, "awayScore": 0 },
-    { "homeId": "Wesl", "awayId": "Mc Kaua", "homeScore": 0, "awayScore": 2 }
+    { "homeId": "Wesl", "awayId": "Mc Kaua", "homeScore": 0, "awayScore": 2 },
+    { "homeId": "Ricardo", "awayId": "Lobato", "homeScore": 2, "awayScore": 1 }
   ]
 }
