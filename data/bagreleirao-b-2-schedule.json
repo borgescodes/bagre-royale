@@ -21,7 +21,7 @@
           "jogos": [
             { "hora": "15:00", "homeId": "Barnes",  "awayId": "Ricardo",  "placar": "?x?" },
             { "hora": "15:20", "homeId": "Dan",     "awayId": "Mc Kaua",  "placar": "?x?" },
-            { "hora": "15:40", "homeId": "Wesl",    "awayId": "Bruno",    "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Wesl",    "awayId": "Bruno",    "placar": "2x1" },
             { "hora": "16:00", "homeId": "Lobato", "awayId": "Gaab",     "placar": "?x?" }
           ]
         }
