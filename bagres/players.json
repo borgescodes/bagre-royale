@@ -15,7 +15,7 @@
     "titulos": 0,
     "asset": "../assets/bagres/bruno.webp",
     "titles": [],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "Kenedy",
@@ -124,7 +124,7 @@
         "asset": "./titulos/staff.webp"
       }
     ],
-    "passe": true
+    "passe": false
   },
   {
     "displayName": "Felps",
