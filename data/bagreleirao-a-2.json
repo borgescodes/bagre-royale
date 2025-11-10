@@ -4,7 +4,7 @@
   "nome": "Bagreleirão Série A - 2ª Edição",
   "inicio": "2025-11-06",
   "cover": "assets/cards/serie-a-2.webp",
-  "status": "upcoming",
+  "status": "live",
   "jogadores": [
     { "id": "Borges", "nome": "Borges" },
     { "id": "Bad", "nome": "Bad" },
@@ -21,7 +21,8 @@
     { "homeId": "Lascanor", "awayId": "Boaz", "homeScore": 0, "awayScore": 2},
     { "homeId": "Vegê", "awayId": "Felps", "homeScore": 1, "awayScore": 2},
     { "homeId": "Person", "awayId": "Felps", "homeScore": 0, "awayScore": 2},
-    { "homeId": "Lascanor", "awayId": "Bad", "homeScore": 1, "awayScore": 2}
+    { "homeId": "Lascanor", "awayId": "Bad", "homeScore": 1, "awayScore": 2},
+    { "homeId": "Felipão", "awayId": "Boaz", "homeScore": 1, "awayScore": 2}
   ]
 }
 

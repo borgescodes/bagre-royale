@@ -3,7 +3,7 @@
   "season": "bagreleirao-b-2",
   "nome": "Bagreleirão Série B - 2ª Edição",
   "inicio": "2025-11-07",
-  "status": "upcoming",
+  "status": "live",
   "cover": "assets/cards/serie-b-2.webp",
   "jogadores": [
     { "id": "Gaab", "nome": "Gaab" },
