@@ -59,7 +59,7 @@
         "asset": "./titulos/bagre-royale.webp"
       }
     ],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "Vg",
@@ -124,7 +124,7 @@
         "asset": "./titulos/staff.webp"
       }
     ],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "Felps",
