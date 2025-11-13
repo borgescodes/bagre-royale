@@ -36,7 +36,7 @@
           "jogos": [
             { "hora": "22:00", "homeId": "Vegê",     "awayId": "Person",  "placar": "2x1" },
             { "hora": "22:20", "homeId": "Felps",    "awayId": "Boaz",    "placar": "0x2" },
-            { "hora": "22:40", "homeId": "Felipão",  "awayId": "Bad",     "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Felipão",  "awayId": "Bad",     "placar": "2x0" },
             { "hora": "23:00", "homeId": "Lascanor", "awayId": "Borges",  "placar": "?x?" }
           ]
         },
