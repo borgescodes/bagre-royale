@@ -35,7 +35,7 @@
           "label": "QUINTA FEIRA - 13/11",
           "jogos": [
             { "hora": "22:00", "homeId": "Dan",     "awayId": "Lobato",  "placar": "0x2" },
-            { "hora": "22:20", "homeId": "Gaab",    "awayId": "Barnes",   "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Gaab",    "awayId": "Barnes",   "placar": "1x2" },
             { "hora": "22:40", "homeId": "Ricardo", "awayId": "Wesl",     "placar": "?x?" },
             { "hora": "23:00", "homeId": "Bruno",   "awayId": "Mc Kaua",  "placar": "?x?" }
           ]
