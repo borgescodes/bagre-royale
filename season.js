@@ -448,6 +448,7 @@ function getEdition(s){
     const ul = el("ul");
     ul.appendChild(el("li", null, ["Pontuação: PTS = 3 por vitória de série + DV (1 ponto por duelo vencido)."]));
     ul.appendChild(el("li", null, ["DV = soma de duelos vencidos no placar."]));
+    ul.appendChild(el("li", null, ["S = saldo de duelos vencidos no placar."]));
     if (isA) {
       ul.appendChild(el("li", null, ["G4: posições 1–4 classificados para a Copa Bagre do Brasil."]));
       ul.appendChild(el("li", null, ["Rebaixamento: últimos 2 caem quando houver 6 ou mais participantes."]));
