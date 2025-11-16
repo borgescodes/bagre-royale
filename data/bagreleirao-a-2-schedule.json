@@ -45,8 +45,8 @@
           "jogos": [
             { "hora": "14:00", "homeId": "Bad",      "awayId": "Felps",   "placar": "0x2" },
             { "hora": "14:20", "homeId": "Borges",   "awayId": "Felipão", "placar": "?x?" },
-            { "hora": "14:40", "homeId": "Vegê",     "awayId": "Lascanor","placar": "?x?" },
-            { "hora": "15:00", "homeId": "Boaz",     "awayId": "Person",  "placar": "?x?" }
+            { "hora": "14:40", "homeId": "Vegê",     "awayId": "Lascanor","placar": "2x0" },
+            { "hora": "15:00", "homeId": "Boaz",     "awayId": "Person",  "placar": "?1x2" }
           ]
         }
       ]
