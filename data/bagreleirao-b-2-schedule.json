@@ -46,7 +46,7 @@
             { "hora": "15:00", "homeId": "Wesl",    "awayId": "Gaab",     "placar": "1x2" },
             { "hora": "15:20", "homeId": "Mc Kaua", "awayId": "Ricardo",  "placar": "2x0" },
             { "hora": "15:40", "homeId": "Dan",     "awayId": "Bruno",    "placar": "2x0" },
-            { "hora": "16:00", "homeId": "Barnes",  "awayId": "Lobato",  "placar": "?x?" }
+            { "hora": "16:00", "homeId": "Barnes",  "awayId": "Lobato",  "placar": "1x2" }
           ]
         }
       ]
