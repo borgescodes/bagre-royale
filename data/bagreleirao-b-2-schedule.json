@@ -61,14 +61,14 @@
             { "hora": "22:00", "homeId": "Dan",     "awayId": "Barnes",   "placar": "?x?" },
             { "hora": "22:20", "homeId": "Lobato", "awayId": "Wesl",     "placar": "?x?" },
             { "hora": "22:40", "homeId": "Gaab",    "awayId": "Mc Kaua",  "placar": "?x?" },
-            { "hora": "23:00", "homeId": "Ricardo", "awayId": "Bruno",    "placar": "?x?" }
+            { "hora": "23:00", "homeId": "Ricardo", "awayId": "Bruno",    "placar": "0x2" }
           ]
         },
         {
           "label": "DOMINGO - 23/11",
           "jogos": [
             { "hora": "15:00", "homeId": "Mc Kaua", "awayId": "Lobato",  "placar": "?x?" },
-            { "hora": "15:20", "homeId": "Bruno",   "awayId": "Gaab",     "placar": "?x?" },
+            { "hora": "15:20", "homeId": "Bruno",   "awayId": "Gaab",     "placar": "0x2" },
             { "hora": "15:40", "homeId": "Dan",     "awayId": "Ricardo",  "placar": "?x?" },
             { "hora": "16:00", "homeId": "Wesl",    "awayId": "Barnes",   "placar": "?x?" }
           ]
@@ -84,7 +84,7 @@
           "jogos": [
             { "hora": "15:00", "homeId": "Dan",     "awayId": "Wesl",     "placar": "?x?" },
             { "hora": "15:20", "homeId": "Barnes",  "awayId": "Mc Kaua",  "placar": "?x?" },
-            { "hora": "15:40", "homeId": "Lobato", "awayId": "Bruno",    "placar": "?x?" },
+            { "hora": "15:40", "homeId": "Lobato", "awayId": "Bruno",    "placar": "0x2" },
             { "hora": "16:00", "homeId": "Gaab",    "awayId": "Ricardo",  "placar": "?x?" }
           ]
         }
