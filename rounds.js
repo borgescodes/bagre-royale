@@ -1,6 +1,5 @@
 
 (function(){
-  // Small DOM helper
   function el(tag, attrs = {}, children = []){
     const n = document.createElement(tag);
     if (attrs && typeof attrs === "object"){
