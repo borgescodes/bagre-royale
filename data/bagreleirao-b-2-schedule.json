@@ -59,7 +59,7 @@
           "label": "QUINTA FEIRA - 20/11",
           "jogos": [
             { "hora": "22:00", "homeId": "Dan",     "awayId": "Barnes",   "placar": "?x?" },
-            { "hora": "22:20", "homeId": "Lobato", "awayId": "Wesl",     "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Lobato", "awayId": "Wesl",     "placar": "2x0" },
             { "hora": "22:40", "homeId": "Gaab",    "awayId": "Mc Kaua",  "placar": "?x?" },
             { "hora": "23:00", "homeId": "Ricardo", "awayId": "Bruno",    "placar": "2x0" }
           ]
