@@ -31,7 +31,7 @@
     { "homeId": "Bad", "awayId": "Felps", "homeScore": 0, "awayScore": 2},
     { "homeId": "Person", "awayId": "Boaz", "homeScore": 2, "awayScore": 1},
     { "homeId": "Vegê", "awayId": "Lascanor", "homeScore": 2, "awayScore": 0},
-    { "homeId": "Borges", "awayId": "Felipão", "homeScore": 1, "awayScore": 2},
+    { "homeId": "Borges", "awayId": "Felipão", "homeScore": 0, "awayScore": 2},
     { "homeId": "Borges", "awayId": "Felps", "homeScore": 2, "awayScore": 0},
     { "homeId": "Bad", "awayId": "Person", "homeScore": 2, "awayScore": 1},
     { "homeId": "Lascanor", "awayId": "Felipão", "homeScore": 1, "awayScore": 2},
