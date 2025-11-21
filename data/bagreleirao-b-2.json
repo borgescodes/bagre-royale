@@ -35,6 +35,8 @@
     { "homeId": "Gaab", "awayId": "Bruno", "homeScore": 2, "awayScore": 0 },
     { "homeId": "Lobato", "awayId": "Bruno", "homeScore": 2, "awayScore": 0 },
     { "homeId": "Lobato", "awayId": "Barnes", "homeScore": 2, "awayScore": 1 },
-    { "homeId": "Lobato", "awayId": "Wesl", "homeScore": 2, "awayScore": 0 }
+    { "homeId": "Lobato", "awayId": "Wesl", "homeScore": 2, "awayScore": 0 },
+    { "homeId": "Dan", "awayId": "Barnes", "homeScore": 0, "awayScore": 2 },
+    { "homeId": "Gaab", "awayId": "Mc Kaua", "homeScore": 1, "awayScore": 2 }
   ]
 }
