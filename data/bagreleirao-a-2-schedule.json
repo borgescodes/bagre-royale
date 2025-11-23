@@ -4,56 +4,8 @@
   "edicao": 2,
   "rodadas": [
     {
-      "id": 1,
-      "titulo": "Rodada 1",
-      "dias": [
-        {
-          "label": "QUARTA FEIRA - 05/11",
-          "jogos": [
-            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Felps",   "placar": "1x2" },
-            { "hora": "22:20", "homeId": "Felipão",  "awayId": "Person",  "placar": "1x2" },
-            { "hora": "22:40", "homeId": "Lascanor", "awayId": "Boaz",    "placar": "0x2" },
-            { "hora": "23:00", "homeId": "Borges",   "awayId": "Bad",     "placar": "2x0" }
-          ]
-        },
-        {
-          "label": "DOMINGO - 09/11",
-          "jogos": [
-            { "hora": "14:00", "homeId": "Boaz",     "awayId": "Felipão", "placar": "2x1" },
-            { "hora": "14:20", "homeId": "Vegê",     "awayId": "Borges",  "placar": "0x2" },
-            { "hora": "14:40", "homeId": "Bad",      "awayId": "Lascanor","placar": "2x1" },
-            { "hora": "15:00", "homeId": "Person",   "awayId": "Felps",   "placar": "0x2" }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "titulo": "Rodada 2",
-      "dias": [
-        {
-          "label": "QUARTA FEIRA - 12/11",
-          "jogos": [
-            { "hora": "22:00", "homeId": "Vegê",     "awayId": "Person",  "placar": "2x1" },
-            { "hora": "22:20", "homeId": "Felps",    "awayId": "Boaz",    "placar": "0x2" },
-            { "hora": "22:40", "homeId": "Felipão",  "awayId": "Bad",     "placar": "2x0" },
-            { "hora": "23:00", "homeId": "Lascanor", "awayId": "Borges",  "placar": "0x2" }
-          ]
-        },
-        {
-          "label": "DOMINGO - 16/11",
-          "jogos": [
-            { "hora": "14:00", "homeId": "Bad",      "awayId": "Felps",   "placar": "0x2" },
-            { "hora": "14:20", "homeId": "Borges",   "awayId": "Felipão", "placar": "0x2" },
-            { "hora": "14:40", "homeId": "Vegê",     "awayId": "Lascanor","placar": "2x0" },
-            { "hora": "15:00", "homeId": "Boaz",     "awayId": "Person",  "placar": "1x2" }
-          ]
-        }
-      ]
-    },
-    {
       "id": 3,
-      "titulo": "Rodada 3",
+      "titulo": "Rodada anterior",
       "dias": [
         {
           "label": "QUARTA FEIRA - 19/11",
@@ -77,7 +29,7 @@
     },
     {
       "id": 4,
-      "titulo": "Rodada 4",
+      "titulo": "Rodada Final",
       "dias": [
         {
           "label": "DOMINGO - 30/11",

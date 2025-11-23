@@ -1,3 +1,8 @@
+/*
+    { "homeId": "Vegê", "awayId": "Bad", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Person", "awayId": "Lascanor", "homeScore": 0, "awayScore": 2},
+    { "homeId": "Boaz", "awayId": "Borges", "homeScore": 0, "awayScore": 2}
+*/
 (function () {
   const qs = (s, el = document) => el.querySelector(s);
   const qsa = (s, el = document) => [...el.querySelectorAll(s)];
