@@ -32,7 +32,7 @@
       "titulo": "Rodada Final",
       "dias": [
         {
-          "label": "DOMINGO - 30/11",
+          "label": "QUARTA FEIRA - 26/11",
           "jogos": [
             { "hora": "14:00", "homeId": "Vegê",     "awayId": "Bad",     "placar": "?x?" },
             { "hora": "14:20", "homeId": "Boaz",     "awayId": "Borges",  "placar": "?x?" },

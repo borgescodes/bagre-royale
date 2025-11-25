@@ -32,7 +32,7 @@
       "titulo": "Rodada Final",
       "dias": [
         {
-          "label": "DOMINGO - 30/11",
+          "label": "QUINTA FEIRA - 27/11",
           "jogos": [
             { "hora": "15:00", "homeId": "Dan",     "awayId": "Wesl",     "placar": "?x?" },
             { "hora": "15:20", "homeId": "Barnes",  "awayId": "Mc Kaua",  "placar": "?x?" },
