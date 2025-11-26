@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "title": "Copa - 2ª Edição",
+    "timezone": "America/Belem",
+    "version": 6
+  },
+  "rounds": {
+    "quartas": [
+      {
+        "id": "Q1",
+        "stage": "Q1",
+        "meta": {},
+        "a": {
+          "name": "1° - SÉRIE A",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "4° - SÉRIE B",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      },
+      {
+        "id": "Q2",
+        "stage": "Q2",
+        "meta": {},
+        "a": {
+          "name": "2° - SÉRIE B",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "3° - SÉRIE A",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      },
+      {
+        "id": "Q3",
+        "stage": "Q3",
+        "meta": {},
+        "a": {
+          "name": "1° - SÉRIE B",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "4° - SÉRIE A",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      },
+      {
+        "id": "Q4",
+        "stage": "Q4",
+        "meta": {},
+        "a": {
+          "name": "2° - SÉRIE A",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "3° - SÉRIE B",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      }
+    ],
+    "semis": [
+      {
+        "id": "S1",
+        "stage": "S1",
+        "meta": {
+          "from": [
+            "Q1",
+            "Q2"
+          ]
+        },
+        "a": {
+          "name": "VENCEDOR Q1",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "VENCEDOR Q2",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      },
+      {
+        "id": "S2",
+        "stage": "S2",
+        "meta": {
+          "from": [
+            "Q3",
+            "Q4"
+          ]
+        },
+        "a": {
+          "name": "VENCEDOR Q3",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "VENCEDOR Q4",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      }
+    ],
+    "final": [
+      {
+        "id": "F1",
+        "stage": "Final",
+        "meta": {
+          "from": [
+            "S1",
+            "S2"
+          ]
+        },
+        "a": {
+          "name": "VENCEDOR S1",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "VENCEDOR S2",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      },
+      {
+        "id": "3P",
+        "stage": "3º Lugar",
+        "meta": {
+          "fromLosers": [
+            "S1",
+            "S2"
+          ]
+        },
+        "a": {
+          "name": "PERDEDOR S1",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        },
+        "b": {
+          "name": "PERDEDOR S2",
+          "photo": "assets/bagres/.webp",
+          "score": "",
+          "winner": false
+        }
+      }
+    ]
+  }
+}

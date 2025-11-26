@@ -34,10 +34,10 @@
         {
           "label": "QUINTA FEIRA - 27/11",
           "jogos": [
-            { "hora": "15:00", "homeId": "Dan",     "awayId": "Wesl",     "placar": "?x?" },
-            { "hora": "15:20", "homeId": "Barnes",  "awayId": "Mc Kaua",  "placar": "?x?" },
-            { "hora": "15:40", "homeId": "Lobato", "awayId": "Bruno",    "placar": "2x0" },
-            { "hora": "16:00", "homeId": "Gaab",    "awayId": "Ricardo",  "placar": "?x?" }
+            { "hora": "22:00", "homeId": "Dan",     "awayId": "Wesl",     "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Barnes",  "awayId": "Mc Kaua",  "placar": "?x?" },
+            { "hora": "22:40", "homeId": "Lobato", "awayId": "Bruno",    "placar": "2x0" },
+            { "hora": "23:00", "homeId": "Gaab",    "awayId": "Ricardo",  "placar": "?x?" }
           ]
         }
       ]
