@@ -35,9 +35,9 @@
           "label": "QUARTA FEIRA - 26/11",
           "jogos": [
             { "hora": "22:00", "homeId": "Vegê",     "awayId": "Bad",     "placar": "?x?" },
-            { "hora": "22:20", "homeId": "Boaz",     "awayId": "Borges",  "placar": "?x?" },
+            { "hora": "22:20", "homeId": "Boaz",     "awayId": "Borges",  "placar": "0x2" },
             { "hora": "22:40", "homeId": "Person",   "awayId": "Lascanor","placar": "?x?" },
-            { "hora": "23:00", "homeId": "Felps",    "awayId": "Felipão", "placar": "?x?" }
+            { "hora": "23:00", "homeId": "Felps",    "awayId": "Felipão", "placar": "0x2" }
           ]
         }
       ]
