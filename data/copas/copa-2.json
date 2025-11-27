@@ -11,8 +11,8 @@
         "stage": "Q1",
         "meta": {},
         "a": {
-          "name": "1° - SÉRIE A",
-          "photo": "assets/bagres/.webp",
+          "name": "Borges",
+          "photo": "assets/bagres/borges.webp",
           "score": "",
           "winner": false
         },
@@ -34,8 +34,8 @@
           "winner": false
         },
         "b": {
-          "name": "3° - SÉRIE A",
-          "photo": "assets/bagres/.webp",
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
           "score": "",
           "winner": false
         }
@@ -51,8 +51,8 @@
           "winner": false
         },
         "b": {
-          "name": "4° - SÉRIE A",
-          "photo": "assets/bagres/.webp",
+          "name": "Felps",
+          "photo": "assets/bagres/felps.webp",
           "score": "",
           "winner": false
         }
@@ -62,8 +62,8 @@
         "stage": "Q4",
         "meta": {},
         "a": {
-          "name": "2° - SÉRIE A",
-          "photo": "assets/bagres/.webp",
+          "name": "Felipão",
+          "photo": "assets/bagres/felipão.webp",
           "score": "",
           "winner": false
         },
