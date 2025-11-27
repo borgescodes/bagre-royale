@@ -148,9 +148,13 @@
     "displayName": "Felipão",
     "tag": "#CUCPUY0RL",
     "serie": "A",
-    "titulos": 1,
+    "titulos": 2,
     "asset": "../assets/bagres/felipão.webp",
     "titles": [
+            {
+        "2° Lugar - SÉRIE A": 1,
+        "asset": "./titulos/serie-a.webp"
+      },
       {
         "3° Lugar - SÉRIE B": 1,
         "asset": "./titulos/serie-b.webp"
@@ -162,9 +166,13 @@
     "displayName": "Boaz",
     "tag": "#JR8Q0QY88",
     "serie": "A",
-    "titulos": 2,
+    "titulos": 3,
     "asset": "../assets/bagres/boaz.webp",
     "titles": [
+            {
+        "3° Lugar - SÉRIE A": 1,
+        "asset": "./titulos/serie-a.webp"
+      },
       {
         "2° Lugar - Copa Bagre": 1,
         "asset": "./titulos/copa-badge.webp"
@@ -198,7 +206,7 @@
     "displayName": "Borges",
     "tag": "#8RPRGP0G0",
     "serie": "A",
-    "titulos": 4,
+    "titulos": 5,
     "asset": "../assets/bagres/borges.webp",
     "titles": [
       {
@@ -214,7 +222,7 @@
         "asset": "./titulos/strategic.webp"
       },
       {
-        "Campeão - SÉRIE A": 1,
+        "Campeão - SÉRIE A": 2,
         "asset": "./titulos/serie-a.webp"
       },
       {
