@@ -452,6 +452,7 @@ function getEdition(s){
     if (isA) {
       ul.appendChild(el("li", null, ["G4: posições 1–4 classificados para a Copa Bagre do Brasil."]));
       ul.appendChild(el("li", null, ["Rebaixamento: últimos 2 caem quando houver 6 ou mais participantes."]));
+      ul.appendChild(el("li", null, ["Empates: usa-se primeiro o saldo de DV; se ainda houver empate, decide o confronto direto."]));
     } else {
       ul.appendChild(el("li", null, ["G4: posições 1–4 classificados para a Copa Bagre do Brasil."]));
       ul.appendChild(el("li", null, ["G2: posições 1–2 promovidos para a SÉRIE A do BAGRELEIRÃO."]));
