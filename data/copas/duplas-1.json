@@ -11,14 +11,14 @@
         "stage": "Q1",
         "meta": {},
         "a": {
-          "name": "Dupla 1",
-          "photo": "assets/bagres/.webp",
+          "name": "SocaForte",
+          "photo": "assets/duplas/socaforte.jpeg",
           "score": "",
           "winner": false
         },
         "b": {
-          "name": "Dupla 2",
-          "photo": "assets/bagres/.webp",
+          "name": "Trupe Fantasma",
+          "photo": "assets/duplas/trupe.jpeg",
           "score": "",
           "winner": false
         }
@@ -28,14 +28,14 @@
         "stage": "Q2",
         "meta": {},
         "a": {
-          "name": "Dupla 3",
-          "photo": "assets/bagres/.webp",
+          "name": "Agua de Chuca",
+          "photo": "assets/duplas/aguachuca.jpeg",
           "score": "",
           "winner": false
         },
         "b": {
-          "name": "Dupla 4",
-          "photo": "assets/bagres/.webp",
+          "name": "Tom & Jerry",
+          "photo": "assets/duplas/tomjerry.jpeg",
           "score": "",
           "winner": false
         }
@@ -45,14 +45,14 @@
         "stage": "Q3",
         "meta": {},
         "a": {
-          "name": "Dupla 5",
-          "photo": "assets/bagres/.webp",
+          "name": "Pançudos",
+          "photo": "assets/duplas/pancudos.jpeg",
           "score": "",
           "winner": false
         },
         "b": {
-          "name": "Dupla 6",
-          "photo": "assets/bagres/.webp",
+          "name": "Zeta",
+          "photo": "assets/duplas/zeta.jpeg",
           "score": "",
           "winner": false
         }
@@ -62,14 +62,14 @@
         "stage": "Q4",
         "meta": {},
         "a": {
-          "name": "Dupla 7",
-          "photo": "assets/bagres/.webp",
+          "name": "Não Grita",
+          "photo": "assets/duplas/naogrita.jpeg",
           "score": "",
           "winner": false
         },
         "b": {
-          "name": "Dupla 8",
-          "photo": "assets/bagres/.webp",
+          "name": "E Vai Tomando",
+          "photo": "assets/duplas/vaitomando.jpeg",
           "score": "",
           "winner": false
         }
