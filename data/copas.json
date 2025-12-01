@@ -7,14 +7,14 @@
       "cover": "assets/cards/miniaturas/camp-2v2-card.webp",
       "logo": "assets/cards/miniaturas/2v2-ico.webp",
       "date": "2025-11-31",
-      "status": "upcoming"
+      "status": "finished"
     },
     {
       "id": "copa-2",
       "name": "2° Edição Copa Bagre do Brasil",
       "cover": "assets/cards/copa-natalino-card.webp",
       "logo": "assets/cards/copa-natal.webp",
-      "date": "2025-12-01",
+      "date": "2025-12-07",
       "status": "upcoming"
     },
     {

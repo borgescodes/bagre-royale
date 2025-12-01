@@ -134,13 +134,13 @@
         "a": {
           "name": "Trupe Fantasma",
           "photo": "assets/duplas/trupe.jpeg",
-          "score": "",
-          "winner": false
+          "score": 1,
+          "winner": true
         },
         "b": {
           "name": "Não Grita",
           "photo": "assets/duplas/naogrita.jpeg",
-          "score": "",
+          "score": 0,
           "winner": false
         }
       },
