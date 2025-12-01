@@ -156,13 +156,13 @@
         "a": {
           "name": "Tom & Jerry",
           "photo": "assets/duplas/tomjerry.jpeg",
-          "score": "",
-          "winner": false
+          "score": 1,
+          "winner": true
         },
         "b": {
           "name": "Pançudos",
           "photo": "assets/duplas/pancudos.jpeg",
-          "score": "",
+          "score": 0,
           "winner": false
         }
       }
