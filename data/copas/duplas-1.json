@@ -88,13 +88,13 @@
         "a": {
           "name": "Trupe Fantasma",
           "photo": "assets/duplas/trupe.jpeg",
-          "score": "",
-          "winner": false
+          "score": 1,
+          "winner": true
         },
         "b": {
           "name": "Tom & Jerry",
           "photo": "assets/duplas/tomjerry.jpeg",
-          "score": "",
+          "score": 0,
           "winner": false
         }
       },
@@ -132,14 +132,14 @@
           ]
         },
         "a": {
-          "name": "VENCEDOR S1",
-          "photo": "assets/bagres/.webp",
+          "name": "Trupe Fantasma",
+          "photo": "assets/duplas/trupe.jpeg",
           "score": "",
           "winner": false
         },
         "b": {
-          "name": "VENCEDOR S2",
-          "photo": "assets/bagres/.webp",
+          "name": "Não Grita",
+          "photo": "assets/duplas/naogrita.jpeg",
           "score": "",
           "winner": false
         }
@@ -154,8 +154,8 @@
           ]
         },
         "a": {
-          "name": "PERDEDOR S1",
-          "photo": "assets/bagres/.webp",
+          "name": "Tom & Jerry",
+          "photo": "assets/duplas/tomjerry.jpeg",
           "score": "",
           "winner": false
         },
