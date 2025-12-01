@@ -13,14 +13,14 @@
         "a": {
           "name": "SocaForte",
           "photo": "assets/duplas/socaforte.jpeg",
-          "score": "",
+          "score": 0,
           "winner": false
         },
         "b": {
           "name": "Trupe Fantasma",
           "photo": "assets/duplas/trupe.jpeg",
-          "score": "",
-          "winner": false
+          "score": 1,
+          "winner": true
         }
       },
       {
@@ -86,8 +86,8 @@
           ]
         },
         "a": {
-          "name": "VENCEDOR Q1",
-          "photo": "assets/bagres/.webp",
+          "name": "Trupe Fantasma",
+          "photo": "assets/duplas/trupe.jpeg",
           "score": "",
           "winner": false
         },
