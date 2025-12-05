@@ -30,14 +30,14 @@
         "a": {
           "name": "Barnes",
           "photo": "assets/bagres/felipe.webp",
-          "score": "",
+          "score": 1,
           "winner": false
         },
         "b": {
           "name": "Boaz",
           "photo": "assets/bagres/boaz.webp",
-          "score": "",
-          "winner": false
+          "score": 2,
+          "winner": true
         }
       },
       {
@@ -92,8 +92,8 @@
           "winner": false
         },
         "b": {
-          "name": "VENCEDOR Q2",
-          "photo": "assets/bagres/.webp",
+          "name": "Boaz",
+          "photo": "assets/bagres/boaz.webp",
           "score": "",
           "winner": false
         }
