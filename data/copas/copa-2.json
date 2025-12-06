@@ -47,13 +47,13 @@
         "a": {
           "name": "Lobato",
           "photo": "assets/bagres/lobato.webp",
-          "score": "",
-          "winner": false
+          "score": 2,
+          "winner": true
         },
         "b": {
           "name": "Felps",
           "photo": "assets/bagres/felps.webp",
-          "score": "",
+          "score": 0,
           "winner": false
         }
       },
@@ -108,8 +108,8 @@
           ]
         },
         "a": {
-          "name": "VENCEDOR Q3",
-          "photo": "assets/bagres/.webp",
+          "name": "Lobato",
+          "photo": "assets/bagres/lobato.webp",
           "score": "",
           "winner": false
         },
