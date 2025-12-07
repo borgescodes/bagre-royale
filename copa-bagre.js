@@ -1,8 +1,3 @@
-/*
-    { "homeId": "Vegê", "awayId": "Bad", "homeScore": 0, "awayScore": 2},
-    { "homeId": "Person", "awayId": "Lascanor", "homeScore": 0, "awayScore": 2},
-    { "homeId": "Boaz", "awayId": "Borges", "homeScore": 0, "awayScore": 2}
-*/
 (function () {
   const qs = (s, el = document) => el.querySelector(s);
   const qsa = (s, el = document) => [...el.querySelectorAll(s)];
@@ -409,23 +404,20 @@ async function init() {
     if (Number.isFinite(a.score) && Number.isFinite(b.score) && a.score!==b.score) return a.score>b.score?b:a;
     return null;
   }
-  function computeTop3(){
-    const finals = (state.data?.rounds?.final)||[];
-    const F = finals.find(x=>x.id==="F1") || finals.find(x=>/final/i.test(String(x.stage||"")) && !/(3|terceir)/i.test(String(x.stage||"")));
-    const T = finals.find(x=>x.id==="3P") || finals.find(x=>/(3|terceir)/i.test(String(x.stage||"")));
-    const S1 = podium_getMatchByIdOrStage("S1","S1");
-    const S2 = podium_getMatchByIdOrStage("S2","S2");
-    const first  = podium_teamWinner(F);
-    const second = podium_teamLoser(F);
-    let third = podium_teamWinner(T);
-    if (!third){
-      const l1 = podium_teamLoser(S1), l2 = podium_teamLoser(S2);
-      if (l1 && l2 && Number.isFinite(l1.score) && Number.isFinite(l2.score)){
-        third = l1.score > l2.score ? l1 : l2;
-      }
-    }
-    return { first, second, third };
-  }
+function computeTop3(){
+  const finals = (state.data?.rounds?.final)||[];
+  const F = finals.find(x=>x.id==="F1") || finals.find(x=>/final/i.test(String(x.stage||"")) && !/(3|terceir)/i.test(String(x.stage||"")));
+  const T = finals.find(x=>x.id==="3P") || finals.find(x=>/(3|terceir)/i.test(String(x.stage||"")));
+
+  const first  = podium_teamWinner(F);
+  const second = podium_teamLoser(F);
+
+  // Only take third if there is an explicit 3rd-place match with a clear winner
+  const third = podium_teamWinner(T) || null;
+
+  return { first, second, third };
+}
+
   function renderPodium(){
     const host = document.getElementById("podium");
     if (!host) return;
