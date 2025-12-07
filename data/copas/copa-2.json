@@ -110,14 +110,14 @@
         "a": {
           "name": "Lobato",
           "photo": "assets/bagres/lobato.webp",
-          "score": "",
+          "score": 0,
           "winner": false
         },
         "b": {
           "name": "Felipão",
           "photo": "assets/bagres/felipão.webp",
-          "score": "",
-          "winner": false
+          "score": 2,
+          "winner": true
         }
       }
     ],
@@ -138,8 +138,8 @@
           "winner": false
         },
         "b": {
-          "name": "VENCEDOR S2",
-          "photo": "assets/bagres/.webp",
+          "name": "Felipão",
+          "photo": "assets/bagres/felipão.webp",
           "score": "",
           "winner": false
         }
@@ -160,8 +160,8 @@
           "winner": false
         },
         "b": {
-          "name": "PERDEDOR S2",
-          "photo": "assets/bagres/.webp",
+          "name": "Lobato",
+          "photo": "assets/bagres/lobato.webp",
           "score": "",
           "winner": false
         }
