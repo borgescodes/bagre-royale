@@ -300,6 +300,10 @@
     "asset": "../assets/bagres/lobato.webp",
     "titles": [
       {
+        "3° Lugar - Copa Bagre": 1,
+        "asset": "./titulos/copa-badge.webp"
+      },
+      {
         "Campeão - SÉRIE B": 1,
         "asset": "./titulos/serie-b.webp"
       }
