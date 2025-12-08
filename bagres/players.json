@@ -169,6 +169,10 @@
     "asset": "../assets/bagres/felipão.webp",
     "titles": [
       {
+        "2° Lugar - Copa Bagre": 1,
+        "asset": "./titulos/copa-badge.webp"
+      },
+      {
         "Campeão - Camp 2v2": 1,
         "asset": "./titulos/2v2-badge.webp"
       },
@@ -239,7 +243,7 @@
         "asset": "./titulos/staff.webp"
       },
       {
-        "Campeão - Copa Bagre": 1,
+        "Bicampeão - Copa Bagre": 2,
         "asset": "./titulos/copa-badge.webp"
       },
       {
@@ -251,7 +255,7 @@
         "asset": "./titulos/2v2-badge.webp"
       },
       {
-        "Campeão - SÉRIE A": 2,
+        "Bicampeão - SÉRIE A": 2,
         "asset": "./titulos/serie-a.webp"
       },
       {
