@@ -156,14 +156,14 @@
         "a": {
           "name": "Boaz",
           "photo": "assets/bagres/boaz.webp",
-          "score": "",
+          "score": 1,
           "winner": false
         },
         "b": {
           "name": "Lobato",
           "photo": "assets/bagres/lobato.webp",
-          "score": "",
-          "winner": false
+          "score": 2,
+          "winner": true
         }
       }
     ]
