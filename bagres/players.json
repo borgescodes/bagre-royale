@@ -30,7 +30,7 @@
     "displayName": "Danilo",
     "tag": "#VQGVYLQYQ",
     "serie": "B",
-    "titulos": 1,
+    "titulos": 0,
     "asset": "../assets/bagres/dan.webp",
     "titles": [
       {
@@ -44,7 +44,7 @@
     "displayName": "Gustavo",
     "tag": "#PU9GQ09CJ",
     "serie": "A",
-    "titulos": 4,
+    "titulos": 0,
     "asset": "../assets/bagres/lascanor.webp",
     "titles": [
       {
@@ -74,7 +74,7 @@
     "displayName": "Vg",
     "tag": "#Y02LRRULR",
     "serie": "A",
-    "titulos": 1,
+    "titulos": 0,
     "asset": "../assets/bagres/vege.webp",
     "titles": [
       {
@@ -88,7 +88,7 @@
     "displayName": "C. Barnes",
     "tag": "#29QR0UYCL",
     "serie": "B",
-    "titulos": 2,
+    "titulos": 1,
     "asset": "../assets/bagres/felipe.webp",
     "titles": [
       {
@@ -129,7 +129,7 @@
     "displayName": "Henrique",
     "tag": "#LUPL29Y8",
     "serie": "A",
-    "titulos": 1,
+    "titulos": 0,
     "asset": "../assets/bagres/person.webp",
     "titles": [
       {
@@ -147,7 +147,7 @@
     "displayName": "Felps",
     "tag": "#LVR9YL2QV",
     "serie": "A",
-    "titulos": 2,
+    "titulos": 0,
     "asset": "../assets/bagres/felps.webp",
     "titles": [
       {
@@ -165,7 +165,7 @@
     "displayName": "Felipão",
     "tag": "#CUCPUY0RL",
     "serie": "A",
-    "titulos": 4,
+    "titulos": 1,
     "asset": "../assets/bagres/felipão.webp",
     "titles": [
       {
@@ -191,7 +191,7 @@
     "displayName": "Boaz",
     "tag": "#JR8Q0QY88",
     "serie": "A",
-    "titulos": 4,
+    "titulos": 2,
     "asset": "../assets/bagres/boaz.webp",
     "titles": [
       {
@@ -217,7 +217,7 @@
     "displayName": "Bad",
     "tag": "#2CVVCPRR8",
     "serie": "A",
-    "titulos": 1,
+    "titulos": 0,
     "asset": "../assets/bagres/bad.webp",
     "titles": [
       {
@@ -235,7 +235,7 @@
     "displayName": "Borges",
     "tag": "#8RPRGP0G0",
     "serie": "A",
-    "titulos": 7,
+    "titulos": 5,
     "asset": "../assets/bagres/borges.webp",
     "titles": [
       {
@@ -278,7 +278,7 @@
     "displayName": "Kauã",
     "tag": "#88Y9LJC9G",
     "serie": "B",
-    "titulos": 2,
+    "titulos": 1,
     "asset": "../assets/bagres/kaua.webp",
     "titles": [
       {
