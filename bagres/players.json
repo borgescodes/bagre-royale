@@ -24,7 +24,7 @@
     "titulos": 0,
     "asset": "../assets/bagres/kenedy.webp",
     "titles": [],
-    "passe": false
+    "passe": true
   },
   {
     "displayName": "Danilo",
@@ -68,7 +68,7 @@
         "asset": "./titulos/bagre-royale.webp"
       }
     ],
-    "passe": true
+    "passe": false
   },
   {
     "displayName": "Vg",
