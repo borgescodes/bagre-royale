@@ -134,13 +134,13 @@
         "a": {
           "name": "Borges",
           "photo": "assets/bagres/borges.webp",
-          "score": "",
-          "winner": false
+          "score": 2,
+          "winner": true
         },
         "b": {
           "name": "Felipão",
           "photo": "assets/bagres/felipão.webp",
-          "score": "",
+          "score": 0,
           "winner": false
         }
       },
