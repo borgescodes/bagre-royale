@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bagre • Hall da Fama — Awards 2025</title>
+    <link rel="icon" href="../assets/navbar/bagre-main.webp" sizes="any" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="awards.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header class="site-header nav--home" id="siteNav">
+      <div class="container header-wrap">
+        <a
+          class="btn btn-back"
+          href="../index.html"
+          aria-label="Voltar para início"
+          >Voltar</a
+        >
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Bagre Awards 2025 — Hall da Fama</h2>
+            <p class="muted">Resultados e destaques do ano</p>
+          </div>
+        </div>
+
+        <div id="hallGrid" class="grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Bagre Royale</small>
+        <img
+          src="../assets/navbar/logo-dev-horizontal.webp"
+          alt="Logo Dev"
+          class="footer-dev-logo"
+        />
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="awards.js"></script>
+  </body>
+</html>
