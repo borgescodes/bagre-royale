@@ -4,7 +4,7 @@
   "nome": "Bagreleirão Série A - 2ª Edição",
   "inicio": "2025-11-06",
   "cover": "assets/cards/serie-a-2.webp",
-  "status": "live",
+  "status": "finished",
   "jogadores": [
     { "id": "Borges", "nome": "Borges" },
     { "id": "Bad", "nome": "Bad" },

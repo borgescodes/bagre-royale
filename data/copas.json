@@ -3,8 +3,8 @@
   "temporadas": [
     {
       "id": "duplas-1",
-      "name": "1° Season - Camp 2v2",
-      "cover": "assets/cards/miniaturas/camp-2v2-card.webp",
+      "name": "1° Temporada - Camp 2v2",
+      "cover": "assets/cards/miniaturas/camp-2v2-card-f.webp",
       "logo": "assets/cards/miniaturas/2v2-ico.webp",
       "date": "2025-11-31",
       "status": "finished"
@@ -12,7 +12,7 @@
     {
       "id": "copa-2",
       "name": "2° Edição Copa Bagre do Brasil",
-      "cover": "assets/cards/copa-natalino-card.webp",
+      "cover": "assets/cards/miniaturas/copa-natalino-card-f.webp",
       "logo": "assets/cards/copa-natal.webp",
       "date": "2025-12-07",
       "status": "finished"

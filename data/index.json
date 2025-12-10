@@ -3,27 +3,18 @@
   "atual": "bagre-s2",
   "temporadas": [
     {
+      "id": "playoffs-v1",
+      "name": "Playoffs Bagreleirão - 2026",
+      "cover": "assets/cards/miniaturas/playoffs-1.webp",
+      "date": "2025-12-13",
+      "status": "upcoming"
+    },
+    {
       "id": "bagre-s1",
-      "name": "Bagre Royale - 1ª Season",
+      "name": "1ª Season - Bagre Royale Qualifys",
       "cover": "assets/cards/miniaturas/royale-f.webp",
       "date": "2025-10-21",
       "status": "finished"
     }
-  ],
-  "playersAgg": [
-    { "id": "Borges", "titles": 2, "serie": "a" },
-    { "id": "Lascanor", "titles": 2, "serie": "a" },
-    { "id": "Bad", "titles": 1, "serie": "a" },
-    { "id": "Person", "titles": 0, "serie": "a" },
-    { "id": "Gaab", "titles": 0, "serie": "b" },
-    { "id": "Vegê", "titles": 1, "serie": "a" },
-    { "id": "Dan", "titles": 0, "serie": "b" },
-    { "id": "Boaz", "titles": 1, "serie": "a" },
-    { "id": "Felipão", "titles": 1, "serie": "b" },
-    { "id": "Foox", "titles": 0, "serie": "b" },
-    { "id": "Ricardo", "titles": 0, "serie": "b" },
-    { "id": "Wesl", "titles": 0, "serie": "b" },
-    { "id": "Felps", "titles": 1, "serie": "a" },
-    { "id": "Felipe", "titles": 0, "serie": "b" }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "schema": "v1",
+  "season": "playoffs-v1",
+  "nome": "Playoffs Bagreleirão - 2026",
+  "inicio": "2025-12-13",
+  "cover": "assets/cards/royale-final.webp",
+  "status": "upcoming",
+
+  "jogadores": [
+    { "id": "Borges", "nome": "Borges" },
+    { "id": "Lascanor", "nome": "Lascanor" },
+    { "id": "Bad", "nome": "Bad" },
+    { "id": "Person", "nome": "Person" },
+    { "id": "Gaab", "nome": "Gaab" }
+  ],
+  "jogos": [
+
+  ],
+  "resumo": "Do Top 1 ao 5 - entram no Bagreleirão, somente top 1 na série A e do 2-5 na B"
+}
