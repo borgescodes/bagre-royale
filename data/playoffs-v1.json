@@ -1,20 +1,27 @@
 {
   "schema": "v1",
   "season": "playoffs-v1",
-  "nome": "Playoffs Bagreleirão - 2026",
+  "nome": "Playoffs Bagreleirão",
   "inicio": "2025-12-13",
-  "cover": "assets/cards/royale-final.webp",
+  "cover": "assets/cards/playoffs-card-1.png",
   "status": "upcoming",
 
-  "jogadores": [
-    { "id": "Borges", "nome": "Borges" },
-    { "id": "Lascanor", "nome": "Lascanor" },
-    { "id": "Bad", "nome": "Bad" },
-    { "id": "Person", "nome": "Person" },
-    { "id": "Gaab", "nome": "Gaab" }
-  ],
+"jogadores": [
+  { "id": "Gaab", "nome": "Gaab" },
+  { "id": "Wesley", "nome": "Wesley" },
+  { "id": "Ricardo", "nome": "Ricardo" },
+  { "id": "Bruno", "nome": "Bruno" },
+  { "id": "Ferdynand", "nome": "Ferdynand" },
+  { "id": "Max", "nome": "Max" },
+  { "id": "Joao batista", "nome": "Joao batista" },
+  { "id": "Caos", "nome": "Caos" },
+  { "id": "Tuika", "nome": "Tuika" },
+  { "id": "Gui", "nome": "Gui" },
+  { "id": "Dantzzy7", "nome": "Dantzzy7" },
+  { "id": "Kauã", "nome": "Kauã" }
+],
   "jogos": [
 
   ],
-  "resumo": "Do Top 1 ao 5 - entram no Bagreleirão, somente top 1 na série A e do 2-5 na B"
+  "resumo": "📊 Pontuação:\n• Cada vitória vale 3 pontos\n• Coroa vencida adiciona +1 ponto (DV)\n• DV = total de coroas conquistadas\n• S = saldo de coroas (vencidas − sofridas)\n\n⚖️ Critérios de desempate:\n1) Maior saldo de DV (S)\n2) Persistindo o empate, confronto direto\n\n🏆 Classificação:\n• Top 6 avançam ao Bagreleirão\n• 1º lugar → vaga direta na Série A\n• 2º ao 6º lugar → ingressam na Série B"
 }
