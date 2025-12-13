@@ -42,7 +42,7 @@
     { "homeId": "wesl", "awayId": "gui7", "homeScore": 0, "awayScore": 0 },
     { "homeId": "davi", "awayId": "kaua", "homeScore": 0, "awayScore": 0 },
     { "homeId": "gaab", "awayId": "brun", "homeScore": 0, "awayScore": 0 },
-    { "homeId": "max", "awayId": "tuik", "homeScore": 0, "awayScore": 0 },
+    { "homeId": "max", "awayId": "tuik", "homeScore": 1, "awayScore": 0 },
     { "homeId": "gui7", "awayId": "jb", "homeScore": 0, "awayScore": 0 },
     { "homeId": "fer", "awayId": "fab", "homeScore": 0, "awayScore": 0 }
   ],
